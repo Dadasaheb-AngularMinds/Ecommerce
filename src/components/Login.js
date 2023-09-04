@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Wave from 'react-wavify';
 
 function Login() {
   console.log('Login Page');
   const [formData, setFormData] = useState({ email: '', password: '' });
-  const history = useNavigate()
+  const history = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(formData);
-    history('/user/dashboard')
-
+    history('/user/dashboard');
   };
 
   const handleInputChange = (event) => {
@@ -22,7 +22,7 @@ function Login() {
   };
   return (
     <>
-      <div className="flex flex-col justify-center flex-1 min-h-full py-12 sm:px-6 lg:px-8">
+      <div className="relative flex flex-col justify-center flex-1 min-h-full min-h-screen py-10 bg-gradient-to-b from-sky-300 to-sky-100 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <img
             className="w-auto h-10 mx-auto"
@@ -34,8 +34,8 @@ function Login() {
           </h2>
         </div>
 
-        <div className="mt-2 sm:mx-auto sm:w-full sm:max-w-[480px]">
-          <div className="px-6 py-6 bg-white shadow sm:rounded-lg sm:px-12">
+        <div className="mt-2 sm:mx-auto sm:w-full sm:max-w-[480px] z-10">
+          <div className="px-6 py-6 bg-transparent bg-white shadow-lg sm:rounded-lg sm:px-12">
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
@@ -175,14 +175,29 @@ function Login() {
           <p className="mt-3 text-sm text-center text-gray-500">
             Don't have an account?{' '}
             <a
-              href={() => false}
-              onClick={() =>history('/register')}
+              onClick={() => history('/register')}
               className="font-semibold leading-6 text-indigo-600 cursor-pointer hover:text-indigo-500"
             >
               Sign Up here
             </a>
           </p>
         </div>
+         
+        <Wave fill="url(#gradient)" className="absolute bottom-0 left-0 w-full p-0 h-60"
+        options={{
+          height: 20,
+          amplitude: 20,
+          speed: 0.25,
+          points: 4,
+        }}
+        >
+          <defs>
+            <linearGradient id="gradient" gradientTransform="rotate(90)">
+              <stop offset="10%" stopColor="#93c5fd" />
+              <stop offset="90%" stopColor="#60a5fa" />
+            </linearGradient>
+          </defs>
+        </Wave>
       </div>
     </>
   );
