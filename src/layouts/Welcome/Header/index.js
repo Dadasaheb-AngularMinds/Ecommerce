@@ -2,31 +2,32 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Dialog } from '@headlessui/react';
+import amazonLogo from '../../../assets/images/amazon.png';
+import './welcomeHeader.css';
 
 const HeaderSection = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Product', href: '#' },
-    { name: 'Features', href: '#' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Company', href: '#' },
+    { name: 'Home', href: '#' },
+    { name: 'Collection', href: '#' },
+    { name: 'Best Sellers', href: '#' },
+    { name: 'Todays Deals', href: '#' },
+    { name: 'Flat off', href: '#' },
   ];
   const history = useNavigate();
+
   return (
-    <header className="sticky inset-x-0 top-0 z-50">
+    <header className="sticky inset-x-0 top-0 z-50 bg-[#7bb1b1]">
       <nav
-        className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8"
+        className={
+          'flex items-center justify-between px-3 py-2 mx-auto container-fluid  lg:px-8'
+        }
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img
-              className="w-auto h-8"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-              alt=""
-            />
+            <img className="w-auto h-10" src={amazonLogo} alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -39,24 +40,65 @@ const HeaderSection = () => {
             <Bars3Icon className="w-6 h-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
+        <div className="flex justify-center hidden w-3/4 text-center lg:flex lg:gap-x-5 ">
+          {navigation.map((item,index) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-white"
+              className={`${index===0 ? 'border-b-4 border-orange-400 text-orange-700 font-semibold ' : ''}px-2 pt-1 font-serif text-xl leading-6 tracking-wide transition-all duration-200 text-blue-950 hover:text-orange-200 first-letter:text-lg `}
             >
               {item.name}
             </a>
           ))}
+          <form>
+            <div class="flex">
+              <div class="relative w-full">
+                <input
+                  type="search"
+                  id="search-dropdown"
+                  class="block h-6 w-full p-4 pr-20 z-20 text-sm text-gray-900 bg-gray-50 border-l-gray-100 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+                  placeholder="Search"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="absolute top-0 right-0 p-2.5 pt-1.5 h-full text-sm font-medium text-white bg-orange-400  border border-orange-400 hover:bg-orange-300 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
+
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href={() => false}
-            className="text-sm font-semibold leading-6 text-white duration-100 cursor-pointer hover:scale-100 hover:text-sky-700"
+            className="px-3 py-1 text-sm font-semibold leading-6 text-white duration-100 rounded-full cursor-pointer hover:scale-95 hover:text-sky-700"
             onClick={() => history('/login')}
           >
-            Log in <span aria-hidden="true">&rarr;</span>
+            <i
+              class="fa fa-user text-xl bg-blue-950 hover:text-orange-200 text-orange-300 px-2 rounded-full"
+              aria-hidden="true"
+            ></i>
+          </a>
+          <a href={() => false}
+            className="px-3 text-sm font-semibold leading-6 text-white duration-100 rounded-full cursor-pointer hover:scale-95 hover:scale-100 hover:text-sky-700">
+            <i class="fa fa-shopping-cart text-2xl text-blue-950" aria-hidden="true"></i>
           </a>
         </div>
       </nav>

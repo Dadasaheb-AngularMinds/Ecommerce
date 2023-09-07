@@ -2,23 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-/* width */
 ::-webkit-scrollbar {
   width: 6px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #d5d5d5;
   border-radius: 5px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@layer utilities {
+  .radial-gradient {
+    background: radial-gradient(circle, #0000004f, #000000c0);
+  }
+  .brand-collection-button {
+    @apply relative bg-transparent rounded-l-3xl;
+  }
+  .brand-collection-button::before {
+    @apply content-['']
+    absolute w-[100%] h-[100%] rounded-l-3xl
+    bg-gradient-to-l from-[#c3623193] via-[#c3623169] to-orange-300 top-0 left-0
+    transition-transform ease-in-out origin-right duration-300
+    scale-x-0;
+  }
+  .brand-collection-button:hover::before {
+    @apply origin-left scale-x-100 rounded-l-3xl;
+  }
 }

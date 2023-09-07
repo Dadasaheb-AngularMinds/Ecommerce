@@ -11,6 +11,11 @@ import Banner2 from './Banner2';
 import Banner3 from './Banner3';
 import Carosul2 from './Carosul2/index.js';
 import Carosul3 from './Carosul3';
+import CarosulWithText from './CarosulWithText';
+import JustForYou from './JustForYou';
+import SpecialOfferForYou from './SpecialOfferForYou';
+import BrandCollection from './BrandCollection';
+import Banner0 from './Banner0';
 
 const benefits = [
   'Competitive salaries',
@@ -26,7 +31,9 @@ function Welcome() {
     <div className="bg-gray-900">
       <HeaderSection />
       <main className="isolate">
+        <Banner0 />
         <Banner1 />
+        <BrandCollection />
         <Banner2 />
         {/* <ContentSection /> */}
         <Banner3 />
@@ -34,6 +41,10 @@ function Welcome() {
         {/* <TeamSection /> */}
         <Carosul2 />
         <Carosul3 />
+        <CarosulWithText />
+        <JustForYou />
+        <SpecialOfferForYou />
+
       </main>
       <FooterSection />
     </div>

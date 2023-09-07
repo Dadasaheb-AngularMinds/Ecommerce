@@ -9,12 +9,17 @@ import 'swiper/css/navigation';
 import './style.css';
 
 // import required modules
-import { Navigation } from 'swiper/modules';
+import { Autoplay,Navigation } from 'swiper/modules';
 
 export default function Banner2() {
   return (
     <div className="py-10">
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper navigation={true}
+       autoplay={{
+        delay: 1800,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay,Navigation]} className="mySwiper">
         <SwiperSlide>
           <img
             src="https://cdn.eyemyeye.com/desktop/images/banners/homepage/2_Desktop_Home_CL_050623.jpg"
