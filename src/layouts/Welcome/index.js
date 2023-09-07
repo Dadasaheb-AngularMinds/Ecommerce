@@ -33,8 +33,8 @@ function Welcome() {
       <main className="isolate">
         <Banner0 />
         <Banner1 />
-        <BrandCollection />
         <Banner2 />
+        <BrandCollection />
         {/* <ContentSection /> */}
         <Banner3 />
         {/* <ValuesSection /> */}

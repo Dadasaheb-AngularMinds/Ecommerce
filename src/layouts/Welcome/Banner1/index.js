@@ -5,9 +5,9 @@ const Banner1 = () => {
   const history = useNavigate();
 
   return (
-    <div className="bg-gray-100 container-fluid">
+    <div className="bg-[#e6f4f6] container-fluid">
       <div className="w-full">
-        <div className="relative px-6 py-20 overflow-hidden bg-gray-900 shadow-sm group sm:px-10 sm:py-24 md:px-12 lg:px-20">
+        <div className="relative px-6 py-10 bg-[#e6f4f6] overflow-hidden shadow-sm group sm:px-10 sm:py-24 md:px-12 lg:px-20">
           <img
             className="absolute inset-0 object-cover w-full h-full transition-all duration-300 brightness-200 saturate-0 group-hover:blur-none blur-sm"
             src="https://wphix.com/html/blackwood-prv/assets/img/hero/landing-header-1.jpg"

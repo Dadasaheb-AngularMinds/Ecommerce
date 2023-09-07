@@ -3,7 +3,7 @@ import brandImg from '../../../assets/images/img8.jpg';
 
 const BrandCollection = () => {
   return (
-    <div className="h-auto py-20 bg-[#000000aa] container-fluid">
+    <div className="h-auto  bg-[#e6f4f6] container-fluid">
       <div className="z-20 w-full h-auto">
         <div className="relative h-auto px-6 py-20 overflow-hidden shadow-sm group sm:px-10 sm:py-24 md:px-12 lg:px-20">
           <img
@@ -24,7 +24,7 @@ const BrandCollection = () => {
               }}
             />
           </div>
-          <div className="relative h-auto max-w-5xl py-32 mx-auto lg:mx-auto">
+          <div className="relative h-auto max-w-5xl mx-auto py-52 lg:mx-auto">
             <blockquote className="absolute inset-0 justify-center h-auto text-lg font-semibold text-center text-white sm:text-xl sm:leading-8">
               <div className="font-serif text-4xl font-bold text-center text-orange-100 sm:text-6xl ">
                 Brand B & R

@@ -13,7 +13,7 @@ import { Autoplay,Navigation } from 'swiper/modules';
 
 export default function Banner2() {
   return (
-    <div className="py-10">
+    <div className="relative py-10">
       <Swiper navigation={true}
        autoplay={{
         delay: 1800,
@@ -78,6 +78,59 @@ export default function Banner2() {
           />
         </SwiperSlide>
       </Swiper>
+      <div className="absolute bottom-0 z-20 grid grid-cols-3 gap-8 left-40 right-40">
+        <div className="flex items-center w-full h-full bg-white p-9">
+          <div className="grid grid-cols-2 gap-4">
+            <div className="w-full bg-slate-700">
+              <img src={'https://images.wallpaperscraft.com/image/single/rose_petals_white_1003429_3840x2160.jpg'} />
+            </div>
+            <div className="flex items-center justify-center w-full bg-yellow-300">
+              <img src={'https://images.wallpaperscraft.com/image/single/rose_petals_white_1003429_3840x2160.jpg'} />
+            </div>
+            <div className="w-full bg-blue-300">
+              <img src={'https://images.wallpaperscraft.com/image/single/rose_petals_white_1003429_3840x2160.jpg'} />
+            </div>
+            <div className="w-full bg-pink-300">
+              {" "}
+              <img src={'https://images.wallpaperscraft.com/image/single/rose_petals_white_1003429_3840x2160.jpg'} />
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center w-full h-full bg-white p-9 ">
+          <div className="grid grid-cols-2 gap-4">
+            <div className="w-full bg-slate-700">
+              <img src={'https://images.wallpaperscraft.com/image/single/rose_petals_white_1003429_3840x2160.jpg'} />
+            </div>
+            <div className="flex items-center justify-center w-full bg-yellow-300">
+              <img src={'https://images.wallpaperscraft.com/image/single/rose_petals_white_1003429_3840x2160.jpg'} />
+            </div>
+            <div className="w-full bg-blue-300">
+              <img src={'https://images.wallpaperscraft.com/image/single/rose_petals_white_1003429_3840x2160.jpg'} />
+            </div>
+            <div className="w-full bg-pink-300">
+              {" "}
+              <img src={'https://images.wallpaperscraft.com/image/single/rose_petals_white_1003429_3840x2160.jpg'} />
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center w-full h-full bg-white p-9 ">
+          <div className="grid grid-cols-2 gap-4">
+            <div className="w-full bg-slate-700">
+              <img src={'https://images.wallpaperscraft.com/image/single/rose_petals_white_1003429_3840x2160.jpg'} />
+            </div>
+            <div className="flex items-center justify-center w-full bg-yellow-300">
+              <img src={'https://images.wallpaperscraft.com/image/single/rose_petals_white_1003429_3840x2160.jpg'} />
+            </div>
+            <div className="w-full bg-blue-300">
+              <img src={'https://images.wallpaperscraft.com/image/single/rose_petals_white_1003429_3840x2160.jpg'} />
+            </div>
+            <div className="w-full bg-pink-300">
+              {" "}
+              <img src={'https://images.wallpaperscraft.com/image/single/rose_petals_white_1003429_3840x2160.jpg'} />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

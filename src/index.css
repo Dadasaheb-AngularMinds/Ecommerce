@@ -21,7 +21,7 @@
 
 @layer utilities {
   .radial-gradient {
-    background: radial-gradient(circle, #0000004f, #000000c0);
+    background: radial-gradient(circle, #c7baba4f, #000000c0);
   }
   .brand-collection-button {
     @apply relative bg-transparent rounded-l-3xl;
