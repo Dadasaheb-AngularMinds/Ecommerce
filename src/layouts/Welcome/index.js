@@ -1,30 +1,15 @@
 import React from 'react';
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Banner1 from './Banner1';
-import ValuesSection from './ValuesSection';
-import TeamSection from './TeamSection';
-import ContentSection from './ContentSection';
 import HeaderSection from './Header';
 import FooterSection from './FooterSection';
-import Banner2 from './Banner2';
 import Banner3 from './Banner3';
-import Carosul2 from './Carosul2/index.js';
-import Carosul3 from './Carosul3';
-import CarosulWithText from './CarosulWithText';
 import JustForYou from './JustForYou';
 import SpecialOfferForYou from './SpecialOfferForYou';
 import BrandCollection from './BrandCollection';
 import Banner0 from './Banner0';
-
-const benefits = [
-  'Competitive salaries',
-  'Flexible work hours',
-  '30 days of paid vacation',
-  'Annual team retreats',
-  'Benefits for you and your family',
-  'A great work environment',
-];
+import Collection from './Collection';
+import Banner5 from './Banner5';
+import Banner6 from './Banner6';
 
 function Welcome() {
   return (
@@ -33,18 +18,13 @@ function Welcome() {
       <main className="isolate">
         <Banner0 />
         <Banner1 />
-        <Banner2 />
         <BrandCollection />
-        {/* <ContentSection /> */}
+        <Collection />
         <Banner3 />
-        {/* <ValuesSection /> */}
-        {/* <TeamSection /> */}
-        <Carosul2 />
-        <Carosul3 />
-        <CarosulWithText />
-        <JustForYou />
         <SpecialOfferForYou />
-
+        <JustForYou />
+        <Banner5 />
+        <Banner6 />
       </main>
       <FooterSection />
     </div>

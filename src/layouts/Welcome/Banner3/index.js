@@ -12,13 +12,19 @@ const Banner3 = () => {
     'https://images.wallpaperscraft.com/image/single/strawberries_berries_leaves_1021712_1600x1200.jpg',
   ];
   return (
-    <div className="pt-5 pb-20 bg-gray-800 container-fluid ">
-      <p class="text-4xl font-bold font-serif text-orange-500 text-center mb-5">
-        Categories
+    <div className="relative pt-5 pb-20 welcome-linear-gradient-category container-fluid ">
+      <p class="text-4xl font-bold font-serif text-blue-950 text-center mb-5">
+        -Categories-
       </p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-2">
+      <p
+        className="absolute font-serif text-xl italic animate-bounce top-2 sm:top-6 text-blue-950 right-5"
+        role="button"
+      >
+        See all products
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 px-2">
         {imageArray.map((item, index) => (
-          <div class="group rounded-lg relative overflow-hidden bg-slate-400">
+          <div class="group rounded relative overflow-hidden bg-slate-400">
             <div class=" w-full h-full overflow-hidden cursor-pointer hover:brightness-125 duration-500 transition-transform transform hover:scale-110">
               <img src={item} alt="Image 1" class="w-full h-auto" />
             </div>

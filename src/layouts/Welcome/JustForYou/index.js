@@ -6,11 +6,20 @@ import img5 from '../../../assets/images/img5.jpg';
 
 const JustForYou = () => {
   return (
-    <div className="relative px-5 py-10 bg-gray-800 md:px-20 lg:px-28 sm:px-6">
+    <div className="relative p-5 bg-gray-800">
+      <p className="mb-5 font-serif text-4xl font-bold text-center text-orange-400">
+        -Regional-
+      </p>
+      <p
+        className="absolute font-serif text-xl italic text-white underline animate-bounce top-2 sm:top-6 right-5"
+        role="button"
+      >
+        See all products
+      </p>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
         <div class="group overflow-hidden bg-gray-200 relative p-4">
           <img
-            className="object-cover w-full h-full transition-all transition-transform duration-300 brightness-100 hover:brightness-90 hover:scale-100"
+            className="object-cover w-full h-full transition-all duration-300 brightness-100 hover:brightness-90 hover:scale-100"
             src={img5}
           />
 

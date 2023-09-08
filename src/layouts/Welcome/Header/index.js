@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Dialog } from '@headlessui/react';
-import amazonLogo from '../../../assets/images/amazon.png';
+import amazonLogo from '../../../assets/images/amazon-new.png';
 import './welcomeHeader.css';
 
 const HeaderSection = () => {
@@ -18,7 +18,7 @@ const HeaderSection = () => {
   const history = useNavigate();
 
   return (
-    <header className="sticky inset-x-0 top-0 z-50 bg-[#7bb1b1]">
+    <header className="sticky inset-x-0 top-0 z-50 bg-gray-950">
       <nav
         className={
           'flex items-center justify-between px-3 py-2 mx-auto container-fluid  lg:px-8'
@@ -26,8 +26,8 @@ const HeaderSection = () => {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <img className="w-auto h-10" src={amazonLogo} alt="" />
+          <a href="#" className="">
+            <img className="w-auto h-9" src={amazonLogo} alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -41,11 +41,15 @@ const HeaderSection = () => {
           </button>
         </div>
         <div className="flex justify-center hidden w-3/4 text-center lg:flex lg:gap-x-5 ">
-          {navigation.map((item,index) => (
+          {navigation.map((item, index) => (
             <a
               key={item.name}
               href={item.href}
-              className={`${index===0 ? 'border-b-4 border-orange-400 text-orange-700 font-semibold ' : ''}px-2 pt-1 font-serif text-xl leading-6 tracking-wide transition-all duration-200 text-blue-950 hover:text-orange-200 first-letter:text-lg `}
+              className={`${
+                index === 0
+                  ? 'text-orange-300 font-semibold '
+                  : 'text-gray-200 '
+              }hover:scale-95 px-2 pt-1 font-serif text-lg leading-6 tracking-wide transition-all duration-200 hover:text-orange-200 first-letter:text-lg `}
             >
               {item.name}
             </a>
@@ -88,17 +92,10 @@ const HeaderSection = () => {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href={() => false}
-            className="px-3 py-1 text-sm font-semibold leading-6 text-white duration-100 rounded-full cursor-pointer hover:scale-95 hover:text-sky-700"
+            className="px-3 py-1 font-serif text-xl font-semibold leading-6 text-gray-200 duration-100 rounded-full cursor-pointer hover:scale-95 hover:text-orange-300"
             onClick={() => history('/login')}
           >
-            <i
-              class="fa fa-user text-xl bg-blue-950 hover:text-orange-200 text-orange-300 px-2 rounded-full"
-              aria-hidden="true"
-            ></i>
-          </a>
-          <a href={() => false}
-            className="px-3 text-sm font-semibold leading-6 text-white duration-100 rounded-full cursor-pointer hover:scale-95 hover:scale-100 hover:text-sky-700">
-            <i class="fa fa-shopping-cart text-2xl text-blue-950" aria-hidden="true"></i>
+            Log in <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>

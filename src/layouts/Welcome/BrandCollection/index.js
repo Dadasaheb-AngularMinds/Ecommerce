@@ -11,7 +11,7 @@ const BrandCollection = () => {
             src={brandImg}
             alt=""
           />
-          <div className="absolute inset-0 radial-gradient transition-all duration-300  group-hover:bg-[#00000044] mix-blend-multiply" />
+          <div className="absolute inset-0 radial-gradient transition-all duration-300  group-hover:bg-[#0000002e] mix-blend-multiply" />
           <div
             className="hidden md:absolute md:bottom-16 md:left-[50rem] md:block md:transform-gpu md:blur-3xl"
             aria-hidden="true"
@@ -25,7 +25,7 @@ const BrandCollection = () => {
             />
           </div>
           <div className="relative h-auto max-w-5xl mx-auto py-52 lg:mx-auto">
-            <blockquote className="absolute inset-0 justify-center h-auto text-lg font-semibold text-center text-white sm:text-xl sm:leading-8">
+            <blockquote className="absolute inset-0 justify-center h-auto text-lg font-semibold text-center text-white top-1/3 sm:text-xl sm:leading-8">
               <div className="font-serif text-4xl font-bold text-center text-orange-100 sm:text-6xl ">
                 Brand B & R
               </div>
