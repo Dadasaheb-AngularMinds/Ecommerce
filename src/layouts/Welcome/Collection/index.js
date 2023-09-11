@@ -21,16 +21,6 @@ const Collection = () => {
         <div className="w-full h-[90%]">
           <img className="w-full h-[90%] object-fit" src={col6} />
         </div>
-        {/* <div className="flex items-center justify-center w-full bg-[#e9bd5510]">
-          <img className="w-full h-full object-fit" src={col5} />
-        </div>
-        <div className="w-full  bg-[#f19f2414]">
-          <img className="object-cover w-full h-full" src={col5} />
-        </div>
-        <div className="w-full bg-[#ed7b3437]">
-          {' '}
-          <img className="object-cover w-full h-full" src={col1} />
-        </div> */}
         <div className="absolute top-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 opacity-0 group-hover:pt-4 group-hover:bg-gray-800 group-hover:opacity-60 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
           <div className="px-5">
             <i
@@ -93,11 +83,47 @@ const Collection = () => {
   );
 
   return (
-    <section id="collection">
-      <div className="bg-[#e6f4f6] container-fluid">
-        <div className="relative w-full welcome-page-collection-gradient">
-          <div className="transition-all duration-300 hover:bg-transparent bg-[#0000000a]  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4  px-6 py-10 bg-[#e6f4f6] overflow-hidden sm:px-2 sm:py-2 md:px-2 lg:px-2">
-            <div className="relative h-[100%] p-5">
+    <div className="bg-[#e6f4f6] container-fluid">
+      <div className="relative w-full welcome-page-collection-gradient">
+        <div className="transition-all duration-300 hover:bg-transparent bg-[#0000000a]  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 px-6 py-10 bg-[#e6f4f6] overflow-hidden sm:px-2 sm:py-2 md:px-2 lg:px-2">
+          <div className="relative h-[100%] p-5">
+            <img
+              className="w-auto h-[80%] mt-28 transition-all duration-300 bg-transparent brightness-100 hover:brightness-90 hover:scale-100 object-fit  hover:blur-none "
+              src={collectionImg}
+              alt=""
+            />
+            <div className="absolute top-0 z-20 sm:top-10 left-5">
+              <div className="space-y-1">
+                <h4 className="text-2xl">Latest Trending</h4>
+                <h1 className="font-serif text-5xl">Collection</h1>
+                <p className="mb-2 italic">
+                  Last call for upto <span className="animate-bounce">45%</span>
+                </p>
+                <button
+                  className="p-1 px-5 text-white bg-gray-900 "
+                  role="button"
+                >
+                  SHOP NOW
+                </button>
+              </div>
+            </div>
+            <div className="absolute top-2/4 right-5">
+              <p
+                className="mb-2 font-serif text-3xl italic underline transition-all duration-300 animate-bounce text-gray-950 hover:text-gray-700"
+                role="button"
+              >
+                Hurry up!
+              </p>
+            </div>
+            <div className="absolute bottom-5 right-5">
+              <p
+                className="mb-2 font-serif text-xl font-bold text-gray-900 underline transition-all duration-300 hover:text-gray-700"
+                role="button"
+              >
+                See all Products
+              </p>
+            </div>
+            <div className="absolute top-6 sm:top-20 w-[20%]">
               <img
                 className="w-auto h-[80%] mt-28 transition-all duration-300 bg-transparent brightness-100 hover:brightness-90 hover:scale-100 object-fit  hover:blur-none "
                 src={collectionImg}
@@ -166,7 +192,7 @@ const Collection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

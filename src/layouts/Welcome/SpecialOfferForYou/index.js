@@ -5,7 +5,9 @@ const SpecialOfferForYou = () => {
   return (
     <section id="flat-off">
     <div className="pt-3 bg-gray-100 container-fluid">
-      <p className='font-serif text-4xl font-bold text-center text-blue-950'>-Special Offers-</p>
+      <p className="font-serif text-4xl font-bold text-center text-blue-950">
+        -Special Offers-
+      </p>
 
       <div className="relative grid grid-cols-1 gap-4 px-5 mt-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 md:px-2 lg:px-10 sm:px-5">
         <div class="px-4">
@@ -54,11 +56,11 @@ const SpecialOfferForYou = () => {
           </div>
         </div>
         <div className="absolute top-10 sm:top-20 right-1/4 lg:right-28 lg:bottom-2/3">
-              <span class="relative flex h-3 w-3">
-                <span class="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#69351440] opacity-75"></span>
-                <span class="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center   bg-[#00000010] opacity-75"></span>
-              </span>
-            </div>
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#69351440] opacity-75"></span>
+            <span class="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center   bg-[#00000010] opacity-75"></span>
+          </span>
+        </div>
       </div>
     </div>
     </section>

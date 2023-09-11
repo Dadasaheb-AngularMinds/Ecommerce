@@ -2,18 +2,90 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-scroll";
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-import "./styles.css";
+import './styles.css';
 
 // import required modules
-import { Autoplay, Navigation } from "swiper/modules";
-import purse from "../../../assets/images/welcome/purse.png";
+import { Autoplay, Navigation } from 'swiper/modules';
+import purse from '../../../assets/images/welcome/purse.png';
+import imgCol6 from '../../../assets/images/welcome/col6.png';
+import love from '../../../assets/images/welcome/love.png';
 
 const Banner6 = () => {
   return (
-    <div className="relative h-full px-24 pt-24 pb-5 bg-orange-300 container-fluid">
+    <div className="h-full px-10 pb-5 bg-gradient-to-t from-[#f05907f9] to-[#f2bda8] container-fluid">
+      <div className="grid grid-cols-1 gap-1 px-6 overflow-hidden transition-all duration-300 bg-transparent sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:px-2 sm:py-2 md:px-2 lg:px-2">
+        <div className="relative flex-col p-10 sm:p-20 d-flex">
+          <p className="w-[90%] font-serif font-bold  text-7xl">
+            <span className="text-gray-500">Inspired</span> by Your Fashion
+          </p>
+          <p className="font-serif font-bold text-7xl">Dream</p>
+          <button className="px-10 py-2 mt-5 text-3xl text-black transition-all duration-300 bg-yellow-500 border border-orange-400 hover:bg-orange-300 rounded-3xl">
+            <span className="font-serif">
+              Shop Now{' '}
+              <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </span>
+          </button>
+          <div className='w-full px-5 py-2 mt-5 shadow-lg sm:w-2/3 rounded-3xl bg-slate-100'>
+             <div class="mt-3 flex -space-x-2 overflow-hidden">
+              <img
+                class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+              />
+              <img
+                class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+              />
+              <img
+                class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                alt=""
+              />
+              <img
+                class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+              />
+              <img
+                class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+              />
+            </div>
+            <div class="mt-3 text-sm font-medium">
+              <a href={() => false} class="text-blue-500">
+                + 198 others
+              </a>
+            </div>
+          </div>
+          <div className="absolute right-1/4 lg:right-28 lg:bottom-2/3">
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#69351440] opacity-75"></span>
+            <span class="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center   bg-[#00000010] opacity-75"></span>
+          </span>
+        </div>
+        </div>
+
+        <div className="relative h-[500px]">
+          <img
+            className="w-auto mx-auto my-auto h-[100%] transition-all duration-300 bg-transparent brightness-100 hover:brightness-90 "
+            src={imgCol6}
+            alt=""
+          />
+          <img className='absolute h-[15%] w-[50%] sm:w-[15%] top-0 sm:top-1/2' src={love}/>
+          <div className="absolute top-10 sm:top-20 right-1/4 lg:right-28 lg:bottom-2/3">
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#69351440] opacity-75"></span>
+            <span class="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center   bg-[#00000010] opacity-75"></span>
+          </span>
+        </div>
+        </div>
+      </div>
+
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
@@ -30,11 +102,11 @@ const Banner6 = () => {
       >
         <SwiperSlide
           className="swiper-slide-fashion"
-          style={{ backgroundColor: "#fdeecd" }}
+          style={{ backgroundColor: '#fdeecd' }}
         >
           <div
             className="slide-circle"
-            style={{ "--bg-color": "#fcf4e4" }}
+            style={{ '--bg-color': '#fcf4e4' }}
           ></div>
           <img src={purse} alt="purse" />
           <div className="absolute right-3 bottom-2">
@@ -59,11 +131,11 @@ const Banner6 = () => {
 
         <SwiperSlide
           className="swiper-slide-fashion"
-          style={{ backgroundColor: "#fdccd5" }}
+          style={{ backgroundColor: '#fdccd5' }}
         >
           <div
             className="shadow-lg slide-circle"
-            style={{ "--bg-color": "#fde4e8" }}
+            style={{ '--bg-color': '#fde4e8' }}
           ></div>
           <img src={purse} alt="purse" />
 
@@ -89,11 +161,11 @@ const Banner6 = () => {
 
         <SwiperSlide
           className="swiper-slide-fashion"
-          style={{ backgroundColor: "#d1edfa" }}
+          style={{ backgroundColor: '#d1edfa' }}
         >
           <div
             className="slide-circle"
-            style={{ "--bg-color": "#e7f5f9" }}
+            style={{ '--bg-color': '#e7f5f9' }}
           ></div>
           <img src={purse} alt="purse" />
           <div className="absolute right-3 bottom-2">
@@ -118,11 +190,11 @@ const Banner6 = () => {
 
         <SwiperSlide
           className="swiper-slide-fashion"
-          style={{ backgroundColor: "#fdccd5" }}
+          style={{ backgroundColor: '#fdccd5' }}
         >
           <div
             className="shadow-lg slide-circle"
-            style={{ "--bg-color": "#fde4e8" }}
+            style={{ '--bg-color': '#fde4e8' }}
           ></div>
           <img src={purse} alt="purse" />
           <div className="absolute right-3 bottom-2">
@@ -147,11 +219,11 @@ const Banner6 = () => {
 
         <SwiperSlide
           className="swiper-slide-fashion"
-          style={{ backgroundColor: "#fdccd5" }}
+          style={{ backgroundColor: '#fdccd5' }}
         >
           <div
             className="shadow-lg slide-circle"
-            style={{ "--bg-color": "#fde4e8" }}
+            style={{ '--bg-color': '#fde4e8' }}
           ></div>
           <img src={purse} alt="purse" />
           <div className="absolute right-3 bottom-2">
@@ -176,21 +248,21 @@ const Banner6 = () => {
 
         <SwiperSlide
           className="swiper-slide-fashion"
-          style={{ backgroundColor: "#fdccd5" }}
+          style={{ backgroundColor: '#fdccd5' }}
         >
           <div
             className="shadow-lg slide-circle"
-            style={{ "--bg-color": "#fde4e8" }}
+            style={{ '--bg-color': '#fde4e8' }}
           ></div>
         </SwiperSlide>
 
         <SwiperSlide
           className="swiper-slide-fashion"
-          style={{ backgroundColor: "#cdfecc" }}
+          style={{ backgroundColor: '#cdfecc' }}
         >
           <div
             className="slide-circle"
-            style={{ "--bg-color": "#e4fde3" }}
+            style={{ '--bg-color': '#e4fde3' }}
           ></div>
           <img src={purse} alt="purse" />
           <div className="absolute right-3 bottom-2">
@@ -215,21 +287,21 @@ const Banner6 = () => {
 
         <SwiperSlide
           className="swiper-slide-fashion"
-          style={{ backgroundColor: "#fdccd5" }}
+          style={{ backgroundColor: '#fdccd5' }}
         >
           <div
             className="shadow-lg slide-circle"
-            style={{ "--bg-color": "#fde4e8" }}
+            style={{ '--bg-color': '#fde4e8' }}
           ></div>
         </SwiperSlide>
 
         <SwiperSlide
           className="swiper-slide-fashion"
-          style={{ backgroundColor: "#fdccd5" }}
+          style={{ backgroundColor: '#fdccd5' }}
         >
           <div
             className="slide-circle"
-            style={{ "--bg-color": "#fde4e8" }}
+            style={{ '--bg-color': '#fde4e8' }}
           ></div>
           <img src={purse} alt="purse" />
           <div className="absolute right-3 bottom-2">
@@ -254,11 +326,11 @@ const Banner6 = () => {
 
         <SwiperSlide
           className="swiper-slide-fashion"
-          style={{ backgroundColor: "#fdccd5" }}
+          style={{ backgroundColor: '#fdccd5' }}
         >
           <div
             className="shadow-lg slide-circle"
-            style={{ "--bg-color": "#fde4e8" }}
+            style={{ '--bg-color': '#fde4e8' }}
           ></div>
         </SwiperSlide>
       </Swiper>
