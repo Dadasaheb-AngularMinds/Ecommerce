@@ -49,4 +49,5 @@
   .brand-collection-button:hover::before {
     @apply origin-left scale-x-100 rounded-l-3xl;
   }
+   
 }

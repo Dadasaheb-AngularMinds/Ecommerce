@@ -91,120 +91,122 @@ const FooterSection = () => {
     ],
   };
   return (
-    <footer
-      className="relative pt-20 bg-sky-950"
-      aria-labelledby="footer-heading"
-    >
-      <h2 id="footer-heading" className="sr-only">
-        Footer
-      </h2>
-      <div className="px-6 pb-8 mx-auto max-w-7xl lg:px-8">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8">
-            <img
-              className="h-7"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-              alt="Company name"
-            />
-            <p className="text-sm leading-6 text-gray-300">
-              Est error fuga modi error. Laborum eum nobis porro cupiditate et
-              quo.
+    <div className="bg-cover transition-all duration-300 bg-[url('https://wphix.com/html/blackwood-prv/assets/img/hero/landing-header-1.jpg')]">
+      <footer
+        className="relative pt-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#0000005d] via-[#00000095] to-[#000000] bg-transparent transition-all duration-500"
+        aria-labelledby="footer-heading"
+      >
+        <h2 id="footer-heading" className="sr-only">
+          Footer
+        </h2>
+        <div className="px-6 pb-8 mx-auto max-w-7xl lg:px-8">
+          <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+            <div className="space-y-8">
+              <img
+                className="h-7"
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                alt="Company name"
+              />
+              <p className="text-sm leading-6 text-gray-300">
+                Est error fuga modi error. Laborum eum nobis porro cupiditate et
+                quo.
+              </p>
+              <div className="flex space-x-6">
+                {footerNavigation.social.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-gray-500 hover:text-gray-400"
+                  >
+                    <span className="sr-only">{item.name}</span>
+                    <item.icon className="w-6 h-6" aria-hidden="true" />
+                  </a>
+                ))}
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-8 mt-16 xl:col-span-2 xl:mt-0">
+              <div className="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3 className="text-sm font-semibold leading-6 text-white">
+                    Solutions
+                  </h3>
+                  <ul role="list" className="mt-6 space-y-4">
+                    {footerNavigation.solutions.map((item) => (
+                      <li key={item.name}>
+                        <a
+                          href={item.href}
+                          className="text-sm leading-6 text-gray-300 hover:text-white"
+                        >
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="mt-10 md:mt-0">
+                  <h3 className="text-sm font-semibold leading-6 text-white">
+                    Support
+                  </h3>
+                  <ul role="list" className="mt-6 space-y-4">
+                    {footerNavigation.support.map((item) => (
+                      <li key={item.name}>
+                        <a
+                          href={item.href}
+                          className="text-sm leading-6 text-gray-300 hover:text-white"
+                        >
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3 className="text-sm font-semibold leading-6 text-white">
+                    Company
+                  </h3>
+                  <ul role="list" className="mt-6 space-y-4">
+                    {footerNavigation.company.map((item) => (
+                      <li key={item.name}>
+                        <a
+                          href={item.href}
+                          className="text-sm leading-6 text-gray-300 hover:text-white"
+                        >
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="mt-10 md:mt-0">
+                  <h3 className="text-sm font-semibold leading-6 text-white">
+                    Legal
+                  </h3>
+                  <ul role="list" className="mt-6 space-y-4">
+                    {footerNavigation.legal.map((item) => (
+                      <li key={item.name}>
+                        <a
+                          href={item.href}
+                          className="text-sm leading-6 text-gray-300 hover:text-white"
+                        >
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="pt-8 mt-16 border-t border-white/10 sm:mt-20 lg:mt-24">
+            <p className="text-xs leading-5 text-gray-400">
+              &copy; 2020 Your Company, Inc. All rights reserved.
             </p>
-            <div className="flex space-x-6">
-              {footerNavigation.social.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-500 hover:text-gray-400"
-                >
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="w-6 h-6" aria-hidden="true" />
-                </a>
-              ))}
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-8 mt-16 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  Solutions
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {footerNavigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  Support
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {footerNavigation.support.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  Company
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {footerNavigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  Legal
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {footerNavigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
-        <div className="pt-8 mt-16 border-t border-white/10 sm:mt-20 lg:mt-24">
-          <p className="text-xs leading-5 text-gray-400">
-            &copy; 2020 Your Company, Inc. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   );
 };
 
