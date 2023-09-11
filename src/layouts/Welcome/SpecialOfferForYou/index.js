@@ -3,6 +3,7 @@ import img6 from '../../../assets/images/img6.png';
 
 const SpecialOfferForYou = () => {
   return (
+    <section id="flat-off">
     <div className="pt-3 bg-gray-100 container-fluid">
       <p className='font-serif text-4xl font-bold text-center text-blue-950'>-Special Offers-</p>
 
@@ -60,6 +61,7 @@ const SpecialOfferForYou = () => {
             </div>
       </div>
     </div>
+    </section>
   );
 };
 

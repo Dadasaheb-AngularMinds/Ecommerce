@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Link } from "react-scroll";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,13 +13,12 @@ import purse from "../../../assets/images/welcome/purse.png";
 
 const Banner6 = () => {
   return (
-    <div className="h-full px-24 pt-24 pb-5 bg-orange-300 container-fluid">
+    <div className="relative h-full px-24 pt-24 pb-5 bg-orange-300 container-fluid">
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
         navigation={true}
         modules={[Autoplay, Navigation]}
-
         // pagination={{
         //   clickable: true,
         // }}
@@ -263,6 +262,7 @@ const Banner6 = () => {
           ></div>
         </SwiperSlide>
       </Swiper>
+     
     </div>
   );
 };
