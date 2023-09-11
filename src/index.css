@@ -24,6 +24,9 @@
   .radial-gradient {
     background: radial-gradient(circle, #c7baba4f, #000000c0);
   }
+  .radial-gradient-2 {
+    background: radial-gradient(circle, #03a8f42e, #01589bcf);
+  }
   .welcome-page-collection-gradient{
     background: linear-gradient(to right, #aed9f3 ,#c0dff2, #d3e6f2)
   }

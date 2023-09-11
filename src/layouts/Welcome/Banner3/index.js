@@ -1,15 +1,23 @@
-import React from "react";
+import React from 'react';
+import clothing from '../../../assets/images/welcome/col5.png';
+import homeAndFurniture from '../../../assets/images/welcome/home&furniture.png';
+import jewelleryImg from '../../../assets/images/welcome/jewellery.png';
+import mobilesAndElect from '../../../assets/images/welcome/mobiles&electronics.png';
+import makeupImg from '../../../assets/images/welcome/makeup.png';
+import healthAndWellness from '../../../assets/images/welcome/health&wellness.png';
+import books from '../../../assets/images/welcome/books.png';
+import toysAndGames from '../../../assets/images/welcome/toysAndGames.png'
 
 const Banner3 = () => {
   const imageArray = [
-    "https://images.wallpaperscraft.com/image/single/raspberries_blackberries_berries_111698_1600x1200.jpg",
-    "https://images.wallpaperscraft.com/image/single/peaches_spices_seasonings_101193_1600x1200.jpg",
-    "https://images.wallpaperscraft.com/image/single/cherries_drops_wet_866252_1600x1200.jpg",
-    "https://images.wallpaperscraft.com/image/single/figs_grapes_blueberries_101724_1600x1200.jpg",
-    "https://images.wallpaperscraft.com/image/single/strawberries_berries_macro_941732_1600x1200.jpg",
-    "https://images.wallpaperscraft.com/image/single/scales_tangerines_retro_868300_1600x1200.jpg",
-    "https://images.wallpaperscraft.com/image/single/tangerines_citruses_drops_887084_1600x1200.jpg",
-    "https://images.wallpaperscraft.com/image/single/strawberries_berries_leaves_1021712_1600x1200.jpg",
+    clothing,
+    homeAndFurniture,
+    jewelleryImg,
+    mobilesAndElect,
+    makeupImg,
+    healthAndWellness,
+    books,
+    toysAndGames,
   ];
   return (
     <section id="best-sellers">
@@ -23,11 +31,15 @@ const Banner3 = () => {
         >
           See all products
         </p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 px-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 px-2 ">
           {imageArray.map((item, index) => (
-            <div class="group rounded relative overflow-hidden bg-slate-400">
-              <div class=" w-full h-full overflow-hidden cursor-pointer hover:brightness-125 duration-500 transition-transform transform hover:scale-110">
-                <img src={item} alt="Image 1" class="w-full h-auto" />
+            <div class="radial-gradient group rounded relative overflow-hidden bg-transparent shadow-lg">
+              <div class=" w-full h-full overflow-hidden cursor-pointer hover:brightness-110 duration-500 transition-transform transform hover:scale-110">
+                <img
+                  src={item}
+                  alt="Image 1"
+                  class="w-full h-auto object-center z-30 "
+                />
               </div>
               <div className="absolute h-5 p-5 transition-all duration-300 opacity-0 group-hover:border-t-4 group-hover:border-l-4 border-slate-50 w-50 group-hover:top-10 top-20 left-20 group-hover:left-10 group-hover:opacity-100"></div>
               <div className="absolute h-5 p-5 transition-all duration-300 opacity-0 group-hover:border-b-4 group-hover:border-r-4 border-slate-50 w-50 group-hover:bottom-10 group-hover:right-10 bottom-20 right-20 group-hover:opacity-100"></div>
