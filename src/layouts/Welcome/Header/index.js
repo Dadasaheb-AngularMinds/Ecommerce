@@ -53,11 +53,7 @@ const HeaderSection = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className={`${
-                  index === 0
-                    ? "text-orange-300 font-semibold "
-                    : "text-gray-200 "
-                }hover:scale-95 px-2 pt-1 font-serif text-lg leading-6 tracking-wide transition-all duration-200 hover:text-orange-200 first-letter:text-lg `}
+                className="px-2 pt-1 font-serif text-lg leading-6 tracking-wide text-gray-200 transition-all duration-200 hover:scale-95 hover:text-orange-200 hover:cursor-pointer first-letter:text-lg "
               >
                 {item.name}
               </Link>
@@ -159,7 +155,6 @@ const HeaderSection = () => {
           </Dialog.Panel>
         </Dialog>
       </header>
-     
     </>
   );
 };

@@ -54,7 +54,7 @@ function Welcome() {
       <FooterSection />
 
       <div
-        className={` animate-bounce shadow-lg rounded-full scroll-to-top-button ${
+        className={` animate-bounce shadow-lg transition-all duration-500 rounded-full scroll-to-top-button ${
           isVisible ? "visible" : ""
         }`}
       >
