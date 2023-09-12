@@ -10,14 +10,14 @@ import toysAndGames from "../../../assets/images/welcome/toysAndGames.png";
 
 const Banner3 = () => {
   const imageArray = [
-    clothing,
-    homeAndFurniture,
-    jewelleryImg,
-    mobilesAndElect,
-    makeupImg,
-    healthAndWellness,
-    books,
-    toysAndGames,
+    {img:clothing,text:"Clothing"},
+    {img:homeAndFurniture,text:"Homes & Furniture"},
+    {img:jewelleryImg,text:"Jewellery"},
+    {img:mobilesAndElect,text:"Mobiles & Electronics"},
+    {img:makeupImg,text:"Make up"},
+    {img:healthAndWellness,text:"Health care"},
+    {img:books,text:"Books"},
+    {img:toysAndGames,text:"Toys"},
   ];
   return (
     <section id="best-sellers">
@@ -36,13 +36,16 @@ const Banner3 = () => {
             <div class="radial-gradient group rounded relative overflow-hidden bg-transparent shadow-lg">
               <div class=" w-full h-full overflow-hidden cursor-pointer hover:brightness-110 duration-500 transition-transform transform hover:scale-110">
                 <img
-                  src={item}
+                  src={item?.img}
                   alt="Image 1"
                   class="w-full h-auto object-center z-30 "
                 />
               </div>
               <div className="absolute h-5 p-5 transition-all duration-300 opacity-0 group-hover:border-t-4 group-hover:border-l-4 border-slate-50 w-50 group-hover:top-10 top-20 left-20 group-hover:left-10 group-hover:opacity-100"></div>
-              <div className="absolute h-5 p-5 transition-all duration-300 opacity-0 group-hover:border-b-4 group-hover:border-r-4 border-slate-50 w-50 group-hover:bottom-10 group-hover:right-10 bottom-20 right-20 group-hover:opacity-100"></div>
+              {/* <div className="absolute h-5 p-5 transition-all duration-300 opacity-0 group-hover:border-b-4 group-hover:border-r-4 border-slate-50 w-50 group-hover:bottom-10 group-hover:right-10 bottom-20 right-20 group-hover:opacity-100"></div> */}
+              <div className="absolute bottom-0 w-full h-16 group-hover:h-20 transition-all py-5 duration-300 bg-gradient-to-t from-[#f0803082] group-hover:bg-gradient-to-t to-[#c3660827]">
+                <p className="bg-[#00000020] py-2 px-5 text-xl text-gray-200 transition-all duration-300 cursor-pointer font-header group-hover:text-gray-50 group-hover:text-2xl font-effect-outline" >{item?.text}</p>
+              </div>
             </div>
           ))}
         </div>
