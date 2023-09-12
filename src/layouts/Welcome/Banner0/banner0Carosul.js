@@ -7,9 +7,9 @@ const Banner0Carosul = (props) => {
         className={`p-10 py-20 grid grid-cols-1 sm:grid-cols-1 ${props?.bg} md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 pt-20  h-[30rem]`}
       >
         <div className="flex flex-col items-center justify-center order-2 sm:order-2 md:order-1 lg:order-1">
-          <div className="space-y-3">
-            <h4 className="text-2xl">Latest Trending</h4>
-            <h1 className="font-serif text-5xl">{props?.type}</h1>
+          <div className="flex flex-col items-center justify-center space-y-3 lg:block">
+            <h4 className="text-base lg:text-2xl">Latest Trending</h4>
+            <h1 className="font-serif text-4xl lg:text-5xl">{props?.type}</h1>
             <p className="mb-2 italic">Last call for upto 45%</p>
             <button className="p-1 px-5 text-white bg-gray-900 ">
               SHOP NOW

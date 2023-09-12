@@ -105,29 +105,34 @@ const Collection = () => {
               />
               <div className="absolute top-0 z-20 sm:top-10 left-5">
                 <div className="space-y-1">
-                  <h4 className="text-2xl">Latest Trending</h4>
-                  <h1 className="font-serif text-5xl">Collection</h1>
-                  <p className="mb-2 italic">
+                  <h4 className="text-base lg:text-2xl">Latest Trending</h4>
+                  <h1 className="font-serif text-3xl lg:text-5xl">
+                    Collection
+                  </h1>
+                  <p className="mb-2 text-sm italic lg:text-base">
                     Last call for upto{" "}
                     <span className="animate-bounce">45%</span>
                   </p>
                   <button
-                    className="p-1 px-5 text-white bg-gray-900 "
+                    className="hidden p-1 px-5 text-white bg-gray-900 lg:block"
                     role="button"
                   >
                     SHOP NOW
                   </button>
+                  <p className="block mb-2 font-serif text-2xl italic underline transition-all duration-300 lg:hidden text-gray-950 hover:text-gray-700">
+                    shop now
+                  </p>
                 </div>
               </div>
               <div className="absolute top-2/4 right-5">
                 <p
-                  className="mb-2 font-serif text-3xl italic underline transition-all duration-300 animate-bounce text-gray-950 hover:text-gray-700"
+                  className="hidden mb-2 font-serif text-3xl italic underline transition-all duration-300 lg:block animate-bounce text-gray-950 hover:text-gray-700"
                   role="button"
                 >
                   Hurry up!
                 </p>
               </div>
-              <div className="absolute bottom-5 right-5">
+              <div className="absolute hidden lg:block bottom-5 right-5">
                 <p
                   className="mb-2 font-serif text-xl font-bold text-gray-900 underline transition-all duration-300 hover:text-gray-700"
                   role="button"
