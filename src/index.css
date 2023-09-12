@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Sofia:400,700&effect=fire|neon|outline|emboss|shadow-multiple');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 ::-webkit-scrollbar {
   width: 10px;

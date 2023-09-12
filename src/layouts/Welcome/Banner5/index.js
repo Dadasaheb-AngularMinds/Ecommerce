@@ -2,9 +2,9 @@ import React from 'react';
 import Electronic from '../../../assets/images/Electronic.png';
 const Banner5 = () => {
   return (
-    <div className="py-5 container-fluid">
-      <p className="mb-5 font-serif text-4xl text-center text-orange-400">
-        -Furnitures-
+    <div className="py-5 bg-[#000000] container-fluid">
+      <p className="mb-5 text-5xl font-normal text-center text-orange-400 font-header">
+        Furniture
       </p>
       <div className="grid grid-cols-1 font-serif lg:grid-cols-2">
         <div className="relative cursor-pointer group">
@@ -69,23 +69,23 @@ const Banner5 = () => {
         </div>
 
         <div className="relative flex flex-col justify-center p-5 space-y-4 text-white">
-          <h3 className="text-3xl font-semibold text-gray-400 ">
+          <h3 className="text-3xl text-orange-500 font-styled ">
             Furniture Haven
           </h3>
-          <p className="font-serif italic">
+          <p className="italic font-poppins">
             Explore our collection of cozy and stylish living room furniture
             that's perfect for relaxation and entertainment.
           </p>
-          <button className="w-auto p-1 px-5 transition-all duration-300 bg-transparent border border-white md:w-36 lg:w-40 hover:bg-orange-500 hover:text-gray-950 hover:font-bold">
+          <button className="w-auto p-1 px-5 transition-all duration-300 bg-transparent border border-white font-poppins md:w-36 lg:w-40 hover:bg-orange-500 hover:text-gray-950 hover:font-bold">
             Shop Now
           </button>
         </div>
 
-        <div className="relative flex flex-col justify-center order-2 p-5 space-y-3 text-white lg:order-1">
-          <h3 className="text-3xl font-semibold text-gray-400">
+        <div className="relative flex flex-col justify-center order-2 p-5 space-y-4 text-white lg:order-1">
+          <h3 className="text-3xl font-normal text-orange-500 font-styled">
             Find your perfect piece...
           </h3>
-          <p className="font-serif italic">
+          <p className="italic font-poppins">
             We're committed to delivering top-notch furniture. Learn about our
             quality standards, materials, and craftsmanship.
           </p>
