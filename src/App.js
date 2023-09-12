@@ -8,6 +8,7 @@ import RequireAuth from './components/Auth';
 import Dashboard from './pages/Dashboard';
 import UserLayout from './layouts/UserLayout';
 import Register from './components/Register';
+import AddProduct from './pages/Admin/AddProduct';
 
 function App() {
   console.log('app');
@@ -20,8 +21,13 @@ function App() {
         <Route path="/user" element={<UserLayout />}>
           <Route path="dashboard" element={<Dashboard />} />
         </Route>
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route path="add-product" element={<AddProduct />} />
+        </Route>
 
-        {/* <Route element={<RequireAuth />}></Route> */}
+        {/* <Route element={<RequireAuth />}>
+          <Route path="add-product" element={<AddProduct />} />
+        </Route> */}
         {/* Protected Routes */}
         {/* <Route element={<PersistLogin />}>
           <Route element={<RequireAuth allowedRoles={[...Object.values(ROLES)]} />}>

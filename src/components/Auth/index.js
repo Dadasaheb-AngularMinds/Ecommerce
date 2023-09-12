@@ -4,7 +4,8 @@ const RequireAuth = () => {
     const location = useLocation()
     const isAuthenticated = () => {
         const token = localStorage.getItem('token');
-        return !!token;  
+        console.log(!!token)
+        return token;  
       };
     const content = (
         isAuthenticated()

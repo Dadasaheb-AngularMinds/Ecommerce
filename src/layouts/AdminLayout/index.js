@@ -12,13 +12,14 @@
   }
   ```
 */
-import { Fragment, useState } from "react";
+import { Children, Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 
 import Desktop from "./Sidebar/Desktop";
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
+import { Outlet } from "react-router-dom";
 
 const userNavigation = [
   { name: "Your profile", href: "#" },
@@ -29,19 +30,12 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function AdminLayout() {
+export default function AdminLayout({Children}) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-white">
-        <body class="h-full">
-        ```
-      */}
+       
       <div>
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog
@@ -88,23 +82,18 @@ export default function AdminLayout() {
                         onClick={() => setSidebarOpen(false)}
                       >
                         <span className="sr-only">Close sidebar</span>
-                        {/* <XMarkIcon
-                          className="w-6 h-6 text-white"
-                          aria-hidden="true"
-                        /> */}
+                         
                       </button>
                     </div>
                   </Transition.Child>
-                  {/* Sidebar component, swap this element with another sidebar if you like */}
-                  <Sidebar />
+                   <Sidebar />
                 </Dialog.Panel>
               </Transition.Child>
             </div>
           </Dialog>
         </Transition.Root>
 
-        {/* Static sidebar for desktop */}
-        <Desktop />
+         <Desktop />
 
         <div className="lg:pl-72">
           <div className="sticky top-0 z-40 flex items-center h-16 px-4 bg-white border-b border-gray-200 shadow-sm shrink-0 gap-x-4 sm:gap-x-6 sm:px-6 lg:px-8">
@@ -117,16 +106,20 @@ export default function AdminLayout() {
               <Bars3Icon className="w-6 h-6" aria-hidden="true" />
             </button>
 
-            {/* Separator */}
-            <div
+             <div
               className="w-px h-6 bg-gray-200 lg:hidden"
               aria-hidden="true"
             />
             <Navbar />
            </div>
 
-          <main className="py-10">
-            <div className="px-4 sm:px-6 lg:px-8">{/* Your content */}</div>
+          <main className="py-5">
+            <div className="px-2 sm:px-6 lg:px-8">
+              {/* {Children} */}
+              <p className="w-full mb-5 text-3xl border-b-4 font-header">Admin Layout</p>
+              <Outlet />
+              
+            </div>
           </main>
         </div>
       </div>
