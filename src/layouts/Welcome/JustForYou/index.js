@@ -8,8 +8,8 @@ const JustForYou = () => {
   return (
     <section id="todays-deals">
       <div className="relative p-5 bg-gray-800">
-        <p className="mb-5 font-serif text-4xl font-bold text-center text-orange-400">
-          -Regional-
+        <p className="mb-5 text-4xl font-bold text-center text-orange-400 font-header">
+          Today's Deals
         </p>
         <p
           className="absolute hidden font-serif italic text-white underline lg:block text-l sm:text-xl animate-bounce top-2 sm:top-6 right-5"

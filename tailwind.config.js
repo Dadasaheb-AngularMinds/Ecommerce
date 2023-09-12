@@ -9,7 +9,6 @@ module.exports = {
         'poppins':['poppins', 'sans-serif']
       },
     },
-    
   },
   plugins: [],
 }
