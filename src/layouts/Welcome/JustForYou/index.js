@@ -12,7 +12,7 @@ const JustForYou = () => {
           -Regional-
         </p>
         <p
-          className="absolute font-serif italic text-white underline text-l sm:text-xl animate-bounce top-2 sm:top-6 right-5"
+          className="absolute hidden font-serif italic text-white underline lg:block text-l sm:text-xl animate-bounce top-2 sm:top-6 right-5"
           role="button"
         >
           See all products

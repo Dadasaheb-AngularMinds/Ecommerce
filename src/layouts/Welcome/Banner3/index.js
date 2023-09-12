@@ -1,12 +1,12 @@
-import React from 'react';
-import clothing from '../../../assets/images/welcome/col5.png';
-import homeAndFurniture from '../../../assets/images/welcome/home&furniture.png';
-import jewelleryImg from '../../../assets/images/welcome/jewellery.png';
-import mobilesAndElect from '../../../assets/images/welcome/mobiles&electronics.png';
-import makeupImg from '../../../assets/images/welcome/makeup.png';
-import healthAndWellness from '../../../assets/images/welcome/health&wellness.png';
-import books from '../../../assets/images/welcome/books.png';
-import toysAndGames from '../../../assets/images/welcome/toysAndGames.png'
+import React from "react";
+import clothing from "../../../assets/images/welcome/col5.png";
+import homeAndFurniture from "../../../assets/images/welcome/home&furniture.png";
+import jewelleryImg from "../../../assets/images/welcome/jewellery.png";
+import mobilesAndElect from "../../../assets/images/welcome/mobiles&electronics.png";
+import makeupImg from "../../../assets/images/welcome/makeup.png";
+import healthAndWellness from "../../../assets/images/welcome/health&wellness.png";
+import books from "../../../assets/images/welcome/books.png";
+import toysAndGames from "../../../assets/images/welcome/toysAndGames.png";
 
 const Banner3 = () => {
   const imageArray = [
@@ -26,7 +26,7 @@ const Banner3 = () => {
           -Categories-
         </p>
         <p
-          className="absolute font-serif text-xl italic animate-bounce top-2 sm:top-6 text-blue-950 right-5"
+          className="absolute hidden font-serif text-xl italic animate-bounce top-2 sm:top-6 text-blue-950 right-5 lg:block"
           role="button"
         >
           See all products
