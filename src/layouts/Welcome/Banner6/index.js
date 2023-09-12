@@ -33,11 +33,11 @@ const Banner6 = () => {
     <div className="h-full px-5 lg:px-10 pb-5 bg-gradient-to-t from-[#f05907f9] to-[#f2bda8] container-fluid">
       <div className="grid grid-cols-1 gap-1 overflow-hidden transition-all duration-300 bg-transparent pt-7 lg:px-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:px-2 sm:py-2 md:px-2 lg:px-2">
         <div className="relative flex-col p-5 lg:p-20 d-flex">
-          <p className="lg:w-[90%] font-serif text-5xl lg:text-7xl font-bold">
-            <span className="text-gray-500">Inspired</span> by Your Fashion
+          <p className="lg:w-[90%] font-header text-5xl lg:text-7xl font-bold">
+            <span className="text-gray-500 font-poppins">Inspired</span> by Your Fashion
           </p>
           <p className="font-serif text-5xl font-bold lg:text-7xl">Dream</p>
-          <button className="px-5 py-1 mt-5 text-xl text-black transition-all duration-300 bg-yellow-500 border border-orange-400 lg:py-2 lg:text-3xl lg:px-10 hover:bg-orange-300 rounded-3xl">
+          <button className="px-5 py-1 mt-5 text-base text-black transition-all duration-300 bg-yellow-500 border border-orange-400 font-poppins lg:py-2 lg:text-3xl lg:px-10 hover:bg-orange-300 rounded-3xl">
             <span className="font-serif">
               Shop Now{" "}
               <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
