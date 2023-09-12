@@ -12,7 +12,7 @@ const JustForYou = () => {
           -Regional-
         </p>
         <p
-          className="absolute font-serif text-xl italic text-white underline animate-bounce top-2 sm:top-6 right-5"
+          className="absolute font-serif italic text-white underline text-l sm:text-xl animate-bounce top-2 sm:top-6 right-5"
           role="button"
         >
           See all products
@@ -24,7 +24,7 @@ const JustForYou = () => {
               src={img5}
             />
 
-            <div className="absolute top-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 opacity-0 group-hover:pt-5 group-hover:bg-gray-800 group-hover:opacity-60 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+            <div className="absolute top-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 opacity-0 group-hover:pt-2 sm:group-hover:pt-5 group-hover:bg-gray-800 group-hover:opacity-60 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
               <div className="p-4 ">
                 <i
                   class="fa fa-bookmark top-2 ml-1 text-xl  border px-1 rounded text-gray-100"
@@ -52,7 +52,8 @@ const JustForYou = () => {
                 </p>
               </div>
             </div>
-            <div className="absolute bottom-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 opacity-0 group-hover:pb-5 group-hover:bg-gray-800 group-hover:opacity-60 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+
+            <div className="absolute bottom-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 opacity-0 group-hover:pb-2 sm:group-hover:pb-5 group-hover:bg-gray-800 group-hover:opacity-60 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
               <div className="p-4 ">
                 <i
                   class="fa fa-heart-o top-2 ml-1 border px-1 rounded text-2xl group-hover:opacity-90 hover:text-3xl text-orange-600"
@@ -90,19 +91,19 @@ const JustForYou = () => {
                   src={img3}
                 />
 
-                <div className="absolute top-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 opacity-0 group-hover:pt-5 group-hover:bg-gray-800 group-hover:opacity-60 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+                <div className="absolute top-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 opacity-0 group-hover:pt-1 sm:group-hover:pt-5 group-hover:bg-gray-800 group-hover:opacity-60 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
                   <div className="px-4">
                     <i
-                      class="fa fa-bookmark top-2 ml-1 text-xl  border px-1 rounded text-gray-100"
+                      class="fa fa-bookmark top-2 ml-1 text-l sm:text-xl border px-1 sm:py-0 py-1 rounded text-gray-100"
                       aria-hidden="true"
                     ></i>
                     &nbsp; &nbsp; &nbsp;
                     <i
-                      class="fa fa-share-alt top-2 ml-1 text-xl border px-1 rounded text-gray-100"
+                      class="fa fa-share-alt top-2 ml-1 text-l sm:text-xl border px-1 sm:py-0 py-1 rounded text-gray-100"
                       aria-hidden="true"
                     ></i>
                   </div>
-                  <div className="px-4 text-center">
+                  <div className="px-2 text-center sm:px-4">
                     <p className="text-base">
                       <i
                         class="fa fa-star text-orange-500"
@@ -129,24 +130,24 @@ const JustForYou = () => {
                         aria-hidden="true"
                       ></i>
                       &nbsp; <span className="text-white">5.0</span>{" "}
-                      <p className="text-white">From 4,506 users</p>
+                      <p className="text-white ">From 4,506 users</p>
                     </p>
                   </div>
                 </div>
-                <div className="absolute bottom-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 opacity-0 group-hover:pb-5 group-hover:bg-gray-800 group-hover:opacity-60 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+                <div className="absolute bottom-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 opacity-0 group-hover:pb-1 sm:group-hover:pb-5 group-hover:bg-gray-800 group-hover:opacity-60 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
                   <div className="px-4 pt-2">
                     <i
-                      class="fa fa-heart-o top-2 ml-1 border px-1 rounded text-2xl group-hover:opacity-90 hover:text-3xl text-orange-600"
+                      class="fa fa-heart-o top-2 ml-1 border px-1 py-1 sm:py-0 rounded sm:text-2xl text-l group-hover:opacity-90 hover:text-xl text-orange-600"
                       aria-hidden="true"
                     ></i>
                     &nbsp;&nbsp;&nbsp;
                     <i
-                      class="fa fa-cart-plus  top-2 ml-1 border px-1 rounded text-2xl hover:text-3xl text-gray-100"
+                      class="fa fa-cart-plus top-2 ml-1 border px-1 py-1 sm:py-0 rounded text-l sm:text-2xl hover:text-xl text-gray-100"
                       aria-hidden="true"
                     ></i>
                   </div>
                   <div className="px-4 pt-2 text-center">
-                    <p className="text-xl text-white">
+                    <p className="text-white text-l sm:text-xl">
                       4,506 users bought this
                     </p>
                   </div>
