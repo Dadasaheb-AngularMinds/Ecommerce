@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Banner0Carosul = (props) => {
   return (
@@ -8,25 +8,23 @@ const Banner0Carosul = (props) => {
       >
         <div className="flex flex-col items-center justify-center order-2 sm:order-2 md:order-1 lg:order-1">
           <div className="flex flex-col items-center justify-center space-y-3 lg:block">
-            <h4 className="text-base lg:text-2xl">Latest Trending</h4>
-            <h1 className="font-serif text-4xl lg:text-5xl">{props?.type}</h1>
+            <h4 className="text-base font-styled lg:text-2xl">Latest Trending</h4>
+            <h1 className="text-4xl font-header lg:text-5xl">{props?.type}</h1>
             <p className="mb-2 italic">Last call for upto 45%</p>
-            <button className="p-1 px-5 text-white bg-gray-900 ">
+            <button className="p-1 px-5 text-white bg-gray-900 font-poppins">
               SHOP NOW
             </button>
           </div>
         </div>
 
         <div className="flex flex-col items-center justify-center order-1 sm:order-1 md:order-2 lg:order-2">
-          {" "}
+          {' '}
           <img
             className="object-contain w-full h-auto transition-all duration-300 group-hover:blur-none "
             src={props?.img}
             alt="electronics"
           />
         </div>
-
-        {/* <div className="absolute inset-0 bg-gray-600/90 mix-blend-multiply" /> */}
       </div>
     </section>
   );

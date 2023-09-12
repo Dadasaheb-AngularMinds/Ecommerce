@@ -72,7 +72,7 @@ const Banner5 = () => {
           <h3 className="text-3xl text-orange-500 font-styled ">
             Furniture Haven
           </h3>
-          <p className="italic font-poppins">
+          <p className="font-poppins">
             Explore our collection of cozy and stylish living room furniture
             that's perfect for relaxation and entertainment.
           </p>
@@ -85,7 +85,7 @@ const Banner5 = () => {
           <h3 className="text-3xl font-normal text-orange-500 font-styled">
             Find your perfect piece...
           </h3>
-          <p className="italic font-poppins">
+          <p className="font-poppins">
             We're committed to delivering top-notch furniture. Learn about our
             quality standards, materials, and craftsmanship.
           </p>

@@ -26,19 +26,19 @@ const BrandCollection = () => {
           </div>
           <div className="relative h-auto max-w-5xl mx-auto py-52 lg:mx-auto">
             <blockquote className="absolute inset-0 justify-center h-auto text-lg font-semibold text-center text-white top-1/3 sm:text-xl sm:leading-8">
-              <div className="font-serif text-4xl font-bold text-center text-orange-100 sm:text-6xl ">
+              <div className="text-4xl font-bold text-center text-orange-400 font-effect-outline font-header sm:text-6xl ">
                 Brand B & R
               </div>
               <div className="w-full mx-auto mt-2 text-orange-400">
-                <p className="font-serif text-2xl">
+                <p className="text-xl font-poppins">
                   Blackwood is evaluated as my most unique Multipurposes.
                   Workcation
                 </p>
               </div>
-              <figcaption className="inset-0 top-auto font-serif text-base text-white ">
+              <figcaption className="inset-0 top-auto text-base text-white font-poppins ">
                 <button
                   // onClick={() => history('/user/dashboard')}
-                  className="px-10 py-1 mt-4 text-2xl text-orange-300 transition-all duration-500 border border-orange-500 sm:text-3xl rounded-3xl hover:text-orange-200 hover:bg-[#fb923c84]"
+                  className="px-10 py-1 mt-4 text-l text-orange-300 transition-all duration-500 border border-orange-500 sm:text-xl rounded-3xl hover:text-orange-200 hover:bg-[#fb923c84]"
                 >
                   -Continue shopping
                 </button>

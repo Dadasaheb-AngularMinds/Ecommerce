@@ -28,20 +28,20 @@ const Banner1 = () => {
               />
             </div>
             <div className="relative max-w-5xl mx-auto lg:mx-0">
-              <div className="font-serif text-5xl font-bold text-orange-300">
+              <div className="text-5xl font-bold text-orange-300 font-header">
                 MarketMingle - Clean Minimal eCommerce Site
               </div>
               <figure>
                 <blockquote className="mt-6 text-lg font-semibold text-white sm:text-xl sm:leading-8">
                   <div className="w-full mx-auto text-sky-200">
-                    <p className="font-serif text-2xl">
+                    <p className="text-l font-poppins">
                       Blackwood is evaluated as my most unique Multipurposes
                       HTML5 Template for shop online with clean and modern
                       design.
                     </p>
                   </div>
                 </blockquote>
-                <figcaption className="mt-6 font-serif text-base text-white">
+                <figcaption className="mt-6 text-base text-white font-header">
                   <div className="font-semibold">--DJP.</div>
                   <div className="mt-1">Founder of Workcation</div>
                   <button
