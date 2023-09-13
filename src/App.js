@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard';
 import UserLayout from './layouts/UserLayout';
 import Register from './components/Register';
 import AddProduct from './pages/Admin/AddProduct';
+import UserDashboard from './pages/User/Dashboard';
 
 function App() {
   console.log('app');
@@ -19,7 +20,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="/user" element={<UserLayout />}>
-          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="dashboard" element={<UserDashboard />} />
         </Route>
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="add-product" element={<AddProduct />} />

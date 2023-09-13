@@ -1,105 +1,75 @@
-import React from "react";
-import { Fragment, useState } from "react";
-import { Dialog, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon } from "@heroicons/react/24/outline";
+import React from 'react';
+import { Fragment, useState } from 'react';
+import { Dialog, Menu, Transition } from '@headlessui/react';
+import { Bars3Icon, BellIcon } from '@heroicons/react/24/outline';
 import {
   ChevronDownIcon,
   MagnifyingGlassIcon,
-} from "@heroicons/react/20/solid";
-
-const userNavigation = [
-  { name: "Your profile", href: "#" },
-  { name: "Sign out", href: "#" },
-];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+} from '@heroicons/react/20/solid';
+import amazonLogo from '../../../assets/images/amazon.png';
 
 const Navbar = () => {
   return (
-    <div className="flex self-stretch flex-1 gap-x-4 lg:gap-x-6">
-      <form className="relative flex flex-1" action="#" method="GET">
-        <label htmlFor="search-field" className="sr-only">
-          Search
-        </label>
-        <MagnifyingGlassIcon
-          className="absolute inset-y-0 left-0 w-5 h-full text-gray-400 pointer-events-none"
-          aria-hidden="true"
+    <div className="grid h-20 grid-cols-1 bg-[#ffffff]  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
+      <div className="flex justify-center py-0 my-3 border-r-0 sm:border-r-0 md:border-r-2 lg:border-r-2 xl:border-r-2">
+        <img
+          className="w-auto h-14 sm:h-14 md:h-14 lg:h-14"
+          src={amazonLogo}
+          alt=""
         />
-        <input
-          id="search-field"
-          className="block w-full h-full py-0 pl-8 pr-0 text-gray-900 border-0 outline-none placeholder:text-gray-400 focus:ring-0 sm:text-sm"
-          placeholder="Search..."
-          type="search"
-          name="search"
-        />
-      </form>
-      <div className="flex items-center gap-x-4 lg:gap-x-6">
-        <button
-          type="button"
-          className="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500"
-        >
-          <span className="sr-only">View notifications</span>
-          <BellIcon className="w-6 h-6" aria-hidden="true" />
-        </button>
-
-        {/* Separator */}
-        <div
-          className="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-200"
-          aria-hidden="true"
-        />
-
-        {/* Profile dropdown */}
-        <Menu as="div" className="relative">
-          <Menu.Button className="-m-1.5 flex items-center p-1.5">
-            <span className="sr-only">Open user menu</span>
-            <img
-              className="w-8 h-8 rounded-full bg-gray-50"
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-              alt=""
-            />
-            <span className="hidden lg:flex lg:items-center">
-              <span
-                className="ml-4 text-sm font-semibold leading-6 text-gray-900"
-                aria-hidden="true"
-              >
-                Tom Cook
-              </span>
-              <ChevronDownIcon
-                className="w-5 h-5 ml-2 text-gray-400"
-                aria-hidden="true"
-              />
-            </span>
-          </Menu.Button>
-          <Transition
-            as={Fragment}
-            enter="transition ease-out duration-100"
-            enterFrom="transform opacity-0 scale-95"
-            enterTo="transform opacity-100 scale-100"
-            leave="transition ease-in duration-75"
-            leaveFrom="transform opacity-100 scale-100"
-            leaveTo="transform opacity-0 scale-95"
-          >
-            <Menu.Items className="absolute right-0 z-10 mt-2.5 w-32 origin-top-right rounded-md bg-white py-2 shadow-lg ring-1 ring-gray-900/5 focus:outline-none">
-              {userNavigation.map((item) => (
-                <Menu.Item key={item.name}>
-                  {({ active }) => (
-                    <a
-                      href={item.href}
-                      className={classNames(
-                        active ? "bg-gray-50" : "",
-                        "block px-3 py-1 text-sm leading-6 text-gray-900"
-                      )}
-                    >
-                      {item.name}
-                    </a>
-                  )}
-                </Menu.Item>
-              ))}
-            </Menu.Items>
-          </Transition>
-        </Menu>
+      </div>
+      <div className="hidden py-0 my-3 sm:hidden lg:block md:hidden xl:block">
+        <div className="flex flex-row py-2 group">
+          <div className="relative w-1/4 h-full ">
+            <i
+              class="absolute fa fa-money text-orange-400 text-4xl top-1 group-hover:-top-1 transition-all duration-300 left-1/4"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div className="cursor-pointer">
+            <p className="text-xl font-bold font-header">100% Payments</p>
+            <p className="text-sm text-gray-500 font-poppins">
+              Monthly Installment
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="hidden py-0 my-3 sm:hidden lg:block md:hidden xl:block">
+        <div className="flex flex-row py-2 group">
+          <div className="relative w-1/4 h-full ">
+            <i
+              class="absolute fa fa-retweet text-orange-400 text-4xl top-1 group-hover:-top-1 transition-all duration-300 left-1/4"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div className="cursor-pointer">
+            <p className="text-xl font-bold font-header">14-Day Returns</p>
+            <p className="text-sm text-gray-500 font-poppins">
+              Secure Payments
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center h-full my5 sm:hidden lg:hidden md:hidden xl:block"></div>
+      <div className="justify-center hidden py-0 my-3 md:justify-end sm:hidden lg:block md:block xl:block">
+        <div className="flex flex-row justify-center gap-4 py-2 group">
+          <i
+            class="fa fa-user-circle-o text-gray-800 cursor-pointer hover:text-orange-500 hover:animate-spin text-2xl group-hover:top-0 transition-all duration-300 left-1/4"
+            aria-hidden="true"
+          ></i>
+          <i
+            class="fa fa-random text-gray-800 cursor-pointer hover:text-orange-500 hover:animate-pulse text-2xl group-hover:top-0 transition-all duration-300 left-1/4"
+            aria-hidden="true"
+          ></i>
+          <i
+            class="fa fa-heart-o text-gray-800 cursor-pointer hover:text-orange-500 hover:animate-pulse text-2xl group-hover:top-0 transition-all duration-300 left-1/4"
+            aria-hidden="true"
+          ></i>
+          <i
+            class="fa fa-shopping-basket text-gray-800 cursor-pointer hover:text-orange-500 hover:animate-pulse text-2xl group-hover:top-0 transition-all duration-300 left-1/4"
+            aria-hidden="true"
+          ></i>
+        </div>
       </div>
     </div>
   );

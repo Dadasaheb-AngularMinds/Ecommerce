@@ -31,7 +31,7 @@ const Banner6 = () => {
   };
   return (
     <div className="h-full px-5 lg:px-10 pb-5 bg-gradient-to-t from-[#f05907f9] to-[#f2bda8] container-fluid">
-      <div className="grid grid-cols-1 gap-1 overflow-hidden transition-all duration-300 bg-transparent pt-7 lg:px-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:px-2 sm:py-2 md:px-2 lg:px-2">
+      <div className="grid grid-cols-1 gap-1 overflow-hidden transition-all duration-300 bg-transparent pt-7 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:px-2 sm:py-2 md:px-2 lg:px-2">
         <div className="relative flex-col p-5 sm:p-20 d-flex">
           <p className="lg:w-[90%] font-serif text-5xl lg:text-7xl font-bold">
             <span className="text-gray-500">Inspired</span> by Your Fashion

@@ -1,21 +1,10 @@
-import React from 'react'
-import { Fragment, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
-import { Bars3Icon } from "@heroicons/react/24/outline";
-
-import Desktop from "./Sidebar/Desktop";
-import Sidebar from "./Sidebar";
-import Navbar from "./Navbar";
+import React from 'react';
+import { Fragment, useState } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
+import { Bars3Icon } from '@heroicons/react/24/outline';
+import Sidebar from './Sidebar';
 import { Outlet } from 'react-router-dom';
-
-const userNavigation = [
-  { name: "Your profile", href: "#" },
-  { name: "Sign out", href: "#" },
-];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+import Header from './Header';
 
 export default function UserLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -83,36 +72,25 @@ export default function UserLayout() {
           </Dialog>
         </Transition.Root>
 
-        {/* Static sidebar for desktop */}
-        <Desktop />
-
-        <div className="lg:pl-72">
-          <div className="sticky top-0 z-40 flex items-center h-16 px-4 bg-white border-b border-gray-200 shadow-sm shrink-0 gap-x-4 sm:gap-x-6 sm:px-6 lg:px-8">
+        <div className="">
+          <div className="sticky top-0 z-40 flex items-center px-0 bg-orange-400 border-b border-gray-200 shadow-sm shrink-0 gap-x-4 sm:gap-x-2 sm:px-0 lg:px-0">
             <button
               type="button"
-              className="-m-2.5 p-2.5 text-gray-700 lg:hidden"
+              className="-m-2.5  pl-5 pr-2 text-gray-700 lg:hidden"
               onClick={() => setSidebarOpen(true)}
             >
-              <span className="sr-only">Open sidebar</span>
               <Bars3Icon className="w-6 h-6" aria-hidden="true" />
             </button>
+            <Header />
+          </div>
 
-            {/* Separator */}
-            <div
-              className="w-px h-6 bg-gray-200 lg:hidden"
-              aria-hidden="true"
-            />
-            <Navbar />
-           </div>
-
-          <main className="h-full py-10">
-            <div className="px-4 sm:px-6 lg:px-8">
+          <main className="h-full py-0">
+            <div className="px-0">
               <Outlet />
-              </div>
+            </div>
           </main>
         </div>
       </div>
     </>
   );
 }
-
