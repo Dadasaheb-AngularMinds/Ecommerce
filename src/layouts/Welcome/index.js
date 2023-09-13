@@ -12,6 +12,7 @@ import Banner5 from "./Banner5";
 import Banner6 from "./Banner6";
 import { Link } from "react-scroll";
 import "../../assets/css/styles.css";
+import Product from "../../components/inside-view/Product";
 
 function Welcome() {
   const [isVisible, setIsVisible] = React.useState(false);
@@ -39,7 +40,7 @@ function Welcome() {
   console.log("23", isVisible);
   return (
     <div className="relative bg-gray-900">
-      <HeaderSection />
+      {/* <HeaderSection />
       <main className="isolate">
         <Banner0 />
         <Banner1 />
@@ -51,7 +52,8 @@ function Welcome() {
         <Banner5 />
         <Banner6 />
       </main>
-      <FooterSection />
+      <FooterSection /> */}
+      <Product />
 
       <div
         className={` animate-bounce shadow-lg transition-all duration-500 rounded-full scroll-to-top-button ${
