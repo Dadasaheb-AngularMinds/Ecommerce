@@ -2,7 +2,7 @@ import React from "react";
 
 const Table = () => {
   return (
-    <div className="container py-5 px-36">
+    <div className="container sm:py-5 sm:px-36">
       {" "}
       <table class="w-full text-sm text-left text-gray-500 ">
         <tbody>

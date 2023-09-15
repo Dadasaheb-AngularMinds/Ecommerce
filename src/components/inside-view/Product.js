@@ -22,7 +22,7 @@ const Product = () => {
               />
             ))}
           </div>
-          <div className="order-1 h-full col-span-2 lg:order-2 welcome-linear-gradient-category">
+          <div className="order-1  md:h-[586px] h-full col-span-2  lg:order-2 welcome-linear-gradient-category">
             <img
               src={activeImage}
               className="object-contain w-full h-full p-3"
