@@ -1,18 +1,19 @@
-import React from 'react';
-import AdminLayout from './layouts/AdminLayout';
-import Login from './components/Login';
-import { BrowserRouter, Route, Routes, Link, Navigate } from 'react-router-dom';
-import AppLayout from './layouts';
-import Welcome from './layouts/Welcome';
-import RequireAuth from './components/Auth';
-import Dashboard from './pages/Dashboard';
-import UserLayout from './layouts/UserLayout';
-import Register from './components/Register';
-import AddProduct from './pages/Admin/AddProduct';
-import UserDashboard from './pages/User/Dashboard';
+import React from "react";
+import AdminLayout from "./layouts/AdminLayout";
+import Login from "./components/Login";
+import { BrowserRouter, Route, Routes, Link, Navigate } from "react-router-dom";
+import AppLayout from "./layouts";
+import Welcome from "./layouts/Welcome";
+import RequireAuth from "./components/Auth";
+import Dashboard from "./pages/Dashboard";
+import UserLayout from "./layouts/UserLayout";
+import Register from "./components/Register";
+import AddProduct from "./pages/Admin/AddProduct";
+import UserDashboard from "./pages/User/Dashboard";
+import ProductView from "./components/inside-view";
 
 function App() {
-  console.log('app');
+  console.log("app");
   return (
     <Routes>
       <Route path="/" element={<AppLayout />}>
@@ -21,6 +22,7 @@ function App() {
         <Route path="register" element={<Register />} />
         <Route path="/user" element={<UserLayout />}>
           <Route path="dashboard" element={<UserDashboard />} />
+          <Route path="product" element={<ProductView />} />
         </Route>
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="add-product" element={<AddProduct />} />

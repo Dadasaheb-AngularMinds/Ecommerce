@@ -40,7 +40,7 @@ function Welcome() {
   console.log("23", isVisible);
   return (
     <div className="relative bg-gray-900">
-      {/* <HeaderSection />
+      <HeaderSection />
       <main className="isolate">
         <Banner0 />
         <Banner1 />
@@ -52,8 +52,8 @@ function Welcome() {
         <Banner5 />
         <Banner6 />
       </main>
-      <FooterSection /> */}
-      <Product />
+      <FooterSection />
+      {/* <Product /> */}
 
       <div
         className={` animate-bounce shadow-lg transition-all duration-500 rounded-full scroll-to-top-button ${

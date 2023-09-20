@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
-import productImg from '../../../../assets/images/product-furniture.png';
+import React, { useState } from "react";
+import productImg from "../../../../assets/images/product-furniture.png";
+import { useNavigate } from "react-router-dom";
 
 const ProductsView = () => {
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
   const [isFocused, setIsFocused] = useState(false);
+  const navigate = useNavigate();
 
   // Function to handle input change
   const handleInputChange = (e) => {
@@ -25,17 +27,20 @@ const ProductsView = () => {
           <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-4">
             {[1, 23, 4, 5, 6, 7].map((item, index) => {
               return (
-                <div className="relative p-5 transition-all duration-300 shadow-xl group bg-slate-100 h-max">
-                  <div className='absolute right-0 z-50 space-y-4 transition-all duration-500 opacity-0 group-hover:opacity-70'>
-                  <div className="p-2 px-3 transition-all duration-300 bg-white cursor-pointer group-hover:opacity-100 group-hover:shadow-lg hover:bg-gray-950 hover:text-white">
-                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                  </div>
-                  <div className="p-2 px-3 transition-all duration-300 bg-white cursor-pointer group-hover:opacity-100 group-hover:shadow-lg hover:bg-gray-950 hover:text-white ">
-                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                  </div>
-                  <div className="p-2 px-3 transition-all duration-300 bg-white cursor-pointer group-hover:opacity-100 group-hover:shadow-lg hover:bg-gray-950 hover:text-white ">
-                    <i class="fa fa-eye" aria-hidden="true"></i>
-                  </div>
+                <div
+                  className="relative p-5 transition-all duration-300 shadow-xl group bg-slate-100 h-max"
+                  onClick={() => navigate("/user/product")}
+                >
+                  <div className="absolute right-0 z-50 space-y-4 transition-all duration-500 opacity-0 group-hover:opacity-70">
+                    <div className="p-2 px-3 transition-all duration-300 bg-white cursor-pointer group-hover:opacity-100 group-hover:shadow-lg hover:bg-gray-950 hover:text-white">
+                      <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    </div>
+                    <div className="p-2 px-3 transition-all duration-300 bg-white cursor-pointer group-hover:opacity-100 group-hover:shadow-lg hover:bg-gray-950 hover:text-white ">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+                    <div className="p-2 px-3 transition-all duration-300 bg-white cursor-pointer group-hover:opacity-100 group-hover:shadow-lg hover:bg-gray-950 hover:text-white ">
+                      <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
                   </div>
                   <div class="group w-full h-full overflow-hidden cursor-pointer hover:brightness-110 duration-500 transition-transform transform  ">
                     <img
