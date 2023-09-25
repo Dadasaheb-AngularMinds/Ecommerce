@@ -10,7 +10,7 @@ import UserLayout from "./layouts/UserLayout";
 import Register from "./components/Register";
 import AddProduct from "./pages/Admin/AddProduct";
 import UserDashboard from "./pages/User/Dashboard";
-import ProductView from "./components/inside-view";
+import ProductView from "./components/Product/inside-view";
 
 function App() {
   console.log("app");
@@ -27,38 +27,41 @@ function App() {
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="add-product" element={<AddProduct />} />
         </Route>
-
         {/* <Route element={<RequireAuth />}>
-          <Route path="add-product" element={<AddProduct />} />
-        </Route> */}
+        <Route path="add-product" element={<AddProduct />} />
+      </Route> */}
         {/* Protected Routes */}
         {/* <Route element={<PersistLogin />}>
-          <Route element={<RequireAuth allowedRoles={[...Object.values(ROLES)]} />}>
-            <Route element={<Prefetch />}>
-              <Route path="dash" element={<DashLayout />}>
+        <Route
+          element={<RequireAuth allowedRoles={[...Object.values(ROLES)]} />}
+        >
+          <Route element={<Prefetch />}>
+            <Route path="dash" element={<DashLayout />}>
+              <Route index element={<Welcome />} />
 
-                <Route index element={<Welcome />} />
-
-                <Route element={<RequireAuth allowedRoles={[ROLES.Manager, ROLES.Admin]} />}>
-                  <Route path="users">
-                    <Route index element={<UsersList />} />
-                    <Route path=":id" element={<EditUser />} />
-                    <Route path="new" element={<NewUserForm />} />
-                  </Route>
+              <Route
+                element={
+                  <RequireAuth allowedRoles={[ROLES.Manager, ROLES.Admin]} />
+                }
+              >
+                <Route path="users">
+                  <Route index element={<UsersList />} />
+                  <Route path=":id" element={<EditUser />} />
+                  <Route path="new" element={<NewUserForm />} />
                 </Route>
-
-                <Route path="notes">
-                  <Route index element={<NotesList />} />
-                  <Route path=":id" element={<EditNote />} />
-                  <Route path="new" element={<NewNote />} />
-                </Route>
-
               </Route>
-              End Dash
+
+              <Route path="notes">
+                <Route index element={<NotesList />} />
+                <Route path=":id" element={<EditNote />} />
+                <Route path="new" element={<NewNote />} />
+              </Route>
             </Route>
+            End Dash
           </Route>
         </Route>
-        End Protected Routes */}
+      </Route> */}
+        {/* End Protected Routes */}
       </Route>
     </Routes>
   );

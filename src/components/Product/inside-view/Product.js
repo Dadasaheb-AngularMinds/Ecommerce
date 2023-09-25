@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import homeAndFurniture from "../../assets/images/welcome/home&furniture.png";
-import clothing from "../../assets/images/welcome/col5.png";
-import mobilesAndElect from "../../assets/images/welcome/mobiles&electronics.png";
-import Tabs from "./Tabs";
 
 const Product = () => {
   const imageArray = [
@@ -30,10 +26,10 @@ const Product = () => {
               />
             ))}
           </div>
-          <div className="order-1  md:h-[586px]  col-span-2  lg:order-2 bg-zinc-100">
+          <div className="order-1  md:h-[586px]  col-span-2 flex lg:order-2 bg-zinc-100">
             <img
               src={activeImage}
-              className="object-contain w-fit"
+              className="flex-grow object-contain"
               alt="main"
             />
           </div>
@@ -47,7 +43,7 @@ const Product = () => {
               Wooden container Bowl
             </h4>
             <div className="mb-1 lg:flex">
-              <ul className="flex lg:pr-4">
+              <ul className="flex border-r-2 lg:pr-4 border-r-1">
                 <li className="mr-1">
                   <span>
                     <i className="text-orange-400 fa fa-star"></i>
@@ -80,10 +76,11 @@ const Product = () => {
                   </span>
                 </li>
               </ul>
-              <vr />
-              <span class="text-sm hidden flex items-center  lg:px-4 lg:block text-zinc-500">
+
+              <span class="text-sm hidden flex items-center border-r-2 lg:px-4 lg:block text-zinc-500">
                 3 rating(s)
               </span>
+              <vr />
               <span className="text-sm text-zinc-500 lg:px-4">
                 Add your Review
               </span>
@@ -254,8 +251,8 @@ const Product = () => {
               </li>
             </ul>
           </div>
-
-          <div className="grid grid-cols-2 gap-8 mt-14">
+          {/* buttons */}
+          <div className="grid grid-cols-2 gap-4 sm:gap-8 mt-14">
             <button className="p-2 bg-transparent border border-orange-400 group">
               <span className="mr-3">
                 <i
@@ -277,8 +274,6 @@ const Product = () => {
           </div>
         </div>
       </div>
-
-      <Tabs />
     </div>
   );
 };

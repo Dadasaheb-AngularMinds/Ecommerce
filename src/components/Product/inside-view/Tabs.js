@@ -33,8 +33,8 @@ export default function Tabs() {
   return (
     <div>
       {/* desktop view */}
-      <div className="">
-        <div className="border-b border-gray-200">
+      <div className="mt-10">
+        <div className="">
           <nav
             className="flex justify-center -mb-px space-x-8"
             aria-label="Tabs"
@@ -46,9 +46,9 @@ export default function Tabs() {
                 onClick={() => handleTabClick(index)}
                 className={classNames(
                   tab.current
-                    ? "border-indigo-500 text-indigo-600"
-                    : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
-                  "group inline-flex items-center border-b-2 py-4 px-1 text-sm font-medium"
+                    ? " text-black"
+                    : "border-transparent text-neutral-400 ",
+                  "group inline-flex items-center  py-4 px-1 text-xl font-medium"
                 )}
                 aria-current={tab.current ? "page" : undefined}
               >

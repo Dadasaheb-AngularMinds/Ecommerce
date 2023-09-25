@@ -12,7 +12,7 @@ import Banner5 from "./Banner5";
 import Banner6 from "./Banner6";
 import { Link } from "react-scroll";
 import "../../assets/css/styles.css";
-import Product from "../../components/inside-view/Product";
+
 
 function Welcome() {
   const [isVisible, setIsVisible] = React.useState(false);

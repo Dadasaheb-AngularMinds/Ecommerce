@@ -4,7 +4,7 @@ const Review = () => {
   return (
     <div className="container lg:py-5 lg:px-36">
       <h1 className="text-xl font-semibold">Reviews(03)</h1>
-      <div className="flex p-5 pb-0">
+      <div className="flex p-10 pb-0">
         <img
           src="https://wphix.com/html/blackwood-prv/blackwood/assets/img/author/avater-1.png"
           className="mt-4 w-14 h-14 bg-indigo-20 lg:h-20 lg:w-28"
