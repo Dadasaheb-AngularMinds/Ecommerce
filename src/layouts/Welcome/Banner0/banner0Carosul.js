@@ -1,14 +1,16 @@
-import React from 'react';
+import React from "react";
 
 const Banner0Carosul = (props) => {
   return (
     <section id="home">
       <div
-        className={`p-10 py-20 grid grid-cols-1 sm:grid-cols-1 ${props?.bg} md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 pt-20  h-[30rem]`}
+        className={`p-10 py-20 grid grid-cols-1 sm:grid-cols-1 ${props?.bg} md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 pt-20`}
       >
         <div className="flex flex-col items-center justify-center order-2 sm:order-2 md:order-1 lg:order-1">
           <div className="flex flex-col items-center justify-center space-y-3 lg:block">
-            <h4 className="text-base font-styled lg:text-2xl">Latest Trending</h4>
+            <h4 className="text-base font-styled lg:text-2xl">
+              Latest Trending
+            </h4>
             <h1 className="text-4xl font-header lg:text-5xl">{props?.type}</h1>
             <p className="mb-2 italic">Last call for upto 45%</p>
             <button className="p-1 px-5 text-white bg-gray-900 font-poppins">
@@ -18,7 +20,7 @@ const Banner0Carosul = (props) => {
         </div>
 
         <div className="flex flex-col items-center justify-center order-1 sm:order-1 md:order-2 lg:order-2">
-          {' '}
+          {" "}
           <img
             className="object-contain w-full h-auto transition-all duration-300 group-hover:blur-none "
             src={props?.img}
