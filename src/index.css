@@ -51,5 +51,36 @@
   .brand-collection-button:hover::before {
     @apply origin-left scale-x-100 rounded-l-3xl;
   }
+  .nav-header-before {
+    background: linear-gradient(rgb(0, 40, 85, 0.85), rgba(11, 9, 10, 0.85));
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 20px 60px -7px;
+    transition: all 0.5s;
+    z-index: 997;
+  }
+  .nav-header-after {
+    box-shadow: 2px 31px 31px rgba(0, 40, 85, 0.4);
+    background: rgba(0, 40, 85, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+
+  .top-bounce-effect {
+    animation: nav-bounce 1.5s;
+  }
+  
+  @keyframes nav-bounce {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: 18px;
+      border-radius: 20px;
+    }
+    100% {
+      top: 0;
+      border-radius: 0px;
+    }
+  }
    
 }

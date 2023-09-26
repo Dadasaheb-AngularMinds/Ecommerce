@@ -1,7 +1,6 @@
 import React from 'react';
 import { Fragment, useState } from 'react';
 import { Dialog, Menu, Transition } from '@headlessui/react';
-import { Bars3Icon, BellIcon } from '@heroicons/react/24/outline';
 import {
   ChevronDownIcon,
   MagnifyingGlassIcon,
@@ -18,8 +17,7 @@ function classNames(...classes) {
 
 const BottomBar = () => {
   return (
-    <div className="flex self-stretch flex-1 p-3 px-2 sm:px-16 md:px-16 lg:px-20 xl:px-24 bg-[#edecec]">
-      
+    <div className="sticky top-0 z-40 flex flex-1 px-2 pb-2 sm:px-16 md:px-16 lg:px-20 xl:px-24 ">
       <form className="flex flex-1 " action="#" method="GET">
         <div className="relative w-full mt-2 rounded-md shadow-sm sm:w-full md:w-full lg:w-full xl:w-1/2">
           <div className="absolute inset-y-0 left-0 items-center hidden sm:flex">
@@ -35,11 +33,11 @@ const BottomBar = () => {
               <option>EU</option>
             </select>
           </div>
-          <div className='absolute left-0 hidden h-5 bg-gray-800 border border-gray-400 sm:block sm:left-40 top-2 '></div>
+          {/* <div className="absolute left-0 hidden h-5 bg-gray-800 border border-gray-400 sm:block sm:left-40 top-2 "></div> */}
           <MagnifyingGlassIcon
-          className="absolute inset-y-0 w-5 h-full text-gray-700 pointer-events-none right-2"
-          aria-hidden="true"
-        />
+            className="absolute inset-y-0 w-5 h-full text-gray-700 pointer-events-none right-2"
+            aria-hidden="true"
+          />
           <input
             type="text"
             name="phone-number"
@@ -56,16 +54,17 @@ const BottomBar = () => {
           className="-m-2.5 p-2.5 hidden sm:block ml-1 text-gray-400 hover:text-gray-500"
         >
           <span className="sr-only">View notifications</span>
-          <i class="fa fa-bell-o text-gray-800 cursor-pointer hover:text-orange-500 hover:animate-pulse text-2xl hover:top-0 transition-all duration-300" aria-hidden="true"></i>
+          <i
+            class="fa fa-bell-o text-gray-100 cursor-pointer hover:text-orange-500 hover:animate-pulse text-2xl hover:top-0 transition-all duration-300"
+            aria-hidden="true"
+          ></i>
         </button>
 
-        {/* Separator */}
         <div
           className="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-200"
           aria-hidden="true"
         />
 
-        {/* Profile dropdown */}
         <Menu as="div" className="relative">
           <Menu.Button className="-m-1.5 flex items-center p-1.5">
             <span className="sr-only">Open user menu</span>
@@ -76,13 +75,13 @@ const BottomBar = () => {
             />
             <span className="hidden lg:flex lg:items-center ">
               <span
-                className="ml-4 text-sm font-semibold leading-6 text-gray-900"
+                className="ml-4 text-sm font-semibold leading-6 text-gray-100"
                 aria-hidden="true"
               >
                 Tom Cook
               </span>
               <ChevronDownIcon
-                className="w-5 h-5 ml-2 text-gray-400 "
+                className="w-5 h-5 ml-2 text-gray-100 "
                 aria-hidden="true"
               />
             </span>

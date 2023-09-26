@@ -5,9 +5,44 @@ import { Bars3Icon } from '@heroicons/react/24/outline';
 import Sidebar from './Sidebar';
 import { Outlet } from 'react-router-dom';
 import Header from './Header';
+import BottomBar from './Navbar/bottom';
+import { useEffect } from 'react';
+import FooterSection from '../../pages/User/Footer';
 
 export default function UserLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [scrollStyle, setScrollStyle] = useState('nav-header-before');
+
+  function isInViewport(ele) {
+    const rect = ele.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  const eleview = () => {
+    if (isInViewport(document.getElementById('px-72'))) {
+      setScrollStyle('nav-header-before');
+    } else {
+      setScrollStyle(
+        'nav-header-after top-bounce-effect fixed top-0 z-50 shadow-lg border-1'
+      );
+    }
+  };
+
+  useEffect(() => {
+    function handleScroll() {
+      eleview();
+    }
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div>
@@ -64,7 +99,7 @@ export default function UserLayout() {
         </Dialog>
       </Transition.Root>
 
-      <div className="sticky top-0 z-40 flex items-center px-0 bg-orange-400 border-b border-gray-200 shadow-sm shrink-0 gap-x-4 sm:gap-x-2 sm:px-0 lg:px-0">
+      <div className="flex items-center px-0 bg-orange-400 border-b border-gray-200 shadow-sm shrink-0 gap-x-4 sm:gap-x-2 sm:px-0 lg:px-0">
         <button
           type="button"
           className="-m-2.5  pl-5 pr-2 text-gray-700 lg:hidden"
@@ -74,10 +109,22 @@ export default function UserLayout() {
         </button>
         <Header />
       </div>
-
+      <div id="px-72"></div>
+      <div
+        className={
+          scrollStyle +
+          ' navbar grid w-full grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1'
+        }
+        aria-hidden="true"
+      >
+        <BottomBar />
+      </div>
       <main className="h-full py-0">
-          <Outlet />
+        <Outlet />
       </main>
+      <footer>
+        <FooterSection />
+      </footer>
     </div>
   );
 }

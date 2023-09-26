@@ -26,9 +26,10 @@ const ProductsView = () => {
   return (
     <div className="container-fluid">
       <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-4">
+        {/* ------------Categories-------------- */}
         <div className="col-span-1 md:col-span-1">
           <div className="p-5">
-            <div class="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
+            <div class="max-w-screen-xl mx-auto px-5 ">
               <div class="flex flex-col items-left">
                 <h2 class="font-bold text-xl font-header text-orange-500">
                   Categories
@@ -361,10 +362,141 @@ const ProductsView = () => {
               </div>
             </div>
           </div>
+
+          <div>
+            <div
+              id="default-carousel"
+              class="relative w-full"
+              data-carousel="slide"
+            >
+              <div class="relative h-80 overflow-hidden rounded-lg bg-gray-200">
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src={productImg}
+                    class="absolute block w-auto h-44 object-center z-30 hover:scale-110 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src={productImg}
+                    class="absolute block w-auto h-44 object-center z-30 hover:scale-110 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src={productImg}
+                    class="absolute block w-auto h-44 object-center z-30 hover:scale-110 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src={productImg}
+                    class="absolute block w-auto h-44 object-center z-30 hover:scale-110 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src={productImg}
+                    class="w-auto h-44 object-center z-30 hover:scale-110 duration-500 transition-transform absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full bg-slate-400"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                  data-carousel-slide-to="0"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full bg-slate-400"
+                  aria-current="false"
+                  aria-label="Slide 2"
+                  data-carousel-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full bg-slate-400"
+                  aria-current="false"
+                  aria-label="Slide 3"
+                  data-carousel-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full bg-slate-400"
+                  aria-current="false"
+                  aria-label="Slide 4"
+                  data-carousel-slide-to="3"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full bg-slate-400"
+                  aria-current="false"
+                  aria-label="Slide 5"
+                  data-carousel-slide-to="4"
+                ></button>
+              </div>
+              <button
+                type="button"
+                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev
+              >
+                <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-300 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg
+                    class="w-3 h-3 text-gray-600 dark:text-gray-800"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 1 1 5l4 4"
+                    />
+                  </svg>
+                  <span class="sr-only">Previous</span>
+                </span>
+              </button>
+              <button
+                type="button"
+                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next
+              >
+                <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-slate-300 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg
+                    class="w-3 h-3 text-gray-600 dark:text-gray-800"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 9 4-4-4-4"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
         </div>
 
+        {/* ------------Products view-------------- */}
         <div className="col-span-1 px-2 md:col-span-3">
-          <div className='grid grid-cols-1 gap-5 p-4 md:grid-cols-3 sm:grid-cols-2'>
+          <div className="grid grid-cols-1 gap-5 p-4 md:grid-cols-3 sm:grid-cols-2">
             <div className="">
               <span className="text-neutral-600 font-header">
                 View :{' '}
@@ -378,7 +510,7 @@ const ProductsView = () => {
                 ></i>
               </span>
             </div>
-             <div className="">
+            <div className="">
               <span className="text-neutral-600 font-header">
                 Showing 1–12 of 24 results
               </span>
@@ -481,7 +613,7 @@ const ProductsView = () => {
                   className="relative transition-all duration-300 shadow-xl group h-max"
                   onClick={() => navigate('/user/product')}
                 >
-                  <div className="absolute right-0 z-50 space-y-4 transition-all duration-500 opacity-0 group-hover:opacity-70 group-hover:pr-4">
+                  <div className="absolute right-0 z-10 space-y-4 transition-all duration-500 opacity-0 group-hover:opacity-70 group-hover:pr-4">
                     <div className="p-2 px-3 transition-all duration-300 bg-white cursor-pointer group-hover:opacity-100 group-hover:shadow-lg hover:bg-gray-950 hover:text-white">
                       <i class="fa fa-cart-plus" aria-hidden="true"></i>
                     </div>
@@ -492,11 +624,18 @@ const ProductsView = () => {
                       <i class="fa fa-eye" aria-hidden="true"></i>
                     </div>
                   </div>
-                  <div class="group w-full h-full bg-slate-200 overflow-hidden cursor-pointer hover:brightness-110 duration-500 transition-transform transform  ">
+
+                  {index % 2 === 0 && (
+                    <div className="absolute animate-pulse top-2 left-2 z-10 px-1 py-2 space-y-4 transition-all duration-500 bg-[#ff8429] rounded-full">
+                      <p className="text-sm text-white">20%</p>
+                    </div>
+                  )}
+
+                  <div class="group w-full h-full flex justify-center py-10 bg-[#f2efef] overflow-hidden cursor-pointer hover:brightness-110 duration-500 transition-transform transform  ">
                     <img
                       src={productImg}
                       alt="Image 1"
-                      class="w-full h-auto object-center z-30 group-hover:scale-110 duration-500 transition-transform"
+                      class="w-auto h-44 object-center z-30 group-hover:scale-110 duration-500 transition-transform"
                     />
                   </div>
                   <div className="flex flex-col mt-1">
