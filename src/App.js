@@ -1,16 +1,15 @@
 import React from "react";
 import AdminLayout from "./layouts/AdminLayout";
-import Login from "./components/Login";
+import Login from "./components/Auth/Login";
 import { BrowserRouter, Route, Routes, Link, Navigate } from "react-router-dom";
 import AppLayout from "./layouts";
 import Welcome from "./layouts/Welcome";
 import RequireAuth from "./components/Auth";
-import Dashboard from "./pages/Dashboard";
 import UserLayout from "./layouts/UserLayout";
-import Register from "./components/Register";
+import Register from "./components/Auth/Register";
 import AddProduct from "./pages/Admin/AddProduct";
 import UserDashboard from "./pages/User/Dashboard";
-import ProductView from "./components/Product/inside-view";
+import ProductView from "./components/User/Product";
 
 function App() {
   console.log("app");

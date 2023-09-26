@@ -5,8 +5,8 @@ import ProductsView from '../../../components/User/DashboardComponents/ProductsV
 const UserDashboard = () => {
   return (
     <div>
-      <div className='h-80'>
-        {/* <BannerUserDash /> */}
+      <div className=''>
+        <BannerUserDash />
         <ProductsView />
       </div>
     </div>

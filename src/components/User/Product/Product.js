@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const Product = () => {
   const imageArray = [
-    "https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-1.jpg",
-    "https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-2.jpg",
-    "https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-3.jpg",
+    'https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-1.jpg',
+    'https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-2.jpg',
+    'https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-3.jpg',
   ];
   const [activeImage, setActiveImage] = useState(imageArray[0]);
   return (
     <div className="h-full bg-white sm:px-10">
       <div className="grid h-full grid-cols-1 p-5 sm:gap-12 lg:grid-cols-2">
-        {/* image */}
         <div className="grid grid-cols-1 lg:grid-cols-3">
           <div className="flex items-center justify-center order-2 gap-4 mt-5 mb-3 lg:order-1 lg:flex-col">
             {imageArray.map((item) => (
@@ -18,8 +17,8 @@ const Product = () => {
                 src={item}
                 className={`${
                   activeImage === item
-                    ? "border-yellow-400"
-                    : "border-stone-400"
+                    ? 'border-yellow-400'
+                    : 'border-stone-400'
                 } object-contain  mb-3 bg-transparent border-[2px] bg-zinc-50  w-12 h-16  sm:h-24 sm:w-16`}
                 onClick={() => setActiveImage(item)}
                 alt="preview"
@@ -34,10 +33,7 @@ const Product = () => {
             />
           </div>
         </div>
-
-        {/* details */}
         <div>
-          {/* name & price */}
           <div className="mb-5 ">
             <h4 className="mb-2 text-base font-bold transition-all duration-500 cursor-pointer lg:mb-3 hover:text-orange-500">
               Wooden container Bowl
@@ -94,7 +90,6 @@ const Product = () => {
           </div>
           <hr />
 
-          {/* Description */}
           <div className="mt-4 mb-4">
             <p className="font-serif text-sm text-zinc-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
@@ -103,19 +98,17 @@ const Product = () => {
             </p>
           </div>
           <hr />
-
-          {/* color */}
           <div className="mt-5 mb-8">
             <p className="text-sm font-normal">
-              Color :{" "}
+              Color :{' '}
               <span className="ml-10">
                 {[1, 2, 3, 4].map((item, index) => (
                   <input
                     type="color"
                     value={
-                      (index === 1 && "#FF0000") ||
-                      (index === 2 && "#007aff") ||
-                      (index === 3 && "#ed9251")
+                      (index === 1 && '#FF0000') ||
+                      (index === 2 && '#007aff') ||
+                      (index === 3 && '#ed9251')
                     }
                   />
                 ))}
@@ -123,7 +116,6 @@ const Product = () => {
             </p>
           </div>
 
-          {/* size */}
           <div className="flex mb-8 ">
             <span className="text-sm font-normal">Size: </span>
             <ul className="flex w-full ml-12 lg:ml-14">
@@ -160,7 +152,6 @@ const Product = () => {
             </ul>
           </div>
 
-          {/* quantity */}
           <div className="flex">
             <div className="flex items-end mb-12">
               <label className="mt-3 text-sm font-normal">Quantity :</label>
@@ -176,7 +167,7 @@ const Product = () => {
                 </button>
                 <input
                   type="number"
-                  class="outline-none focus:outline-none text-center w-full  font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none"
+                  class="outline-none focus:outline-none text-center w-full  font-semibold text-md hover:text-black focus:text-black  md:text-base cursor-default flex items-center text-gray-700"
                   name="custom-input-number"
                   value="0"
                 />
