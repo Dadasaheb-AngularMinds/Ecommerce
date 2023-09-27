@@ -8,7 +8,7 @@ import Header from './Header';
 import BottomBar from './Navbar/bottom';
 import { useEffect } from 'react';
 import FooterSection from '../../pages/User/Footer';
-import Breadcrumb from './Breadcrumbs';
+import Breadcrumb from '../../components/Breadcrumbs';
 
 export default function UserLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);

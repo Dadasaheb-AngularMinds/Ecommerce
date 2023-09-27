@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import BannerUserDash from '../../../components/User/DashboardComponents/Banner1';
-import ProductsView from '../../../components/User/DashboardComponents/ProductsView';
 import Loader from '../../../components/Loader';
+import BannerUserDash from './Banner1';
+import ProductsView from './ProductsView';
 
 const UserDashboard = () => {
   const [loading, setLoading] = useState(false);

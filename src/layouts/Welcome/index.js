@@ -10,9 +10,6 @@ import Banner0 from "./Banner0";
 import Collection from "./Collection";
 import Banner5 from "./Banner5";
 import Banner6 from "./Banner6";
-import { Link } from "react-scroll";
-import "../../assets/css/styles.css";
-
 
 function Welcome() {
   const [isVisible, setIsVisible] = React.useState(false);
@@ -24,20 +21,18 @@ function Welcome() {
         setIsVisible(false);
       }
     };
-
     window.addEventListener("scroll", toggleVisibility);
-
     return () => {
       window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth", // Smooth scrolling animation
     });
   };
-  console.log("23", isVisible);
   return (
     <div className="relative bg-gray-900">
       <HeaderSection />
@@ -53,7 +48,6 @@ function Welcome() {
         <Banner6 />
       </main>
       <FooterSection />
-      {/* <Product /> */}
 
       <div
         className={` animate-bounce shadow-lg transition-all duration-500 rounded-full scroll-to-top-button ${
