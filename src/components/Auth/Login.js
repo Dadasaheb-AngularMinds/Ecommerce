@@ -5,6 +5,7 @@ import Wave from "react-wavify";
 function Login() {
   console.log("Login Page");
   const [formData, setFormData] = useState({ email: "", password: "" });
+  const [checked, setChecked] = useState(false);
   const history = useNavigate();
 
   const handleSubmit = (event) => {
@@ -87,9 +88,13 @@ function Login() {
               <div className="flex justify-between mb-8 text-sm text-zinc-500">
                 <div className="flex">
                   <input
-                    className="mt-[2px] rounded-[4px]"
+                    className={`mt-[2px] rounded-[4px] focus:outline-none ${
+                      checked && "text-orange-400"
+                    } focus:ring-0 ring-white`}
                     type="checkbox"
                     id="m-agree"
+                    checked={checked}
+                    onChange={() => setChecked(!checked)}
                   />
                   <label className="ml-2 " for="m-agree">
                     Keep me signed in
@@ -114,9 +119,12 @@ function Login() {
               <div className="text-sm text-center text-zinc-500">
                 <p>
                   New to Market?{" "}
-                  <a href="sign-up.html" className="text-orange-400">
+                  <span
+                    onClick={() => history("/register")}
+                    className="text-orange-400 cursor-pointer"
+                  >
                     Sign Up
-                  </a>
+                  </span>
                 </p>
               </div>
             </form>
