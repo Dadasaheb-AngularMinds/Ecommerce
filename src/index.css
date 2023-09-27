@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css?family=Sofia:400,700&effect=fire|neon|outline|emboss|shadow-multiple');
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Sofia:400,700&effect=fire|neon|outline|emboss|shadow-multiple");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -29,14 +29,14 @@
   .radial-gradient-2 {
     background: radial-gradient(circle, #03a8f42e, #01589bcf);
   }
-  .welcome-page-collection-gradient{
-    background: linear-gradient(to right, #aed9f3 ,#c0dff2, #d3e6f2)
+  .welcome-page-collection-gradient {
+    background: linear-gradient(to right, #aed9f3, #c0dff2, #d3e6f2);
   }
-  .welcome-linear-gradient-category{
-    background: linear-gradient(to right, #f5da6b ,#f5e18e, #f5e8b1)
+  .welcome-linear-gradient-category {
+    background: linear-gradient(to right, #f5da6b, #f5e18e, #f5e8b1);
   }
-  .welcome-page-collection-gradient2{
-    background: linear-gradient(to right, #f59f0b62 ,#e87f34, #f89a4d)
+  .welcome-page-collection-gradient2 {
+    background: linear-gradient(to right, #f59f0b62, #e87f34, #f89a4d);
   }
   .brand-collection-button {
     @apply relative bg-transparent rounded-l-3xl;
@@ -68,7 +68,7 @@
   .top-bounce-effect {
     animation: nav-bounce 1.5s;
   }
-  
+
   @keyframes nav-bounce {
     0% {
       top: 0;
@@ -82,5 +82,11 @@
       border-radius: 0px;
     }
   }
-   
+
+  .custom-shadow {
+    box-shadow: inset 0px 40px 80px 0px rgba(2, 2, 26, 0.14);
+  }
+  .custom-clip-path {
+    clip-path: circle(50%);
+  }
 }
