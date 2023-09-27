@@ -7,8 +7,10 @@ import {
   MagnifyingGlassIcon,
 } from '@heroicons/react/20/solid';
 import amazonLogo from '../../../assets/images/amazon.png';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const navigate = useNavigate()
   return (
     <div className="grid h-20 grid-cols-1 bg-[#ffffff]  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
       <div className="flex justify-center py-0 my-3 border-r-0 sm:border-r-0 md:border-r-2 lg:border-r-2 xl:border-r-2">
@@ -66,8 +68,9 @@ const Navbar = () => {
             aria-hidden="true"
           ></i>
           <i
-            class="fa fa-shopping-basket text-gray-800 cursor-pointer hover:text-orange-500 hover:animate-pulse text-2xl group-hover:top-0 transition-all duration-300 left-1/4"
+            class="fa fa-shopping-cart text-gray-800 cursor-pointer hover:text-orange-500 hover:animate-pulse text-2xl group-hover:top-0 transition-all duration-300 left-1/4"
             aria-hidden="true"
+            onClick={() => navigate('/user/cart')}
           ></i>
         </div>
       </div>

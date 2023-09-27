@@ -2,30 +2,34 @@ import React from 'react';
 
 const ProductTable = () => {
   return (
-      <div class="h-screen overflow-x-auto  no-scrollbar mx-10">
-        <div class="h-2/3 no-scrollbar overflow-x-auto border-2 mt-5">
-          <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-            <thead class="sticky top-0 text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
-              <tr className=''>
-                <th scope="col" className="px-6 py-3 text-base">
-                  <span >Image</span>
-                </th>
-                <th scope="col" class="px-6 py-3 text-base">
-                  Product
-                </th>
-                <th scope="col" class="px-6 py-3 text-base">
-                  Qty
-                </th>
-                <th scope="col" class="px-6 py-3 text-base">
-                  Price
-                </th>
-                <th scope="col" class="px-6 py-3 text-base">
-                  Action
-                </th>
-              </tr>
-            </thead>
-            <tbody className=''>
-              {[1,2,3,4,56,6].map((item,index) =><tr key={index} class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+    <div class="h-screen overflow-x-auto  no-scrollbar mx-10">
+      <div class="h-2/3 no-scrollbar overflow-x-auto border-2 mt-5">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+          <thead class="sticky top-0 text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
+            <tr className="">
+              <th scope="col" className="px-6 py-3 text-base">
+                <span>Image</span>
+              </th>
+              <th scope="col" class="px-6 py-3 text-base">
+                Product
+              </th>
+              <th scope="col" class="px-6 py-3 text-base">
+                Qty
+              </th>
+              <th scope="col" class="px-6 py-3 text-base">
+                Price
+              </th>
+              <th scope="col" class="px-6 py-3 text-base">
+                Action
+              </th>
+            </tr>
+          </thead>
+          <tbody className="">
+            {[1, 2, 3, 4, 56, 6].map((item, index) => (
+              <tr
+                key={index}
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+              >
                 <td class="w-32 p-4">
                   <img
                     src="https://wphix.com/html/blackwood-prv/blackwood/assets/img/cart/cart-1.jpg"
@@ -101,12 +105,32 @@ const ProductTable = () => {
                     Remove
                   </a>
                 </td>
-              </tr>)}
-            </tbody>
-          </table>
-        </div>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
-     
+      <div className="grid grid-cols-1 gap-2 mt-5 sm:grid-cols-2">
+        <div className="">
+          <input className='w-1/2 py-3 pl-10 pr-4 border rounded-lg md:w-1/2 sm:w-1/3 focus:outline-orange-400 ' placeholder='Coupon code...'/>
+          <button className='px-5 py-3 ml-3 transition-all duration-300 bg-orange-400 border border-orange-300 rounded-md hover:bg-orange-300'>Apply coupon</button>
+        </div>
+        <div className="space-y-2">
+           <p className='text-2xl font-bold font-header'>Cart Totals</p>
+           <div className='flex justify-between px-5 py-2 border'>
+            <span className='font-bold font-header'>Subtotal</span>
+            <span>$250.00</span>
+           </div>
+           <div className='flex justify-between px-5 py-2 border'>
+            <span className='font-bold font-header'>Total</span>
+            <span>$250.00</span>
+           </div>
+          <button className='px-5 py-3 transition-all duration-300 bg-orange-400 border border-orange-300 rounded-md hover:bg-orange-300'>Proceed to Checkout</button>
+
+        </div>
+         
+      </div>
+    </div>
   );
 };
 
