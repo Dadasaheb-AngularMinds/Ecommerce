@@ -93,12 +93,60 @@ const FooterSection = () => {
   return (
     <div className="bg-cover transition-all duration-300 bg-[url('https://wphix.com/html/blackwood-prv/assets/img/hero/landing-header-1.jpg')]">
       <footer
-        className="relative pt-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#0000005d] via-[#00000095] to-[#000000] bg-transparent transition-all duration-500"
+        className="relative pt-2 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#0000005d] via-[#00000095] to-[#000000] bg-transparent transition-all duration-500"
         aria-labelledby="footer-heading"
       >
-        <h2 id="footer-heading" className="sr-only">
-          Footer
-        </h2>
+        <div className="grid grid-cols-1 mb-5 bg-[#ffffff11] sm:grid-cols-3">
+          <div className="py-0 my-3 lg:block xl:block">
+            <div className="flex flex-row py-2 group">
+              <div className="relative w-1/4 h-full ">
+                <i
+                  class="absolute fa fa-truck text-orange-400 text-4xl top-1 group-hover:-top-1 transition-all duration-300 left-1/4"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <div className="cursor-pointer">
+                <p className="text-xl font-bold text-gray-100 font-header">Free Shipping Orders $60+</p>
+                <p className="text-sm text-gray-500 font-poppins">
+                Moves so quickly that
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="py-0 my-3 lg:block xl:block">
+            <div className="flex flex-row py-2 group">
+              <div className="relative w-1/4 h-full ">
+                <i
+                  class="absolute fa fa-credit-card-alt text-orange-400 text-4xl top-1 group-hover:-top-1 transition-all duration-300 left-1/4"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <div className="cursor-pointer">
+                <p className="text-xl font-bold text-gray-100 font-header">24/7 Customer Support</p>
+                <p className="text-sm text-gray-500 font-poppins">
+                Moves so quickly that
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="py-0 my-3 lg:block xl:block">
+            <div className="flex flex-row py-2 group">
+              <div className="relative w-1/4 h-full ">
+                <i
+                  class="absolute fa fa-money text-orange-400 text-4xl top-1 group-hover:-top-1 transition-all duration-300 left-1/4"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <div className="cursor-pointer">
+                <p className="text-xl font-bold text-gray-100 font-header">100% Secure Payments</p>
+                <p className="text-sm text-gray-500 font-poppins">
+                PayPal / MasterCard
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="px-6 pb-8 mx-auto max-w-7xl lg:px-8">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8">

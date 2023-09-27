@@ -12,8 +12,8 @@ const Register = Loadable(lazy(() => import('./components/Auth/Register')));
 const AddProduct = Loadable(lazy(() => import('./pages/Admin/AddProduct')));
 const UserDashboard = Loadable(lazy(() => import('./pages/User/Dashboard')));
 const ProductView = Loadable(lazy(() => import('./components/User/Product')));
-
-
+const Cart = Loadable(lazy(() => import('./pages/User/Cart')));
+ 
 function App() {
   return (
     <Routes>
@@ -24,6 +24,7 @@ function App() {
         <Route path="/user" element={<UserLayout />}>
           <Route path="dashboard" element={<UserDashboard />} />
           <Route path="product" element={<ProductView />} />
+          <Route path="cart" element={<Cart />} />
         </Route>
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="add-product" element={<AddProduct />} />

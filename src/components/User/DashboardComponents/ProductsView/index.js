@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import productImg from '../../../../assets/images/product-furniture.png';
+import winterImg from '../../../../assets/images/winter.png';
 import { useNavigate } from 'react-router-dom';
 import { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
@@ -15,6 +16,7 @@ import {
   books,
   toys,
 } from './data';
+import BannerUserDash from '../Banner1';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -27,7 +29,7 @@ const ProductsView = () => {
     <div className="container-fluid">
       <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-4">
         {/* ------------Categories-------------- */}
-        <div className="col-span-1 md:col-span-1">
+        <div className="max-h-full col-span-1 overflow-y-auto md:col-span-1">
           <div className="p-5">
             <div class="max-w-screen-xl mx-auto px-5 ">
               <div class="flex flex-col items-left">
@@ -369,7 +371,7 @@ const ProductsView = () => {
               class="relative w-full"
               data-carousel="slide"
             >
-              <div class="relative h-80 overflow-hidden rounded-lg bg-gray-200">
+              <div class="relative h-80 overflow-hidden rounded bg-gray-200">
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
                     src={productImg}
@@ -495,7 +497,7 @@ const ProductsView = () => {
         </div>
 
         {/* ------------Products view-------------- */}
-        <div className="col-span-1 px-2 md:col-span-3">
+        <div className="max-h-[900px] col-span-1 px-2 overflow-y-auto no-scrollbar md:col-span-3">
           <div className="grid grid-cols-1 gap-5 p-4 md:grid-cols-3 sm:grid-cols-2">
             <div className="">
               <span className="text-neutral-600 font-header">
@@ -607,7 +609,7 @@ const ProductsView = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-5 p-4 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2">
-            {[1, 2, 3, 4, 5, 6, 7].map((item, index) => {
+            {[1, 2, 3, 4, 5, 6, 7, 2, 3, 4, 56, 6, 7].map((item, index) => {
               return (
                 <div
                   className="relative transition-all duration-300 shadow-xl group h-max"
@@ -656,6 +658,55 @@ const ProductsView = () => {
               );
             })}
           </div>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-4">
+        <div className="md:col-span-1">
+          <div class="relative w-full h-full flex justify-center bg-[#f2efef] overflow-hidden cursor-pointer hover:brightness-110 duration-500 transition-all">
+            <img
+              src={winterImg}
+              alt="Image 1"
+              class="w-full max-h-80 z-10 duration-500 transition-transform"
+            />
+            <div className="absolute top-0 left-0 z-30 w-full h-full text-center bg-transparent py-14">
+              <p className="mt-5 text-3xl font-bold font-header">Winter Sale</p>
+              <span className="mt-5 text-4xl font-bold font-header">
+                Up to <span className='text-orange-500 font-styled animate-pulse'>40%</span> Off
+              </span>
+
+              <div className="grid grid-cols-4 gap-2 px-10 mt-5">
+                <div className="flex flex-col border-2 border-gray-500 rounded-lg">
+                  <span className="font-bold text-orange-600 font-styled">
+                    95
+                  </span>
+                  <span className="font-bold text-header">DAYS</span>
+                </div>
+                <div className="flex flex-col border-2 border-gray-500 rounded-lg">
+                  <span className="font-bold text-orange-600 font-styled">
+                    95
+                  </span>
+                  <span className="font-bold text-header">HRS</span>
+                </div>
+                <div className="flex flex-col border-2 border-gray-500 rounded-lg">
+                  <span className="font-bold text-orange-600 font-styled">
+                    95
+                  </span>
+                  <span className="font-bold text-header">MIN</span>
+                </div>
+                <div className="flex flex-col border-2 border-gray-500 rounded-lg">
+                  <span className="font-bold text-orange-600 font-styled">
+                    95
+                  </span>
+                  <span className="font-bold text-header">SEC</span>
+                </div>
+              </div>
+
+              <div><button className='px-5 py-1 mt-5 transition-all duration-300 bg-orange-500 border border-orange-500 rounded-lg hover:bg-orange-400'>View all</button></div>
+            </div>
+          </div>
+        </div>
+        <div className="md:col-span-3">
+          <BannerUserDash />
         </div>
       </div>
     </div>

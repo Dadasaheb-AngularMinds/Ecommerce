@@ -8,6 +8,7 @@ import Header from './Header';
 import BottomBar from './Navbar/bottom';
 import { useEffect } from 'react';
 import FooterSection from '../../pages/User/Footer';
+import Breadcrumb from './Breadcrumbs';
 
 export default function UserLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -120,6 +121,7 @@ export default function UserLayout() {
         <BottomBar />
       </div>
       <main className="h-full py-0">
+        <Breadcrumb />
         <Outlet />
       </main>
       <footer>

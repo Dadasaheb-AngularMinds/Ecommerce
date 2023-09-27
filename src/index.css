@@ -22,6 +22,12 @@
   background: #f89a4d;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+ 
+
 @layer utilities {
   .radial-gradient {
     background: radial-gradient(circle, #22212114, #000000c0);
