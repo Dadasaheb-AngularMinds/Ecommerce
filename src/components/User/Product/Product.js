@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import {
+  addToCart,
+  addToWishlist,
+} from "../../../redux/ProductReducers/productSlice";
 
 const Product = () => {
   const imageArray = [
-    'https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-1.jpg',
-    'https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-2.jpg',
-    'https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-3.jpg',
+    "https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-1.jpg",
+    "https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-2.jpg",
+    "https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-3.jpg",
   ];
   const [activeImage, setActiveImage] = useState(imageArray[0]);
+  const dispatch = useDispatch();
+
   return (
     <div className="h-full bg-white sm:px-10">
       <div className="grid h-full grid-cols-1 p-5 sm:gap-12 lg:grid-cols-2">
@@ -17,8 +24,8 @@ const Product = () => {
                 src={item}
                 className={`${
                   activeImage === item
-                    ? 'border-yellow-400'
-                    : 'border-stone-400'
+                    ? "border-yellow-400"
+                    : "border-stone-400"
                 } object-contain  mb-3 bg-transparent border-[2px] bg-zinc-50  w-12 h-16  sm:h-24 sm:w-16`}
                 onClick={() => setActiveImage(item)}
                 alt="preview"
@@ -100,15 +107,15 @@ const Product = () => {
           <hr />
           <div className="mt-5 mb-8">
             <p className="text-sm font-normal">
-              Color :{' '}
+              Color :{" "}
               <span className="ml-10">
                 {[1, 2, 3, 4].map((item, index) => (
                   <input
                     type="color"
                     value={
-                      (index === 1 && '#FF0000') ||
-                      (index === 2 && '#007aff') ||
-                      (index === 3 && '#ed9251')
+                      (index === 1 && "#FF0000") ||
+                      (index === 2 && "#007aff") ||
+                      (index === 3 && "#ed9251")
                     }
                   />
                 ))}
@@ -244,7 +251,24 @@ const Product = () => {
           </div>
           {/* buttons */}
           <div className="grid grid-cols-2 gap-4 sm:gap-8 mt-14">
-            <button className="p-2 bg-transparent border border-orange-400 group">
+            <button
+              className="p-2 bg-transparent border border-orange-400 group"
+              onClick={() => {
+                dispatch(
+                  addToWishlist({
+                    name: "Wooden container Bowl",
+                    ratings: 3,
+                    price: "$96",
+                    description:
+                      "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+                    color: "brown",
+                    size: "M",
+                    quantity: 2,
+                    category: "furniture",
+                  })
+                );
+              }}
+            >
               <span className="mr-3">
                 <i
                   class="fa fa-heart group-hover:text-orange-400"
@@ -253,7 +277,24 @@ const Product = () => {
               </span>
               Wishlist
             </button>
-            <button className="transition-all duration-100 bg-orange-400 border border-orange-400 group hover:bg-transparent ">
+            <button
+              className="transition-all duration-100 bg-orange-400 border border-orange-400 group hover:bg-transparent"
+              onClick={() => {
+                dispatch(
+                  addToCart({
+                    name: "Wooden container Bowl",
+                    ratings: 3,
+                    price: "$96",
+                    description:
+                      "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+                    color: "brown",
+                    size: "M",
+                    quantity: 2,
+                    category: "furniture",
+                  })
+                );
+              }}
+            >
               <span className="mr-3">
                 <i
                   className="fa fa-cart-plus group-hover:text-orange-400"
