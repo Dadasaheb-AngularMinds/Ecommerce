@@ -120,8 +120,8 @@ export default function UserLayout() {
       >
         <BottomBar />
       </div>
-      <main className="h-full py-0">
-        <Breadcrumb />
+      <main className="min-h-screen py-0 bg-[#eef0f3]">
+        {/* <Breadcrumb /> */}
         <Outlet />
       </main>
       <footer>

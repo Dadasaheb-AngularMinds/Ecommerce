@@ -28,20 +28,21 @@ const ProductsView = () => {
   return (
     <div className="container-fluid">
       <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-4">
-        {/* ------------Categories-------------- */}
+        {/* ------------Filters-------------- */}
         <div className="max-h-full col-span-1 overflow-y-auto md:col-span-1">
-          <div className="p-5">
-            <div class="max-w-screen-xl mx-auto px-5 ">
-              <div class="flex flex-col items-left">
-                <h2 class="font-bold text-xl font-header text-orange-500">
-                  Categories
+          <div className="max-h-[900px] overflow-y-auto no-scrollbar">
+            <div class="max-w-screen-xl mx-auto px-3 bg-[#ffffff]">
+              <div class="sticky top-0 bg-[#ffffff] flex flex-col items-left">
+                <h2 class="font-bold text-2xl font-header text-orange-500 mt-2">
+                Filters
                 </h2>
+                 
               </div>
               <div class="grid divide-y divide-neutral-200 max-w-xl mx-auto">
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span>
+                      <span className='uppercase'>
                         {' '}
                         <i class={`fa ${clothing[0]?.icon} mr-2`}></i>{' '}
                         {clothing[0].category}
@@ -69,7 +70,7 @@ const ProductsView = () => {
                             <span>
                               <input
                                 type="checkbox"
-                                class="checked:bg-orange-500 h-3 w-3 focus:outline-none focus:ring-0 cursor-pointer"
+                                class="checked:bg-orange-500 h-4 w-4 focus:outline-none focus:ring-0 cursor-pointer"
                               />
                               <span className="ml-2">{item?.text}</span>
                             </span>
@@ -82,7 +83,7 @@ const ProductsView = () => {
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span>
+                      <span className='uppercase'>
                         <i class={`fa ${homesAndFurnitures[0]?.icon} mr-2`}></i>{' '}
                         {homesAndFurnitures[0].category}
                       </span>
@@ -109,7 +110,7 @@ const ProductsView = () => {
                             <span>
                               <input
                                 type="checkbox"
-                                class="checked:bg-orange-500 h-3 w-3 focus:outline-none focus:ring-0 cursor-pointer"
+                                class="checked:bg-orange-500 h-4 w-4 focus:outline-none focus:ring-0 cursor-pointer"
                               />
                               <span className="ml-2">{item?.text}</span>
                             </span>
@@ -122,7 +123,7 @@ const ProductsView = () => {
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span>
+                      <span className='uppercase'>
                         <i class={`fa ${jewellery[0]?.icon} mr-2`}></i>{' '}
                         {jewellery[0].text}
                       </span>
@@ -149,7 +150,7 @@ const ProductsView = () => {
                             <span>
                               <input
                                 type="checkbox"
-                                class="checked:bg-orange-500 h-3 w-3 focus:outline-none focus:ring-0 cursor-pointer"
+                                class="checked:bg-orange-500 h-4 w-4 focus:outline-none focus:ring-0 cursor-pointer"
                               />
                               <span className="ml-2">{item?.text}</span>
                             </span>
@@ -162,7 +163,7 @@ const ProductsView = () => {
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span>
+                      <span className='uppercase'>
                         <i
                           class={`fa ${mobilesAndElectronics[0]?.icon} mr-2`}
                         ></i>{' '}
@@ -191,7 +192,7 @@ const ProductsView = () => {
                             <span>
                               <input
                                 type="checkbox"
-                                class="checked:bg-orange-500 h-3 w-3 focus:outline-none focus:ring-0 cursor-pointer"
+                                class="checked:bg-orange-500 h-4 w-4 focus:outline-none focus:ring-0 cursor-pointer"
                               />
                               <span className="ml-2">{item?.text}</span>
                             </span>
@@ -204,7 +205,7 @@ const ProductsView = () => {
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span>
+                      <span className='uppercase'>
                         <i class={`fa ${makeUp[0]?.icon} mr-2`}></i>{' '}
                         {makeUp[0].category}
                       </span>
@@ -231,7 +232,7 @@ const ProductsView = () => {
                             <span>
                               <input
                                 type="checkbox"
-                                class="checked:bg-orange-500 h-3 w-3 focus:outline-none focus:ring-0 cursor-pointer"
+                                class="checked:bg-orange-500 h-4 w-4 focus:outline-none focus:ring-0 cursor-pointer"
                               />
                               <span className="ml-2">{item?.text}</span>
                             </span>
@@ -244,7 +245,7 @@ const ProductsView = () => {
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span>
+                      <span className='uppercase'>
                         <i class={`fa ${healthCare[0]?.icon} mr-2`}></i>{' '}
                         {healthCare[0].category}
                       </span>
@@ -271,7 +272,7 @@ const ProductsView = () => {
                             <span>
                               <input
                                 type="checkbox"
-                                class="checked:bg-orange-500 h-3 w-3 focus:outline-none focus:ring-0 cursor-pointer"
+                                class="checked:bg-orange-500 h-4 w-4 focus:outline-none focus:ring-0 cursor-pointer"
                               />
                               <span className="ml-2">{item?.text}</span>
                             </span>
@@ -284,7 +285,7 @@ const ProductsView = () => {
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span>
+                      <span className='uppercase'>
                         <i class={`fa ${books[0]?.icon} mr-2`}></i>{' '}
                         {books[0].category}
                       </span>
@@ -311,7 +312,7 @@ const ProductsView = () => {
                             <span>
                               <input
                                 type="checkbox"
-                                class="checked:bg-orange-500 h-3 w-3 focus:outline-none focus:ring-0 cursor-pointer"
+                                class="checked:bg-orange-500 h-4 w-4 focus:outline-none focus:ring-0 cursor-pointer"
                               />
                               <span className="ml-2">{item?.text}</span>
                             </span>
@@ -324,7 +325,7 @@ const ProductsView = () => {
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span>
+                      <span className='uppercase'>
                         <i class={`fa ${toys[0]?.icon} mr-2`}></i>{' '}
                         {toys[0].category}
                       </span>
@@ -351,7 +352,7 @@ const ProductsView = () => {
                             <span>
                               <input
                                 type="checkbox"
-                                class="checked:bg-orange-500 h-3 w-3 focus:outline-none focus:ring-0 cursor-pointer"
+                                class="checked:bg-orange-500 h-4 w-4 focus:outline-none focus:ring-0 cursor-pointer"
                               />
                               <span className="ml-2">{item?.text}</span>
                             </span>
@@ -371,7 +372,7 @@ const ProductsView = () => {
               class="relative w-full"
               data-carousel="slide"
             >
-              <div class="relative h-80 overflow-hidden rounded bg-gray-200">
+              <div class="relative h-80 overflow-hidden rounded bg-[#ffffff] mt-5">
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
                     src={productImg}
@@ -497,8 +498,8 @@ const ProductsView = () => {
         </div>
 
         {/* ------------Products view-------------- */}
-        <div className="max-h-[900px] col-span-1 px-2 overflow-y-auto no-scrollbar md:col-span-3">
-          <div className="grid grid-cols-1 gap-5 p-4 md:grid-cols-3 sm:grid-cols-2">
+        <div className="max-h-[900px] bg-[#ffffff] col-span-1 overflow-y-auto no-scrollbar md:col-span-3">
+          <div className="sticky top-0 z-30 bg-[#ffffff] grid grid-cols-1 gap-5 p-4 md:grid-cols-3 sm:grid-cols-2">
             <div className="">
               <span className="text-neutral-600 font-header">
                 View :{' '}
