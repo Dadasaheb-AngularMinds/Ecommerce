@@ -34,26 +34,26 @@ const Collection = () => {
         <div className="absolute top-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 opacity-0 group-hover:pt-4 group-hover:bg-gray-800 group-hover:opacity-60 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
           <div className="px-5">
             <i
-              class="fa fa-bookmark ml-1 text-xl  border px-1 rounded text-gray-100"
+              className="fa fa-bookmark ml-1 text-xl  border px-1 rounded text-gray-100"
               aria-hidden="true"
             ></i>
             &nbsp; &nbsp; &nbsp;
             <i
-              class="fa fa-share-alt ml-1 text-xl border px-1 rounded text-gray-100"
+              className="fa fa-share-alt ml-1 text-xl border px-1 rounded text-gray-100"
               aria-hidden="true"
             ></i>
           </div>
           <div className="text-center ">
             <p className="text-base">
-              <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+              <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
               &nbsp;
-              <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+              <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
               &nbsp;
-              <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+              <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
               &nbsp;
-              <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+              <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
               &nbsp;
-              <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+              <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
               &nbsp; <span className="text-white">5.0</span>{" "}
               <p className="text-white">From 4,506 users</p>
             </p>
@@ -63,26 +63,26 @@ const Collection = () => {
         <div className="absolute bottom-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 opacity-0 group-hover:pb-5 group-hover:bg-gray-800 group-hover:opacity-60 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
           <div className="p-3">
             <i
-              class="fa fa-heart-o top-2 ml-1 border px-1 rounded text-2xl group-hover:opacity-90 hover:text-3xl text-orange-600"
+              className="fa fa-heart-o top-2 ml-1 border px-1 rounded text-2xl group-hover:opacity-90 hover:text-3xl text-orange-600"
               aria-hidden="true"
             ></i>
             &nbsp;&nbsp;&nbsp;
             <i
-              class="fa fa-cart-plus  top-2 ml-1 border px-1 rounded text-2xl hover:text-3xl text-gray-100"
+              className="fa fa-cart-plus  top-2 ml-1 border px-1 rounded text-2xl hover:text-3xl text-gray-100"
               aria-hidden="true"
             ></i>
           </div>
           <div className="p-3 text-center">
             <p className="text-base">
-              <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+              <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
               &nbsp;
-              <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+              <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
               &nbsp;
-              <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+              <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
               &nbsp;
-              <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+              <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
               &nbsp;
-              <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+              <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
               &nbsp;<span className="text-white">5.0</span>{" "}
               <p className="text-white">From 4,506 users</p>
             </p>
@@ -148,9 +148,9 @@ const Collection = () => {
                 />
               </div>
               <div className="absolute top-10 sm:top-20 right-1/4 lg:right-28 lg:bottom-2/3">
-                <span class="relative flex h-3 w-3">
-                  <span class="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#69351440] opacity-75"></span>
-                  <span class="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center   bg-[#00000010] opacity-75"></span>
+                <span className="relative flex h-3 w-3">
+                  <span className="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#69351440] opacity-75"></span>
+                  <span className="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center   bg-[#00000010] opacity-75"></span>
                 </span>
               </div>
             </div>

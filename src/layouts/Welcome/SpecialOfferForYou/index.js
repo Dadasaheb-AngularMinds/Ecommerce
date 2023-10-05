@@ -10,13 +10,13 @@ const SpecialOfferForYou = () => {
         </p>
 
         <div className="relative grid grid-cols-1 gap-4 px-5 mt-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 md:px-2 lg:px-10 sm:px-5">
-          <div class="px-4 bg-slate-400">
+          <div className="px-4 bg-slate-400">
             <img
               className="object-cover w-full h-full transition-all duration-300 md:object-contain brightness-100 hover:brightness-90 hover:scale-100"
               src={img6}
             />
           </div>
-          <div class="p-4 pt-10 sm:pt-20 bg-slate-100 text-center">
+          <div className="p-4 pt-10 sm:pt-20 bg-slate-100 text-center">
             <p className="text-3xl font-bold sm:text-5xl">
               <span className="text-green-600">Special Offer</span> Everyday!
             </p>
@@ -50,15 +50,15 @@ const SpecialOfferForYou = () => {
               </div>
             </div>
             <div className="mt-5 text-center">
-              <button class="transition-all duration-300 rounded-full bg-orange-500 hover:bg-orange-400 hover:scale-95 px-7 lg:px-10 py-1 lg:py-3 text-[16px] lg:text-xl">
+              <button className="transition-all duration-300 rounded-full bg-orange-500 hover:bg-orange-400 hover:scale-95 px-7 lg:px-10 py-1 lg:py-3 text-[16px] lg:text-xl">
                 Explore more
               </button>
             </div>
           </div>
           <div className="absolute top-10 sm:top-10 right-1/4 lg:right-28 lg:bottom-2/3">
-            <span class="relative flex h-3 w-3">
-              <span class="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#69351440] opacity-75"></span>
-              <span class="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center   bg-[#00000010] opacity-75"></span>
+            <span className="relative flex h-3 w-3">
+              <span className="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#69351440] opacity-75"></span>
+              <span className="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center   bg-[#00000010] opacity-75"></span>
             </span>
           </div>
         </div>

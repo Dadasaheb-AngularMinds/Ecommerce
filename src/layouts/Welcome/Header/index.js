@@ -59,21 +59,21 @@ const HeaderSection = () => {
               </Link>
             ))}
             <form>
-              <div class="flex">
-                <div class="relative w-full">
+              <div className="flex">
+                <div className="relative w-full">
                   <input
                     type="search"
                     id="search-dropdown"
-                    class="block h-6 w-full p-4 pr-20 z-20 text-sm text-gray-900 bg-gray-50 border-l-gray-100 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+                    className="z-20 block w-full h-6 p-4 pr-20 text-sm text-gray-900 border border-l-2 border-gray-300 bg-gray-50 border-l-gray-100 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
                     placeholder="Search"
                     required
                   />
                   <button
                     type="submit"
-                    class="absolute top-0 right-0 p-2.5 pt-1.5 h-full text-sm font-medium text-white bg-orange-400  border border-orange-400 hover:bg-orange-300 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    className="absolute top-0 right-0 p-2.5 pt-1.5 h-full text-sm font-medium text-white bg-orange-400  border border-orange-400 hover:bg-orange-300 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
                     <svg
-                      class="w-3 h-3"
+                      className="w-3 h-3"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -82,8 +82,8 @@ const HeaderSection = () => {
                       <path
                         stroke="currentColor"
                         strokeLinecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                       />
                     </svg>
@@ -95,7 +95,6 @@ const HeaderSection = () => {
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
-              href={() => false}
               className="px-3 py-1 font-serif text-xl font-semibold leading-6 text-gray-200 duration-100 rounded-full cursor-pointer hover:scale-95 hover:text-orange-300"
               onClick={() => history("/login")}
             >

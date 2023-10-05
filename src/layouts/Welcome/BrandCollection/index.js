@@ -46,15 +46,15 @@ const BrandCollection = () => {
             </blockquote>
           </div>
           <div className="absolute bottom-2/3 left-1/4 lg:left-28 lg:bottom-3/4">
-            <span class="relative flex h-3 w-3">
-              <span class="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#ed8c4f40] opacity-75"></span>
-              <span class="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center bg-[#00000040] opacity-75"></span>
+            <span className="relative flex h-3 w-3">
+              <span className="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#ed8c4f40] opacity-75"></span>
+              <span className="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center bg-[#00000040] opacity-75"></span>
             </span>
           </div>
           <div className="absolute top- 2/3 right-1/4 lg:right-28 lg:top-2/3">
-            <span class="relative flex h-3 w-3">
-              <span class="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#ed8c4f40] opacity-75"></span>
-              <span class="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center   bg-[#00000040] opacity-75"></span>
+            <span className="relative flex h-3 w-3">
+              <span className="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#ed8c4f40] opacity-75"></span>
+              <span className="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center   bg-[#00000040] opacity-75"></span>
             </span>
           </div>
         </div>

@@ -17,7 +17,7 @@ function classNames(...classes) {
 
 const BottomBar = () => {
   return (
-    <div className="sticky top-0 z-40 flex flex-1 px-2 pb-2 sm:px-16 md:px-16 lg:px-20 xl:px-24 ">
+    <div className="sticky top-0 z-40 flex flex-1 px-2 pb-2 sm:px-16 md:px-16 lg:px-20 xl:px-5">
       <form className="flex flex-1 " action="#" method="GET">
         <div className="relative w-full mt-2 rounded-md shadow-sm sm:w-full md:w-full lg:w-full xl:w-1/2">
           <div className="absolute inset-y-0 left-0 items-center hidden sm:flex">
@@ -53,7 +53,6 @@ const BottomBar = () => {
           type="button"
           className="-m-2.5 p-2.5 hidden sm:block ml-1 text-gray-400 hover:text-gray-500"
         >
-          <span className="sr-only">View notifications</span>
           <i
             class="fa fa-bell-o text-gray-100 cursor-pointer hover:text-orange-500 hover:animate-pulse text-2xl hover:top-0 transition-all duration-300"
             aria-hidden="true"
@@ -66,9 +65,8 @@ const BottomBar = () => {
         />
 
         <Menu as="div" className="relative">
-          <Menu.Button className="-m-1.5 flex items-center p-1.5">
-            <span className="sr-only">Open user menu</span>
-            <img
+          <Menu.Button className="flex items-center p-1.5">
+             <img
               className="w-8 h-8 rounded-full bg-gray-50"
               src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
               alt=""

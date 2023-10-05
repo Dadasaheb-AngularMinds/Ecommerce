@@ -13,26 +13,26 @@ const Furnitures = () => {
           <div className="absolute top-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 opacity-0 group-hover:pt-2 group-hover:bg-gradient-to-b from-[#ef5c0df9] to-[#00000000] group-hover:opacity-60 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
             <div className="p-4 ">
               <i
-                class="fa fa-bookmark top-2 ml-1 text-xl  border px-1 rounded text-gray-100"
+                className="fa fa-bookmark top-2 ml-1 text-xl  border px-1 rounded text-gray-100"
                 aria-hidden="true"
               ></i>
               &nbsp; &nbsp; &nbsp;
               <i
-                class="fa fa-share-alt top-2 ml-1 text-xl border px-1 rounded text-gray-100"
+                className="fa fa-share-alt top-2 ml-1 text-xl border px-1 rounded text-gray-100"
                 aria-hidden="true"
               ></i>
             </div>
             <div className="p-4 text-center">
               <p className="text-base">
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp; <span className="text-white">5.0</span>{" "}
                 <p className="text-white">From 4,506 users</p>
               </p>
@@ -41,26 +41,26 @@ const Furnitures = () => {
           <div className="absolute bottom-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 via-opacity-25 opacity-0 group-hover:pb-2 group-hover:bg-gradient-to-t from-[#ef5c0df9] to-[#00000000] group-hover:opacity-50 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
             <div className="p-4 ">
               <i
-                class="fa fa-heart-o top-2 ml-1 border px-1 rounded text-2xl group-hover:opacity-90 hover:text-3xl transition-all duration-300 text-white"
+                className="fa fa-heart-o top-2 ml-1 border px-1 rounded text-2xl group-hover:opacity-90 hover:text-3xl transition-all duration-300 text-white"
                 aria-hidden="true"
               ></i>
               &nbsp;&nbsp;&nbsp;
               <i
-                class="fa fa-cart-plus transition-all duration-300 top-2 ml-1 border px-1 rounded text-2xl hover:text-3xl text-gray-100"
+                className="fa fa-cart-plus transition-all duration-300 top-2 ml-1 border px-1 rounded text-2xl hover:text-3xl text-gray-100"
                 aria-hidden="true"
               ></i>
             </div>
             <div className="p-4 text-center">
               <p className="text-base">
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;<span className="text-white">5.0</span>{" "}
                 <p className="text-white">From 4,506 users</p>
               </p>
@@ -96,26 +96,26 @@ const Furnitures = () => {
           <div className="absolute top-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 opacity-0 group-hover:pt-2 group-hover:bg-gradient-to-b from-[#ef5c0df9] to-[#00000000] group-hover:opacity-60 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
             <div className="p-4 ">
               <i
-                class="fa fa-bookmark top-2 ml-1 text-xl  border px-1 rounded text-gray-100"
+                className="fa fa-bookmark top-2 ml-1 text-xl  border px-1 rounded text-gray-100"
                 aria-hidden="true"
               ></i>
               &nbsp; &nbsp; &nbsp;
               <i
-                class="fa fa-share-alt top-2 ml-1 text-xl border px-1 rounded text-gray-100"
+                className="fa fa-share-alt top-2 ml-1 text-xl border px-1 rounded text-gray-100"
                 aria-hidden="true"
               ></i>
             </div>
             <div className="p-4 text-center">
               <p className="text-base">
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp; <span className="text-white">5.0</span>{" "}
                 <p className="text-white">From 4,506 users</p>
               </p>
@@ -124,26 +124,26 @@ const Furnitures = () => {
           <div className="absolute bottom-0 left-0 grid w-full grid-cols-2 transition-all duration-500 bg-gray-800 via-opacity-25 opacity-0 group-hover:pb-2 group-hover:bg-gradient-to-t from-[#ef5c0df9] to-[#00000000] group-hover:opacity-50 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
             <div className="p-4 ">
               <i
-                class="fa fa-heart-o top-2 ml-1 border px-1 rounded text-2xl group-hover:opacity-90 hover:text-3xl transition-all duration-300 text-white"
+                className="fa fa-heart-o top-2 ml-1 border px-1 rounded text-2xl group-hover:opacity-90 hover:text-3xl transition-all duration-300 text-white"
                 aria-hidden="true"
               ></i>
               &nbsp;&nbsp;&nbsp;
               <i
-                class="fa fa-cart-plus transition-all duration-300 top-2 ml-1 border px-1 rounded text-2xl hover:text-3xl text-gray-100"
+                className="fa fa-cart-plus transition-all duration-300 top-2 ml-1 border px-1 rounded text-2xl hover:text-3xl text-gray-100"
                 aria-hidden="true"
               ></i>
             </div>
             <div className="p-4 text-center">
               <p className="text-base">
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;
-                <i class="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
                 &nbsp;<span className="text-white">5.0</span>{" "}
                 <p className="text-white">From 4,506 users</p>
               </p>
