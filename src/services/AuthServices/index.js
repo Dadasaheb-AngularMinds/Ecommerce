@@ -1,46 +1,28 @@
-const login = (payload) => {
-   
-  const apiUrl = 'http://localhost:3500/customers/login';
+import axios from "axios";
+import { post } from "../http/httpMethods";
 
-  const result = fetch(apiUrl, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(payload),
-  })
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      return data;
-    })
-    .catch((error) => {
-      return { error: error.message };
-    });
-  return result;
+const login = async (payload) => {
+  try {
+    const response = await post(
+      "http://localhost:3500/customers/login",
+      payload
+    );
+    return response;
+  } catch (error) {
+    return error;
+  }
 };
 
 const register = async (payload) => {
-  const apiUrl = 'http://localhost:3500/customers/register';
-
-  const result = fetch(apiUrl, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(payload),
-  })
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      return data;
-    })
-    .catch((error) => {
-      return { error: error.message };
-    });
-  return result;
+  try {
+    const response = await post(
+      "http://localhost:3500/customers/register",
+      payload
+    );
+    return response;
+  } catch (error) {
+    return error;
+  }
 };
 
 export const authenticationService = {
