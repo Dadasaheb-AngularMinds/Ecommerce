@@ -131,7 +131,7 @@ const FooterSection = () => {
                     Solutions
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
-                    {footerNavigation.solutions.map((item) => (
+                    {footerNavigation.solutions.map((item,index) => (
                       <li key={item.name}>
                         <a
                           href={item.href}

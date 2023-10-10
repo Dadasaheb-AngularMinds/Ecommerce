@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css?family=Sofia:400,700&effect=fire|neon|outline|emboss|shadow-multiple");
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Sofia:400,700&effect=fire|neon|outline|emboss|shadow-multiple');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -55,7 +55,6 @@
   color: #fff;
 }
 
-
 @layer utilities {
   .radial-gradient {
     background: radial-gradient(circle, #22212114, #000000c0);
@@ -86,7 +85,7 @@
     @apply origin-left scale-x-100 rounded-l-3xl;
   }
   .nav-header-before {
-    background: linear-gradient(rgb(0, 40, 85, 0.85), rgba(11, 9, 10, 0.85));
+    background: linear-gradient(rgb(11, 9, 10), rgba(11, 9, 10, 0.85));
     box-shadow: rgba(255, 255, 255, 0.2) 0px 20px 60px -7px;
     transition: all 0.5s;
     z-index: 997;
@@ -122,5 +121,12 @@
   }
   .custom-clip-path {
     clip-path: circle(50%);
+  }
+
+  .inset-shadow {
+    box-shadow: rgba(204, 219, 232, 0.376) 3px 3px 29px 0px inset,
+      rgba(124, 179, 233, 0.4) -5px 5px, rgba(124, 179, 233, 0.3) -10px 10px,
+      rgba(124, 179, 233, 0.2) -15px 15px, rgba(124, 179, 233, 0.1) -20px 20px,
+      rgba(124, 179, 233, 0.05) -25px 25px;
   }
 }

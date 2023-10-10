@@ -54,10 +54,10 @@ const Banner1 = () => {
               </figure>
             </div>
             <div className="absolute top-96 right-44 lg:top-36">
-              <span class="relative flex h-3 w-3">
-                <span class="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-orange-400 opacity-75"></span>
-                <span class="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center bg-orange-400 opacity-75">
-                  <i class="fa fa-play absolute top-2 ml-1  text-2xl hover:text-3xl text-orange-600"></i>
+              <span className="relative flex w-3 h-3">
+                <span className="absolute inline-flex justify-center w-full h-full p-6 bg-orange-400 rounded-full opacity-75 animate-ping d-flex"></span>
+                <span className="relative inline-flex justify-center w-full h-6 p-6 text-center bg-orange-400 rounded-full opacity-75 d-flex">
+                  <i className="absolute ml-1 text-2xl text-orange-600 fa fa-play top-2 hover:text-3xl"></i>
                 </span>
               </span>
             </div>

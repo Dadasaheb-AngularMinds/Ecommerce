@@ -57,11 +57,11 @@ function Register() {
     <>
       {loading ? <Loader /> : <></>}
       <div className="flex flex-col items-center">
-        <div className="sm:px-20 px-5 py-10 bg-white custom-shadow  sm:w-[37rem]">
+        <div className="sm:px-20 px-5 py-5 rounded-lg mt-4 bg-white inset-shadow sm:w-[37rem]">
           <div className="flex flex-col items-center w-full">
             <button
               href="!#"
-              className="bg-neutral-100 relative  group text-start mb-4 h-[50px] rounded-lg sm:w-[80%]  w-full flex items-center z-30 "
+              className="bg-neutral-100 relative  group text-start mb-3 h-[50px] rounded-lg sm:w-[80%]  w-full flex items-center z-30 "
             >
               <i className="flex items-center justify-center h-full  text-lg text-white rounded-l-lg rounded-r-sm w-[100px] fa fa-google"></i>{" "}
               <span className="w-full text-gray-500 transition-all duration-500 group-hover:text-white">
@@ -76,12 +76,12 @@ function Register() {
               your email<span> ........</span>{" "}
             </p>
           </div>
-          <div className="mt-8">
+          <div className="mt-2">
             <form onSubmit={(e) => handleSubmit(e)}>
               <label>
                 <p className="mb-2 font-medium text-zinc-600">User Name</p>
               </label>
-              <div className="relative mb-6">
+              <div className="relative mb-4">
                 <input
                   type="text"
                   className="w-full py-4 pl-10 pr-4 border-none rounded-lg ring-white focus:ring-orange-400 bg-neutral-100 "
@@ -97,7 +97,7 @@ function Register() {
               <label>
                 <p className="mb-2 font-medium text-zinc-600">E-mail</p>
               </label>
-              <div className="relative mb-6">
+              <div className="relative mb-4">
                 <input
                   type="text"
                   className="w-full py-4 pl-10 pr-4 border-none rounded-lg ring-white focus:ring-orange-400 bg-neutral-100 "
@@ -112,7 +112,7 @@ function Register() {
               <label>
                 <p className="mb-2 font-medium text-zinc-600">Password</p>
               </label>
-              <div className="relative mb-5">
+              <div className="relative mb-4">
                 <input
                   type="password"
                   name="password"
@@ -139,7 +139,7 @@ function Register() {
                   <i className="text-gray-400 fa fa-lock"></i>
                 </div>
               </div>
-              <div className="flex justify-between mb-8 text-sm text-zinc-500">
+              <div className="flex justify-between mb-5 text-sm text-zinc-500">
                 <div className="flex">
                   <input
                     className={`mt-[2px] rounded-[4px] focus:outline-none ${
@@ -160,8 +160,8 @@ function Register() {
               </div>
 
               <div className="">
-                <button className="relative group w-full mb-5 text-base bg-orange-400 z-30 border-black p-3.5 rounded-lg font-medium hover:text-white">
-                  {" "}
+                <button className="relative group w-full mb-4 text-base bg-orange-400 z-30 border-black p-3.5 rounded-lg font-medium hover:text-white">
+                  {' '}
                   Sign Up
                   <div
                     className="absolute left-0 w-10 h-[35px] bg-orange-500 -z-10  bottom-0 rounded-bl-lg rounded-tr-[85%] group-hover:w-full 

@@ -22,7 +22,7 @@ const Categories = () => {
   return (
     <section id="best-sellers">
       <div className="relative pt-5 pb-20 welcome-linear-gradient-category container-fluid ">
-        <p class="text-4xl font-bold font-serif text-blue-950 text-center mb-5">
+        <p className="mb-5 font-serif text-4xl font-bold text-center text-blue-950">
           -Categories-
         </p>
         <p
@@ -31,14 +31,14 @@ const Categories = () => {
         >
           See all products
         </p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 px-2 ">
+        <div className="grid grid-cols-1 gap-2 px-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
           {imageArray.map((item, index) => (
-            <div class="radial-gradient group rounded relative overflow-hidden bg-transparent shadow-lg">
-              <div class=" w-full h-full overflow-hidden cursor-pointer hover:brightness-110 duration-500 transition-transform transform hover:scale-110">
+            <div key={index} className="relative overflow-hidden bg-transparent rounded shadow-lg radial-gradient group">
+              <div className="w-full h-full overflow-hidden transition-transform duration-500 transform cursor-pointer  hover:brightness-110 hover:scale-110">
                 <img
                   src={item}
                   alt="Image 1"
-                  class="w-full h-auto object-center z-30 "
+                  className="z-30 object-center w-full h-auto "
                 />
               </div>
               <div className="absolute h-5 p-5 transition-all duration-300 opacity-0 group-hover:border-t-4 group-hover:border-l-4 border-slate-50 w-50 group-hover:top-10 top-20 left-20 group-hover:left-10 group-hover:opacity-100"></div>

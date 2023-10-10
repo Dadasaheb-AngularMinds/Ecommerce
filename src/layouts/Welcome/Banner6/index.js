@@ -44,44 +44,44 @@ const Banner6 = () => {
             </span>
           </button>
           {/* <div className="w-full px-5 py-2 mt-5 shadow-lg sm:w-2/3 rounded-3xl bg-slate-100">
-            <div class="mt-3 flex -space-x-2 overflow-hidden">
+            <div className="mt-3 flex -space-x-2 overflow-hidden">
               <img
-                class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
                 src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                 alt=""
               />
               <img
-                class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
                 src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                 alt=""
               />
               <img
-                class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
                 src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
                 alt=""
               />
               <img
-                class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
                 src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                 alt=""
               />
               <img
-                class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
                 src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                 alt=""
               />
             </div>
-            <div class="mt-3 text-sm font-medium">
-              <a href={() => false} class="text-blue-500">
+            <div className="mt-3 text-sm font-medium">
+              <a href={() => false} className="text-blue-500">
                 + 198 others
               </a>
             </div>
           </div> */}
 
           <div className="absolute right-1/4 lg:right-28 lg:bottom-2/3">
-            <span class="relative flex h-3 w-3">
-              <span class="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#69351440] opacity-75"></span>
-              <span class="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center   bg-[#00000010] opacity-75"></span>
+            <span className="relative flex h-3 w-3">
+              <span className="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#69351440] opacity-75"></span>
+              <span className="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center   bg-[#00000010] opacity-75"></span>
             </span>
           </div>
         </div>
@@ -97,9 +97,9 @@ const Banner6 = () => {
             src={love}
           />
           <div className="absolute top-10 sm:top-20 right-1/4 lg:right-28 lg:bottom-2/3">
-            <span class="relative flex h-3 w-3">
-              <span class="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#69351440] opacity-75"></span>
-              <span class=" p-6  rounded-full h-6 w-full text-center d-flex justify-start   bg-[#00000010] opacity-75"></span>
+            <span className="relative flex h-3 w-3">
+              <span className="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#69351440] opacity-75"></span>
+              <span className=" p-6  rounded-full h-6 w-full text-center d-flex justify-start   bg-[#00000010] opacity-75"></span>
             </span>
           </div>
         </div>
@@ -136,7 +136,7 @@ const Banner6 = () => {
           </div>
           <div className="absolute right-3 top-2">
             <i
-              class="fa fa-heart-o top-2 ml-1  px-1.5 rounded-full text-2xl group-hover:opacity-90 hover:text-3xl bg-white text-orange-600"
+              className="fa fa-heart-o top-2 ml-1  px-1.5 rounded-full text-2xl group-hover:opacity-90 hover:text-3xl bg-white text-orange-600"
               aria-hidden="true"
             ></i>
           </div>
@@ -166,7 +166,7 @@ const Banner6 = () => {
           </div>
           <div className="absolute right-3 top-2">
             <i
-              class="fa fa-heart-o top-2 ml-1  px-1.5 rounded-full text-2xl group-hover:opacity-90 hover:text-3xl bg-white text-orange-600"
+              className="fa fa-heart-o top-2 ml-1  px-1.5 rounded-full text-2xl group-hover:opacity-90 hover:text-3xl bg-white text-orange-600"
               aria-hidden="true"
             ></i>
           </div>
@@ -195,7 +195,7 @@ const Banner6 = () => {
           </div>
           <div className="absolute right-3 top-2">
             <i
-              class="fa fa-heart-o top-2 ml-1  px-1.5 rounded-full text-2xl group-hover:opacity-90 hover:text-3xl bg-white text-orange-600"
+              className="fa fa-heart-o top-2 ml-1  px-1.5 rounded-full text-2xl group-hover:opacity-90 hover:text-3xl bg-white text-orange-600"
               aria-hidden="true"
             ></i>
           </div>
@@ -224,7 +224,7 @@ const Banner6 = () => {
           </div>
           <div className="absolute right-3 top-2">
             <i
-              class="fa fa-heart-o top-2 ml-1  px-1.5 rounded-full text-2xl group-hover:opacity-90 hover:text-3xl bg-white text-orange-600"
+              className="fa fa-heart-o top-2 ml-1  px-1.5 rounded-full text-2xl group-hover:opacity-90 hover:text-3xl bg-white text-orange-600"
               aria-hidden="true"
             ></i>
           </div>
@@ -253,7 +253,7 @@ const Banner6 = () => {
           </div>
           <div className="absolute right-3 top-2">
             <i
-              class="fa fa-heart-o top-2 ml-1  px-1.5 rounded-full text-2xl group-hover:opacity-90 hover:text-3xl bg-white text-orange-600"
+              className="fa fa-heart-o top-2 ml-1  px-1.5 rounded-full text-2xl group-hover:opacity-90 hover:text-3xl bg-white text-orange-600"
               aria-hidden="true"
             ></i>
           </div>
@@ -292,7 +292,7 @@ const Banner6 = () => {
           </div>
           <div className="absolute right-3 top-2">
             <i
-              class="fa fa-heart-o top-2 ml-1  px-1.5 rounded-full text-2xl group-hover:opacity-90 hover:text-3xl bg-white text-orange-600"
+              className="fa fa-heart-o top-2 ml-1  px-1.5 rounded-full text-2xl group-hover:opacity-90 hover:text-3xl bg-white text-orange-600"
               aria-hidden="true"
             ></i>
           </div>
@@ -331,7 +331,7 @@ const Banner6 = () => {
           </div>
           <div className="absolute right-3 top-2">
             <i
-              class="fa fa-heart-o top-2 ml-1  px-1.5 rounded-full text-2xl group-hover:opacity-90 hover:text-3xl bg-white text-orange-600"
+              className="fa fa-heart-o top-2 ml-1  px-1.5 rounded-full text-2xl group-hover:opacity-90 hover:text-3xl bg-white text-orange-600"
               aria-hidden="true"
             ></i>
           </div>

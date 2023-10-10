@@ -65,7 +65,7 @@ function Login() {
     <>
       {loading ? <Loader /> : <></>}
       <div className="flex flex-col items-center">
-        <div className="sm:px-20 px-5 py-10 bg-white custom-shadow mt-28 sm:w-[37rem]">
+        <div className="sm:px-20 px-5 py-10 bg-white inset-shadow rounded-lg mt-16 sm:w-[37rem]">
           <div className="flex flex-col items-center w-full">
             <button
               href="!#"
