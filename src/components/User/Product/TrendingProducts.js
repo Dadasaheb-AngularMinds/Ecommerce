@@ -31,7 +31,7 @@ const TrendingProducts = () => {
   ];
   const navigate = useNavigate();
   return (
-    <div className="col-span-1 p-5 sm:py-24 sm:px-24 md:col-span-3">
+    <div className="col-span-1 p-5 bg-white sm:py-24 sm:px-24 md:col-span-3">
       <div className="flex flex-col items-center sm:pb-14">
         <p className="mb-3 text-xl font-semibold"> TRENDING PRODUCTS</p>
         <p className="text-sm text-center sm:text-base text-zinc-500">{`Mirum est notare quam littera gothica quam nunc putamus parum claram!`}</p>
