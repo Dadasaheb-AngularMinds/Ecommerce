@@ -9,7 +9,8 @@ const login = async (payload) => {
     );
     return response;
   } catch (error) {
-    return error;
+    console.log(error)
+    return error?.response?.data;
   }
 };
 
