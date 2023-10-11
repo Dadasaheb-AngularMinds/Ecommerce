@@ -16,7 +16,7 @@ const register = async (payload) => {
     const response = await post("/customers/register", payload);
     return response;
   } catch (error) {
-    return error;
+    return error?.response?.data;
   }
 };
 

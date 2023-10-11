@@ -614,7 +614,7 @@ const ProductsView = () => {
               return (
                 <div
                   className="relative transition-all duration-300 shadow-xl group h-max"
-                  onClick={() => navigate('/user/product')}
+                  onClick={() => navigate('/product')}
                 >
                   <div className="absolute right-0 z-10 space-y-4 transition-all duration-500 opacity-0 group-hover:opacity-70 group-hover:pr-4">
                     <div className="p-2 px-3 transition-all duration-300 bg-white cursor-pointer group-hover:opacity-100 group-hover:shadow-lg hover:bg-gray-950 hover:text-white">

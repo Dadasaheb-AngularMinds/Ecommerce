@@ -1,8 +1,9 @@
-import React from "react";
-import { BrowserRouter, Route, Routes, Link, Navigate } from "react-router-dom";
-import { lazy } from "react";
-import Loadable from "./components/Loadable";
+import React from 'react';
+import { BrowserRouter, Route, Routes, Link, Navigate } from 'react-router-dom';
+import { lazy } from 'react';
+import Loadable from './components/Loadable';
 import 'react-toastify/dist/ReactToastify.css';
+import SessionTimeout from './components/User/SessionTimeout.js';
 const AdminLayout = Loadable(lazy(() => import('./layouts/AdminLayout')));
 const Login = Loadable(lazy(() => import('./components/Auth/Login')));
 const AppLayout = Loadable(lazy(() => import('./layouts')));
@@ -15,26 +16,28 @@ const UserDashboard = Loadable(lazy(() => import('./pages/User/Dashboard')));
 const ProductView = Loadable(lazy(() => import('./components/User/Product')));
 const Cart = Loadable(lazy(() => import('./pages/User/Cart')));
 const UserProfile = Loadable(lazy(() => import('./pages/User/Profile')));
- 
+
 function App() {
   return (
     <Routes>
       <Route path="/" element={<AppLayout />}>
         <Route index element={<Welcome />} />
-        <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
-        <Route path="/user" element={<UserLayout />}>
+        <Route path="login" element={<Login />} />
+        <Route path="session-timeout" element={<SessionTimeout />} />
+        <Route element={<UserLayout />}>
           <Route path="dashboard" element={<UserDashboard />} />
           <Route path="product" element={<ProductView />} />
-          <Route path="cart" element={<Cart />} />
-          <Route path="user-profile" element={<UserProfile />} />
+          <Route element={<RequireAuth />}>
+            <Route path="cart" element={<Cart />} />
+            <Route path="profile" element={<UserProfile />} />
+          </Route>
         </Route>
+
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="add-product" element={<AddProduct />} />
         </Route>
-        {/* <Route element={<RequireAuth />}>
-        <Route path="add-product" element={<AddProduct />} />
-      </Route> */}
+
         {/* Protected Routes */}
         {/* <Route element={<PersistLogin />}>
         <Route

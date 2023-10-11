@@ -37,7 +37,7 @@ const BrandCollection = () => {
               </div>
               <figcaption className="inset-0 top-auto text-base text-white font-poppins ">
                 <button
-                  // onClick={() => history('/user/dashboard')}
+                  // onClick={() => history('/dashboard')}
                   className="px-10 py-1 mt-4 text-l text-orange-300 transition-all duration-500 border border-orange-500 sm:text-xl rounded-3xl hover:text-orange-200 hover:bg-[#fb923c84]"
                 >
                   -Continue shopping
@@ -46,13 +46,13 @@ const BrandCollection = () => {
             </blockquote>
           </div>
           <div className="absolute bottom-2/3 left-1/4 lg:left-28 lg:bottom-3/4">
-            <span className="relative flex h-3 w-3">
+            <span className="relative flex w-3 h-3">
               <span className="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#ed8c4f40] opacity-75"></span>
               <span className="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center bg-[#00000040] opacity-75"></span>
             </span>
           </div>
           <div className="absolute top- 2/3 right-1/4 lg:right-28 lg:top-2/3">
-            <span className="relative flex h-3 w-3">
+            <span className="relative flex w-3 h-3">
               <span className="animate-ping p-6 absolute inline-flex h-full w-full rounded-full d-flex justify-center bg-[#ed8c4f40] opacity-75"></span>
               <span className="relative p-6 inline-flex rounded-full h-6 w-full text-center d-flex justify-center   bg-[#00000040] opacity-75"></span>
             </span>

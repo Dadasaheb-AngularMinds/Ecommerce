@@ -5,10 +5,11 @@ import {
   ChevronDownIcon,
   MagnifyingGlassIcon,
 } from '@heroicons/react/20/solid';
+import { useNavigate } from 'react-router-dom';
 
 const userNavigation = [
-  { name: 'Your profile', href: '#' },
-  { name: 'Sign out', href: '#' },
+  { name: 'Your profile', href: '/profile' },
+  { name: 'Sign out', href: '/login' },
 ];
 
 function classNames(...classes) {
@@ -16,6 +17,7 @@ function classNames(...classes) {
 }
 
 const BottomBar = () => {
+  const history = useNavigate()
   return (
     <div className="sticky top-0 z-40 flex flex-1 px-2 pb-2 sm:px-16 md:px-16 lg:px-20 xl:px-5">
       <form className="flex flex-1 " action="#" method="GET">
@@ -97,15 +99,15 @@ const BottomBar = () => {
               {userNavigation.map((item) => (
                 <Menu.Item key={item.name}>
                   {({ active }) => (
-                    <a
-                      href={item.href}
+                    <p
+                      onClick={() =>history(item.href)}
                       className={classNames(
                         active ? 'bg-gray-50' : '',
                         'block px-3 py-1 text-sm leading-6 text-gray-900'
                       )}
                     >
                       {item.name}
-                    </a>
+                    </p>
                   )}
                 </Menu.Item>
               ))}

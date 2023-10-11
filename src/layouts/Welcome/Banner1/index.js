@@ -45,7 +45,7 @@ const Banner1 = () => {
                   <div className="font-semibold">--DJP.</div>
                   <div className="mt-1">Founder of Workcation</div>
                   <button
-                    onClick={() => history("/user/dashboard")}
+                    onClick={() => history("/dashboard")}
                     className="mt-3 text-3xl text-orange-300 underline rounded hover:text-orange-200 underline-offset-8"
                   >
                     -Continue shopping

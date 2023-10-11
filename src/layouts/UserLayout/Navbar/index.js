@@ -70,7 +70,7 @@ const Navbar = () => {
           <i
             class="fa fa-shopping-cart text-gray-800 cursor-pointer hover:text-orange-500 hover:animate-pulse text-2xl group-hover:top-0 transition-all duration-300 left-1/4"
             aria-hidden="true"
-            onClick={() => navigate('/user/cart')}
+            onClick={() => navigate('/cart')}
           ></i>
         </div>
       </div>

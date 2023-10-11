@@ -32,7 +32,7 @@ function Login() {
       document.cookie = token;
       setLoading(false);
       const debounceTimeout = setTimeout(() => {
-        history('/user/dashboard');
+        history('/dashboard');
       }, 1000);
       return () => {
         clearTimeout(debounceTimeout);
@@ -47,6 +47,8 @@ function Login() {
       [name]: value,
     }));
   };
+  
+ 
   return (
     <>
       {loading ? <Loader /> : <></>}

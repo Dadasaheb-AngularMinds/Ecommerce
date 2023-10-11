@@ -6,10 +6,11 @@ import {
   ChevronDownIcon,
   MagnifyingGlassIcon,
 } from "@heroicons/react/20/solid";
+import { useNavigate } from "react-router-dom";
 
 const userNavigation = [
-  { name: "Your profile", href: "#" },
-  { name: "Sign out", href: "#" },
+  { name: "Your profile", href: "/user-profile" },
+  { name: "Sign out", href: "/" },
 ];
 
 function classNames(...classes) {
@@ -17,6 +18,8 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
+
+  const history = useNavigate()
   return (
     <div className="flex self-stretch flex-1 gap-x-4 lg:gap-x-6">
       <form className="relative flex flex-1" action="#" method="GET">
@@ -86,13 +89,14 @@ const Navbar = () => {
                 <Menu.Item key={item.name}>
                   {({ active }) => (
                     <a
-                      href={item.href}
+                      // href={() =>false()}
+                      onClick={() =>history(item.href)}
                       className={classNames(
                         active ? "bg-gray-50" : "",
                         "block px-3 py-1 text-sm leading-6 text-gray-900"
                       )}
                     >
-                      {item.name}
+                      {'item.name'}
                     </a>
                   )}
                 </Menu.Item>
