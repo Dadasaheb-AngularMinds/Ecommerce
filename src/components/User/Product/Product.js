@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import {
   addToCart,
   addToWishlist,
-} from "../../../redux/ProductReducers/productSlice";
+} from "../../../redux/UserReducer/productSlice";
 
 const Product = () => {
   const imageArray = [

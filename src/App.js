@@ -1,21 +1,21 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes, Link, Navigate } from 'react-router-dom';
-import { lazy } from 'react';
-import Loadable from './components/Loadable';
-import 'react-toastify/dist/ReactToastify.css';
-import SessionTimeout from './components/User/SessionTimeout.js';
-const AdminLayout = Loadable(lazy(() => import('./layouts/AdminLayout')));
-const Login = Loadable(lazy(() => import('./components/Auth/Login')));
-const AppLayout = Loadable(lazy(() => import('./layouts')));
-const Welcome = Loadable(lazy(() => import('./layouts/Welcome')));
-const RequireAuth = Loadable(lazy(() => import('./components/Auth')));
-const UserLayout = Loadable(lazy(() => import('./layouts/UserLayout')));
-const Register = Loadable(lazy(() => import('./components/Auth/Register')));
-const AddProduct = Loadable(lazy(() => import('./pages/Admin/AddProduct')));
-const UserDashboard = Loadable(lazy(() => import('./pages/User/Dashboard')));
-const ProductView = Loadable(lazy(() => import('./components/User/Product')));
-const Cart = Loadable(lazy(() => import('./pages/User/Cart')));
-const UserProfile = Loadable(lazy(() => import('./pages/User/Profile')));
+import React from "react";
+import { BrowserRouter, Route, Routes, Link, Navigate } from "react-router-dom";
+import { lazy } from "react";
+import Loadable from "./components/Loadable";
+import "react-toastify/dist/ReactToastify.css";
+import SessionTimeout from "./components/User/SessionTimeout.js";
+const AdminLayout = Loadable(lazy(() => import("./layouts/AdminLayout")));
+const Login = Loadable(lazy(() => import("./components/Auth/Login")));
+const AppLayout = Loadable(lazy(() => import("./layouts")));
+const Welcome = Loadable(lazy(() => import("./layouts/Welcome")));
+const RequireAuth = Loadable(lazy(() => import("./components/Auth")));
+const UserLayout = Loadable(lazy(() => import("./layouts/UserLayout")));
+const Register = Loadable(lazy(() => import("./components/Auth/Register")));
+const AddProduct = Loadable(lazy(() => import("./pages/Admin/AddProduct")));
+const UserDashboard = Loadable(lazy(() => import("./pages/User/Dashboard")));
+const ProductView = Loadable(lazy(() => import("./components/User/Product")));
+const Cart = Loadable(lazy(() => import("./pages/User/Cart")));
+const UserProfile = Loadable(lazy(() => import("./pages/User/Profile")));
 
 function App() {
   return (

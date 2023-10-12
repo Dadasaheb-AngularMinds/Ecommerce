@@ -4,7 +4,7 @@ import Product from "./Product";
 import TrendingProducts from "./TrendingProducts";
 import Tabs from "./Tabs";
 import { Provider } from "react-redux";
-import store from "../../../redux/ProductReducers/store";
+import store from "../../../redux/UserReducer/store";
 
 const ProductView = () => {
   return (

@@ -5,12 +5,6 @@ const Sidebar = () => {
     <div className="max-h-full overflow-y-auto grid-col-[3rem] md:col-span-1">
       <div className="max-h-[900px] overflow-y-auto no-scrollbar">
         <div class="max-w-screen-xl mx-auto  bg-[#ffffff]">
-          <div class="sticky top-0 bg-[#ffffff] flex flex-col items-left">
-            {/* <h2 class="font-bold text-2xl font-header text-orange-500 mt-2">
-              Filters
-            </h2> */}
-          </div>
-
           <div class="grid divide-y divide-neutral-200 max-w-xl mx-auto">
             <div class="">
               <details class="group p-3">
@@ -39,14 +33,14 @@ const Sidebar = () => {
                   </span>
                 </summary>
               </details>
-              <div className="grid grid-rows-3">
-                <div className="py-2 text-sm r-2 p pl-14 text-neutral-800">
+              <div className="grid grid-rows-3 ">
+                <div className="py-2 text-sm cursor-pointer hover:bg-gray-100 r-2 p pl-14 text-neutral-800 hover:text-blue-500">
                   Profile Information
                 </div>
-                <div className="py-2 text-sm r-2 p pl-14 text-neutral-800">
+                <div className="py-2 text-sm cursor-pointer hover:bg-gray-100 r-2 p pl-14 text-neutral-800 hover:text-blue-500">
                   Manage Address
                 </div>
-                <div className="py-2 text-sm r-2 p pl-14 text-neutral-800">
+                <div className="py-2 text-sm cursor-pointer hover:bg-gray-100 r-2 p pl-14 text-neutral-800 hover:text-blue-500">
                   PAN Card Information
                 </div>
               </div>
@@ -64,14 +58,14 @@ const Sidebar = () => {
                 </summary>
               </details>
               <div className="grid grid-rows-3">
-                <div className="flex justify-between py-2 text-sm r-2 p pl-14 text-neutral-800">
+                <div className="flex justify-between py-2 text-sm cursor-pointer r-2 p pl-14 text-neutral-800 hover:bg-gray-100 hover:text-blue-500">
                   Gift Cards{" "}
                   <span className="pr-5 text-green-800">&#8377; 0 </span>
                 </div>
-                <div className="py-2 text-sm r-2 p pl-14 text-neutral-800">
+                <div className="py-2 text-sm cursor-pointer r-2 p pl-14 text-neutral-800 hover:bg-gray-100 hover:text-blue-500">
                   Saved UPI
                 </div>
-                <div className="py-2 text-sm r-2 p pl-14 text-neutral-800">
+                <div className="py-2 text-sm cursor-pointer r-2 p pl-14 text-neutral-800 hover:bg-gray-100 hover:text-blue-500">
                   Saved Cards
                 </div>
               </div>
@@ -89,16 +83,16 @@ const Sidebar = () => {
                 </summary>
               </details>
               <div className="grid grid-rows-3">
-                <div className="flex justify-between py-2 text-sm r-2 p pl-14 text-neutral-800">
+                <div className="flex justify-between py-2 text-sm cursor-pointer r-2 p pl-14 text-neutral-800 hover:bg-gray-100 hover:text-blue-500">
                   My Coupons
                 </div>
-                <div className="py-2 text-sm r-2 p pl-14 text-neutral-800">
+                <div className="py-2 text-sm cursor-pointer r-2 p pl-14 text-neutral-800 hover:bg-gray-100 hover:text-blue-500">
                   My Reviews & Ratings
                 </div>
-                <div className="py-2 text-sm r-2 p pl-14 text-neutral-800">
+                <div className="py-2 text-sm cursor-pointer r-2 p pl-14 text-neutral-800 hover:bg-gray-100 hover:text-blue-500">
                   All Notifications
                 </div>
-                <div className="py-2 text-sm r-2 p pl-14 text-neutral-800">
+                <div className="py-2 text-sm cursor-pointer r-2 p pl-14 text-neutral-800 hover:bg-gray-100 hover:text-blue-500">
                   My WishList
                 </div>
               </div>
