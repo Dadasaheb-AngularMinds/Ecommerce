@@ -1,18 +1,22 @@
-import React from "react";
-import { Fragment, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
-import { Bars3Icon } from "@heroicons/react/24/outline";
-import Sidebar from "./Sidebar";
-import { Outlet } from "react-router-dom";
-import Header from "./Header";
-import BottomBar from "./Navbar/bottom";
-import { useEffect } from "react";
-import FooterSection from "../../pages/User/Footer";
-import Breadcrumb from "../../components/Breadcrumbs";
+import { Fragment, useState } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
+import { Bars3Icon } from '@heroicons/react/24/outline';
+import Sidebar from './Sidebar';
+import { Outlet, useScrollRestoration } from 'react-router-dom';
+import Header from './Header';
+import BottomBar from './Navbar/bottom';
+import { useEffect } from 'react';
+import FooterSection from '../../pages/User/Footer';
+import Breadcrumb from '../../components/Breadcrumbs';
+import ScrollToTop from '../../components/scrollToTop';
 
 export default function UserLayout() {
+  
+
+  // -------------------------------------------------------
+
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [scrollStyle, setScrollStyle] = useState("nav-header-before");
+  const [scrollStyle, setScrollStyle] = useState('nav-header-before');
 
   function isInViewport(ele) {
     const rect = ele.getBoundingClientRect();
@@ -26,11 +30,11 @@ export default function UserLayout() {
   }
 
   const eleview = () => {
-    if (isInViewport(document.getElementById("px-72"))) {
-      setScrollStyle("nav-header-before");
+    if (isInViewport(document.getElementById('px-72'))) {
+      setScrollStyle('nav-header-before');
     } else {
       setScrollStyle(
-        "nav-header-after top-bounce-effect fixed top-0 z-50 shadow-lg border-1"
+        'nav-header-after top-bounce-effect fixed top-0 z-50 shadow-lg border-1'
       );
     }
   };
@@ -39,9 +43,9 @@ export default function UserLayout() {
     function handleScroll() {
       eleview();
     }
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -114,7 +118,7 @@ export default function UserLayout() {
       <div
         className={
           scrollStyle +
-          " navbar grid w-full grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1"
+          ' navbar grid w-full grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1'
         }
         aria-hidden="true"
       >
@@ -122,7 +126,21 @@ export default function UserLayout() {
       </div>
       <main className="min-h-screen py-0 bg-[#eef0f3]">
         {/* <Breadcrumb /> */}
+        {/* <ScrollToTop> */}
         <Outlet />
+        {/* </ScrollToTop> */}
+
+
+
+
+
+
+         
+
+
+
+
+        
       </main>
       <footer>
         <FooterSection />

@@ -19,27 +19,28 @@ const UserProfile = Loadable(lazy(() => import("./pages/User/Profile")));
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<AppLayout />}>
-        <Route index element={<Welcome />} />
-        <Route path="register" element={<Register />} />
-        <Route path="login" element={<Login />} />
-        <Route path="session-timeout" element={<SessionTimeout />} />
-        <Route element={<UserLayout />}>
-          <Route path="dashboard" element={<UserDashboard />} />
-          <Route path="product" element={<ProductView />} />
-          <Route element={<RequireAuth />}>
-            <Route path="cart" element={<Cart />} />
-            <Route path="profile" element={<UserProfile />} />
+    
+      <Routes>
+        <Route path="/" element={<AppLayout />}>
+          <Route index element={<Welcome />} />
+          <Route path="register" element={<Register />} />
+          <Route path="login" element={<Login />} />
+          <Route path="session-timeout" element={<SessionTimeout />} />
+          <Route element={<UserLayout />}>
+            <Route path="dashboard" element={<UserDashboard />} />
+            <Route path="product" element={<ProductView />} />
+            <Route element={<RequireAuth />}>
+              <Route path="cart" element={<Cart />} />
+              <Route path="profile" element={<UserProfile />} />
+            </Route>
           </Route>
-        </Route>
 
-        <Route path="/admin" element={<AdminLayout />}>
-          <Route path="add-product" element={<AddProduct />} />
-        </Route>
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route path="add-product" element={<AddProduct />} />
+          </Route>
 
-        {/* Protected Routes */}
-        {/* <Route element={<PersistLogin />}>
+          {/* Protected Routes */}
+          {/* <Route element={<PersistLogin />}>
         <Route
           element={<RequireAuth allowedRoles={[...Object.values(ROLES)]} />}
         >
@@ -69,9 +70,10 @@ function App() {
           </Route>
         </Route>
       </Route> */}
-        {/* End Protected Routes */}
-      </Route>
-    </Routes>
+          {/* End Protected Routes */}
+        </Route>
+      </Routes>
+     
   );
 }
 

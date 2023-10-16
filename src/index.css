@@ -122,7 +122,6 @@
   .custom-clip-path {
     clip-path: circle(50%);
   }
-
   .inset-shadow {
     box-shadow: rgba(204, 219, 232, 0.376) 3px 3px 29px 0px inset,
       rgba(124, 179, 233, 0.4) -5px 5px, rgba(124, 179, 233, 0.3) -10px 10px,
@@ -132,4 +131,5 @@
   .smooth-shadow {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   }
+  
 }
