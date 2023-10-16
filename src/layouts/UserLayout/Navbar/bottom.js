@@ -1,23 +1,23 @@
-import React from 'react';
-import { Fragment, useState } from 'react';
-import { Dialog, Menu, Transition } from '@headlessui/react';
+import React from "react";
+import { Fragment, useState } from "react";
+import { Dialog, Menu, Transition } from "@headlessui/react";
 import {
   ChevronDownIcon,
   MagnifyingGlassIcon,
-} from '@heroicons/react/20/solid';
-import { useNavigate } from 'react-router-dom';
+} from "@heroicons/react/20/solid";
+import { useNavigate } from "react-router-dom";
 
 const userNavigation = [
-  { name: 'Your profile', href: '/profile' },
-  { name: 'Sign out', href: '/login' },
+  { name: "Your profile", href: "/profile" },
+  { name: "Sign out", href: "/login" },
 ];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(" ");
 }
 
 const BottomBar = () => {
-  const history = useNavigate()
+  const history = useNavigate();
   return (
     <div className="sticky top-0 z-40 flex flex-1 px-2 pb-2 sm:px-16 md:px-16 lg:px-20 xl:px-5">
       <form className="flex flex-1 " action="#" method="GET">
@@ -68,7 +68,7 @@ const BottomBar = () => {
 
         <Menu as="div" className="relative">
           <Menu.Button className="flex items-center p-1.5">
-             <img
+            <img
               className="w-8 h-8 rounded-full bg-gray-50"
               src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
               alt=""
@@ -100,10 +100,10 @@ const BottomBar = () => {
                 <Menu.Item key={item.name}>
                   {({ active }) => (
                     <p
-                      onClick={() =>history(item.href)}
+                      onClick={() => history(item.href)}
                       className={classNames(
-                        active ? 'bg-gray-50' : '',
-                        'block px-3 py-1 text-sm leading-6 text-gray-900'
+                        active ? "bg-gray-50" : "",
+                        "block px-3 py-1 text-sm leading-6 text-gray-900 cursor-pointer"
                       )}
                     >
                       {item.name}

@@ -30,12 +30,11 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function AdminLayout({Children}) {
+export default function AdminLayout({ Children }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <>
-       
       <div>
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog
@@ -82,18 +81,17 @@ export default function AdminLayout({Children}) {
                         onClick={() => setSidebarOpen(false)}
                       >
                         <span className="sr-only">Close sidebar</span>
-                         
                       </button>
                     </div>
                   </Transition.Child>
-                   <Sidebar />
+                  <Sidebar />
                 </Dialog.Panel>
               </Transition.Child>
             </div>
           </Dialog>
         </Transition.Root>
 
-         <Desktop />
+        <Desktop />
 
         <div className="lg:pl-72">
           <div className="sticky top-0 z-40 flex items-center h-16 px-4 bg-white border-b border-gray-200 shadow-sm shrink-0 gap-x-4 sm:gap-x-6 sm:px-6 lg:px-8">
@@ -106,19 +104,20 @@ export default function AdminLayout({Children}) {
               <Bars3Icon className="w-6 h-6" aria-hidden="true" />
             </button>
 
-             <div
+            <div
               className="w-px h-6 bg-gray-200 lg:hidden"
               aria-hidden="true"
             />
             <Navbar />
-           </div>
+          </div>
 
           <main className="py-5">
             <div className="px-2 sm:px-6 lg:px-8">
               {/* {Children} */}
-              <p className="w-full mb-5 text-3xl border-b-4 font-header">Admin Layout</p>
+              <p className="w-full mb-5 text-3xl border-b-4 font-header">
+                Admin Layout
+              </p>
               <Outlet />
-              
             </div>
           </main>
         </div>
