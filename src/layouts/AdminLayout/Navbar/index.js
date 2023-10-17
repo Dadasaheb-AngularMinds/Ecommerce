@@ -18,8 +18,7 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
-
-  const history = useNavigate()
+  const history = useNavigate();
   return (
     <div className="flex self-stretch flex-1 gap-x-4 lg:gap-x-6">
       <form className="relative flex flex-1" action="#" method="GET">
@@ -85,18 +84,19 @@ const Navbar = () => {
             leaveTo="transform opacity-0 scale-95"
           >
             <Menu.Items className="absolute right-0 z-10 mt-2.5 w-32 origin-top-right rounded-md bg-white py-2 shadow-lg ring-1 ring-gray-900/5 focus:outline-none">
-              {userNavigation.map((item) => (
+              {userNavigation.map((item, index) => (
                 <Menu.Item key={item.name}>
                   {({ active }) => (
                     <a
                       // href={() =>false()}
-                      onClick={() =>history(item.href)}
+                      onClick={() => history(item.href)}
+                      key={index}
                       className={classNames(
                         active ? "bg-gray-50" : "",
                         "block px-3 py-1 text-sm leading-6 text-gray-900"
                       )}
                     >
-                      {'item.name'}
+                      {"item.name"}
                     </a>
                   )}
                 </Menu.Item>

@@ -1,5 +1,5 @@
-import React from 'react';
-import Electronic from '../../../assets/images/Electronic.png';
+import React from "react";
+import Electronic from "../../../assets/images/Electronic.png";
 const Banner5 = () => {
   return (
     <div className="py-5 bg-[#000000] container-fluid">
@@ -24,17 +24,32 @@ const Banner5 = () => {
             </div>
             <div className="p-4 text-center">
               <p className="text-base">
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
-                &nbsp; <span className="text-white">5.0</span>{' '}
-                <p className="text-white">From 4,506 users</p>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
+                &nbsp; <span className="text-white">5.0</span>{" "}
+                <span className="text-white">From 4,506 users</span>
               </p>
             </div>
           </div>
@@ -52,17 +67,32 @@ const Banner5 = () => {
             </div>
             <div className="p-4 text-center">
               <p className="text-base">
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
-                &nbsp;<span className="text-white">5.0</span>{' '}
-                <p className="text-white">From 4,506 users</p>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
+                &nbsp;<span className="text-white">5.0</span>{" "}
+                <span className="text-white">From 4,506 users</span>
               </p>
             </div>
           </div>
@@ -107,17 +137,32 @@ const Banner5 = () => {
             </div>
             <div className="p-4 text-center">
               <p className="text-base">
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
-                &nbsp; <span className="text-white">5.0</span>{' '}
-                <p className="text-white">From 4,506 users</p>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
+                &nbsp; <span className="text-white">5.0</span>{" "}
+                <span className="text-white">From 4,506 users</span>
               </p>
             </div>
           </div>
@@ -135,17 +180,32 @@ const Banner5 = () => {
             </div>
             <div className="p-4 text-center">
               <p className="text-base">
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
                 &nbsp;
-                <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
-                &nbsp;<span className="text-white">5.0</span>{' '}
-                <p className="text-white">From 4,506 users</p>
+                <i
+                  className="fa fa-star text-orange-500"
+                  aria-hidden="true"
+                ></i>
+                &nbsp;<span className="text-white">5.0</span>{" "}
+                <span className="text-white">From 4,506 users</span>
               </p>
             </div>
           </div>

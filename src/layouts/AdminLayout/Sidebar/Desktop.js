@@ -23,7 +23,7 @@ const navigation = [
   { name: "Calendar", href: "#", icon: CalendarIcon, current: false },
   { name: "Documents", href: "#", icon: DocumentDuplicateIcon, current: false },
   { name: "Reports", href: "#", icon: ChartPieIcon, current: false },
- ];
+];
 const teams = [
   { id: 1, name: "Heroicons", href: "#", initial: "H", current: false },
   { id: 2, name: "Tailwind Labs", href: "#", initial: "T", current: false },
@@ -45,10 +45,11 @@ const Desktop = () => {
           <ul role="list" className="flex flex-col flex-1 gap-y-7 ">
             <li>
               <ul role="list" className="-mx-2 space-y-1">
-                {navigation.map((item) => (
+                {navigation.map((item, index) => (
                   <li key={item.name}>
                     <a
                       href={item.href}
+                      key={index}
                       className={classNames(
                         item.current
                           ? "bg-gray-50 text-indigo-600"
@@ -76,10 +77,11 @@ const Desktop = () => {
                 Your teams
               </div>
               <ul role="list" className="mt-2 -mx-2 space-y-1">
-                {teams.map((team) => (
+                {teams.map((team, index) => (
                   <li key={team.name}>
                     <a
                       href={team.href}
+                      key={index}
                       className={classNames(
                         team.current
                           ? "bg-gray-50 text-indigo-600"

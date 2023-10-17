@@ -42,6 +42,7 @@ const TrendingProducts = () => {
             <div
               className="relative transition-all duration-300 group bg-slate-100 h-max"
               onClick={() => navigate("/product")}
+              key={index}
             >
               <div className="absolute right-0 z-50 space-y-4 transition-all duration-500 opacity-0 group-hover:opacity-70">
                 <div className="p-2 px-3 transition-all duration-300 bg-white cursor-pointer group-hover:opacity-100 group-hover:shadow-lg hover:bg-gray-950 hover:text-white">

@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import {
   addToCart,
   addToWishlist,
 } from "../../../redux/UserReducer/productSlice";
 
-import '../../../layouts/UserLayout/zoom.css';
+import "../../../layouts/UserLayout/zoom.css";
 
 const Product = () => {
   const imageArray = [
-    'https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-1.jpg',
-    'https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-2.jpg',
-    'https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-3.jpg',
+    "https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-1.jpg",
+    "https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-2.jpg",
+    "https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-3.jpg",
   ];
   const [activeImage, setActiveImage] = useState(imageArray[0]);
   const dispatch = useDispatch();
@@ -38,16 +38,17 @@ const Product = () => {
       <div className="grid h-full grid-cols-1 p-5 sm:gap-12 lg:grid-cols-2">
         <div className="grid grid-cols-1 lg:grid-cols-3">
           <div className="flex items-center justify-center order-2 gap-4 mt-5 mb-3 lg:order-1 lg:flex-col">
-            {imageArray.map((item) => (
+            {imageArray.map((item, index) => (
               <img
                 src={item}
                 className={`${
                   activeImage === item
-                    ? 'border-yellow-400'
-                    : 'border-stone-400'
+                    ? "border-yellow-400"
+                    : "border-stone-400"
                 } object-contain  mb-3 bg-transparent border-[2px] bg-zinc-50  w-12 h-16  sm:h-24 sm:w-16`}
                 onClick={() => setActiveImage(item)}
                 alt="preview"
+                key={index}
               />
             ))}
           </div>
@@ -63,9 +64,9 @@ const Product = () => {
             <div
               className="absolute hidden group-hover:block left-[100%] w-[750px] top-0 h-[550px] magnify-glass"
               style={{
-                backgroundSize: '200%',
-                backgroundRepeat: 'no-repeat',
-                backgroundImage: `url(${'https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-2.jpg'})`,
+                backgroundSize: "200%",
+                backgroundRepeat: "no-repeat",
+                backgroundImage: `url(${"https://wphix.com/html/blackwood-prv/blackwood/assets/img/products/quick-view/quick-view-02-2.jpg"})`,
                 backgroundPosition: `-${magnifyPosition.x * 2}px -${
                   magnifyPosition.y * 2
                 }px`,
@@ -140,15 +141,15 @@ const Product = () => {
           <hr />
           <div className="mt-5 mb-8">
             <p className="text-sm font-normal">
-              Color :{' '}
+              Color :{" "}
               <span className="ml-10">
                 {[1, 2, 3, 4].map((item, index) => (
                   <input
                     type="color"
                     value={
-                      (index === 1 && '#FF0000') ||
-                      (index === 2 && '#007aff') ||
-                      (index === 3 && '#ed9251')
+                      (index === 1 && "#FF0000") ||
+                      (index === 2 && "#007aff") ||
+                      (index === 3 && "#ed9251")
                     }
                   />
                 ))}
@@ -289,15 +290,15 @@ const Product = () => {
               onClick={() => {
                 dispatch(
                   addToWishlist({
-                    name: 'Wooden container Bowl',
+                    name: "Wooden container Bowl",
                     ratings: 3,
-                    price: '$96',
+                    price: "$96",
                     description:
-                      'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum',
-                    color: 'brown',
-                    size: 'M',
+                      "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+                    color: "brown",
+                    size: "M",
                     quantity: 2,
-                    category: 'furniture',
+                    category: "furniture",
                   })
                 );
               }}
@@ -315,15 +316,15 @@ const Product = () => {
               onClick={() => {
                 dispatch(
                   addToCart({
-                    name: 'Wooden container Bowl',
+                    name: "Wooden container Bowl",
                     ratings: 3,
-                    price: '$96',
+                    price: "$96",
                     description:
-                      'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum',
-                    color: 'brown',
-                    size: 'M',
+                      "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+                    color: "brown",
+                    size: "M",
                     quantity: 2,
-                    category: 'furniture',
+                    category: "furniture",
                   })
                 );
               }}

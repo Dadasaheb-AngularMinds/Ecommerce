@@ -56,7 +56,7 @@ const BottomBar = () => {
           className="-m-2.5 p-2.5 hidden sm:block ml-1 text-gray-400 hover:text-gray-500"
         >
           <i
-            class="fa fa-bell-o text-gray-100 cursor-pointer hover:text-orange-500 hover:animate-pulse text-2xl hover:top-0 transition-all duration-300"
+            className="fa fa-bell-o text-gray-100 cursor-pointer hover:text-orange-500 hover:animate-pulse text-2xl hover:top-0 transition-all duration-300"
             aria-hidden="true"
           ></i>
         </button>

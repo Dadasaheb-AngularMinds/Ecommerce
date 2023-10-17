@@ -55,7 +55,7 @@ const Collection = () => {
               &nbsp;
               <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
               &nbsp; <span className="text-white">5.0</span>{" "}
-              <p className="text-white">From 4,506 users</p>
+              <span className="text-white">From 4,506 users</span>
             </p>
           </div>
         </div>
@@ -84,7 +84,7 @@ const Collection = () => {
               &nbsp;
               <i className="fa fa-star text-orange-500" aria-hidden="true"></i>
               &nbsp;<span className="text-white">5.0</span>{" "}
-              <p className="text-white">From 4,506 users</p>
+              <span className="text-white">From 4,506 users</span>
             </p>
           </div>
         </div>

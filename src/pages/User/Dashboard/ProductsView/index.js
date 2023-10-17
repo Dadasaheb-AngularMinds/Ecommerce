@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import productImg from '../../../../assets/images/product-furniture.png';
-import winterImg from '../../../../assets/images/winter.png';
-import { useNavigate } from 'react-router-dom';
-import { Fragment } from 'react';
-import { Menu, Transition } from '@headlessui/react';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import React, { useState } from "react";
+import productImg from "../../../../assets/images/product-furniture.png";
+import winterImg from "../../../../assets/images/winter.png";
+import { useNavigate } from "react-router-dom";
+import { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 import {
   clothing,
@@ -15,11 +15,11 @@ import {
   healthCare,
   books,
   toys,
-} from './data';
-import BannerUserDash from '../Banner1';
+} from "./data";
+import BannerUserDash from "../Banner1";
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(" ");
 }
 
 const ProductsView = () => {
@@ -34,28 +34,27 @@ const ProductsView = () => {
             <div class="max-w-screen-xl mx-auto px-3 bg-[#ffffff]">
               <div class="sticky top-0 bg-[#ffffff] flex flex-col items-left">
                 <h2 class="font-bold text-2xl font-header text-orange-500 mt-2">
-                Filters
+                  Filters
                 </h2>
-                 
               </div>
               <div class="grid divide-y divide-neutral-200 max-w-xl mx-auto">
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span className='uppercase'>
-                        {' '}
-                        <i class={`fa ${clothing[0]?.icon} mr-2`}></i>{' '}
+                      <span className="uppercase">
+                        {" "}
+                        <i class={`fa ${clothing[0]?.icon} mr-2`}></i>{" "}
                         {clothing[0].category}
                       </span>
                       <span class="transition group-open:rotate-180">
                         <svg
                           fill="none"
                           height="24"
-                          shape-rendering="geometricPrecision"
+                          shapeRendering="geometricPrecision"
                           stroke="currentColor"
                           strokeLinecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
+                          strokeLinejoin="round"
+                          strokeWidth="1.5"
                           viewBox="0 0 24 24"
                           width="24"
                         >
@@ -66,7 +65,7 @@ const ProductsView = () => {
                     <div class="text-neutral-600 mt-3 group-open:animate-fadeIn px-2">
                       {clothing?.map((item, index) => {
                         return (
-                          <div className="flex">
+                          <div className="flex" key={index}>
                             <span>
                               <input
                                 type="checkbox"
@@ -83,19 +82,19 @@ const ProductsView = () => {
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span className='uppercase'>
-                        <i class={`fa ${homesAndFurnitures[0]?.icon} mr-2`}></i>{' '}
+                      <span className="uppercase">
+                        <i class={`fa ${homesAndFurnitures[0]?.icon} mr-2`}></i>{" "}
                         {homesAndFurnitures[0].category}
                       </span>
                       <span class="transition group-open:rotate-180">
                         <svg
                           fill="none"
                           height="24"
-                          shape-rendering="geometricPrecision"
+                          shapeRendering="geometricPrecision"
                           stroke="currentColor"
                           strokeLinecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
+                          strokeLinejoin="round"
+                          strokeWidth="1.5"
                           viewBox="0 0 24 24"
                           width="24"
                         >
@@ -106,7 +105,7 @@ const ProductsView = () => {
                     <div class="text-neutral-600 mt-3 group-open:animate-fadeIn px-2">
                       {clothing?.map((item, index) => {
                         return (
-                          <div className="flex">
+                          <div className="flex" key={index}>
                             <span>
                               <input
                                 type="checkbox"
@@ -123,19 +122,19 @@ const ProductsView = () => {
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span className='uppercase'>
-                        <i class={`fa ${jewellery[0]?.icon} mr-2`}></i>{' '}
+                      <span className="uppercase">
+                        <i class={`fa ${jewellery[0]?.icon} mr-2`}></i>{" "}
                         {jewellery[0].text}
                       </span>
                       <span class="transition group-open:rotate-180">
                         <svg
                           fill="none"
                           height="24"
-                          shape-rendering="geometricPrecision"
+                          shapeRendering="geometricPrecision"
                           stroke="currentColor"
                           strokeLinecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
+                          strokeLinejoin="round"
+                          strokeWidth="1.5"
                           viewBox="0 0 24 24"
                           width="24"
                         >
@@ -146,7 +145,7 @@ const ProductsView = () => {
                     <div class="text-neutral-600 mt-3 group-open:animate-fadeIn px-2">
                       {clothing?.map((item, index) => {
                         return (
-                          <div className="flex">
+                          <div className="flex" key={index}>
                             <span>
                               <input
                                 type="checkbox"
@@ -163,21 +162,21 @@ const ProductsView = () => {
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span className='uppercase'>
+                      <span className="uppercase">
                         <i
                           class={`fa ${mobilesAndElectronics[0]?.icon} mr-2`}
-                        ></i>{' '}
+                        ></i>{" "}
                         {mobilesAndElectronics[0].text}
                       </span>
                       <span class="transition group-open:rotate-180">
                         <svg
                           fill="none"
                           height="24"
-                          shape-rendering="geometricPrecision"
+                          shapeRendering="geometricPrecision"
                           stroke="currentColor"
                           strokeLinecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
+                          strokeLinejoin="round"
+                          strokeWidth="1.5"
                           viewBox="0 0 24 24"
                           width="24"
                         >
@@ -188,7 +187,7 @@ const ProductsView = () => {
                     <div class="text-neutral-600 mt-3 group-open:animate-fadeIn px-2">
                       {clothing?.map((item, index) => {
                         return (
-                          <div className="flex">
+                          <div className="flex" key={index}>
                             <span>
                               <input
                                 type="checkbox"
@@ -205,19 +204,19 @@ const ProductsView = () => {
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span className='uppercase'>
-                        <i class={`fa ${makeUp[0]?.icon} mr-2`}></i>{' '}
+                      <span className="uppercase">
+                        <i class={`fa ${makeUp[0]?.icon} mr-2`}></i>{" "}
                         {makeUp[0].category}
                       </span>
                       <span class="transition group-open:rotate-180">
                         <svg
                           fill="none"
                           height="24"
-                          shape-rendering="geometricPrecision"
+                          shapeRendering="geometricPrecision"
                           stroke="currentColor"
                           strokeLinecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
+                          strokeLinejoin="round"
+                          strokeWidth="1.5"
                           viewBox="0 0 24 24"
                           width="24"
                         >
@@ -228,7 +227,7 @@ const ProductsView = () => {
                     <div class="text-neutral-600 mt-3 group-open:animate-fadeIn px-2">
                       {clothing?.map((item, index) => {
                         return (
-                          <div className="flex">
+                          <div className="flex" key={index}>
                             <span>
                               <input
                                 type="checkbox"
@@ -245,19 +244,19 @@ const ProductsView = () => {
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span className='uppercase'>
-                        <i class={`fa ${healthCare[0]?.icon} mr-2`}></i>{' '}
+                      <span className="uppercase">
+                        <i class={`fa ${healthCare[0]?.icon} mr-2`}></i>{" "}
                         {healthCare[0].category}
                       </span>
                       <span class="transition group-open:rotate-180">
                         <svg
                           fill="none"
                           height="24"
-                          shape-rendering="geometricPrecision"
+                          shapeRendering="geometricPrecision"
                           stroke="currentColor"
                           strokeLinecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
+                          strokeLinejoin="round"
+                          strokeWidth="1.5"
                           viewBox="0 0 24 24"
                           width="24"
                         >
@@ -268,7 +267,7 @@ const ProductsView = () => {
                     <div class="text-neutral-600 mt-3 group-open:animate-fadeIn px-2">
                       {clothing?.map((item, index) => {
                         return (
-                          <div className="flex">
+                          <div className="flex" key={index}>
                             <span>
                               <input
                                 type="checkbox"
@@ -285,19 +284,19 @@ const ProductsView = () => {
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span className='uppercase'>
-                        <i class={`fa ${books[0]?.icon} mr-2`}></i>{' '}
+                      <span className="uppercase">
+                        <i class={`fa ${books[0]?.icon} mr-2`}></i>{" "}
                         {books[0].category}
                       </span>
                       <span class="transition group-open:rotate-180">
                         <svg
                           fill="none"
                           height="24"
-                          shape-rendering="geometricPrecision"
+                          shapeRendering="geometricPrecision"
                           stroke="currentColor"
                           strokeLinecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
+                          strokeLinejoin="round"
+                          strokeWidth="1.5"
                           viewBox="0 0 24 24"
                           width="24"
                         >
@@ -308,7 +307,7 @@ const ProductsView = () => {
                     <div class="text-neutral-600 mt-3 group-open:animate-fadeIn px-2">
                       {clothing?.map((item, index) => {
                         return (
-                          <div className="flex">
+                          <div className="flex" key={index}>
                             <span>
                               <input
                                 type="checkbox"
@@ -325,19 +324,19 @@ const ProductsView = () => {
                 <div class="py-5">
                   <details class="group">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span className='uppercase'>
-                        <i class={`fa ${toys[0]?.icon} mr-2`}></i>{' '}
+                      <span className="uppercase">
+                        <i class={`fa ${toys[0]?.icon} mr-2`}></i>{" "}
                         {toys[0].category}
                       </span>
                       <span class="transition group-open:rotate-180">
                         <svg
                           fill="none"
                           height="24"
-                          shape-rendering="geometricPrecision"
+                          shapeRendering="geometricPrecision"
                           stroke="currentColor"
                           strokeLinecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
+                          strokeLinejoin="round"
+                          strokeWidth="1.5"
                           viewBox="0 0 24 24"
                           width="24"
                         >
@@ -348,7 +347,7 @@ const ProductsView = () => {
                     <div class="text-neutral-600 mt-3 group-open:animate-fadeIn px-2">
                       {clothing?.map((item, index) => {
                         return (
-                          <div className="flex">
+                          <div className="flex" key={index}>
                             <span>
                               <input
                                 type="checkbox"
@@ -462,8 +461,8 @@ const ProductsView = () => {
                     <path
                       stroke="currentColor"
                       strokeLinecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M5 1 1 5l4 4"
                     />
                   </svg>
@@ -486,8 +485,8 @@ const ProductsView = () => {
                     <path
                       stroke="currentColor"
                       strokeLinecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="m1 9 4-4-4-4"
                     />
                   </svg>
@@ -502,7 +501,7 @@ const ProductsView = () => {
           <div className="sticky top-0 z-30 bg-[#ffffff] grid grid-cols-1 gap-5 p-4 md:grid-cols-3 sm:grid-cols-2">
             <div className="">
               <span className="text-neutral-600 font-header">
-                View :{' '}
+                View :{" "}
                 <i
                   class="fa fa-plus-square-o ml-2 cursor-pointer"
                   aria-hidden="true"
@@ -547,9 +546,9 @@ const ProductsView = () => {
                             href="#"
                             className={classNames(
                               active
-                                ? 'bg-gray-100 text-gray-900'
-                                : 'text-gray-700',
-                              'block px-4 py-2 text-sm'
+                                ? "bg-gray-100 text-gray-900"
+                                : "text-gray-700",
+                              "block px-4 py-2 text-sm"
                             )}
                           >
                             Account settings
@@ -562,9 +561,9 @@ const ProductsView = () => {
                             href="#"
                             className={classNames(
                               active
-                                ? 'bg-gray-100 text-gray-900'
-                                : 'text-gray-700',
-                              'block px-4 py-2 text-sm'
+                                ? "bg-gray-100 text-gray-900"
+                                : "text-gray-700",
+                              "block px-4 py-2 text-sm"
                             )}
                           >
                             Support
@@ -577,9 +576,9 @@ const ProductsView = () => {
                             href="#"
                             className={classNames(
                               active
-                                ? 'bg-gray-100 text-gray-900'
-                                : 'text-gray-700',
-                              'block px-4 py-2 text-sm'
+                                ? "bg-gray-100 text-gray-900"
+                                : "text-gray-700",
+                              "block px-4 py-2 text-sm"
                             )}
                           >
                             License
@@ -593,9 +592,9 @@ const ProductsView = () => {
                               type="submit"
                               className={classNames(
                                 active
-                                  ? 'bg-gray-100 text-gray-900'
-                                  : 'text-gray-700',
-                                'block w-full px-4 py-2 text-left text-sm'
+                                  ? "bg-gray-100 text-gray-900"
+                                  : "text-gray-700",
+                                "block w-full px-4 py-2 text-left text-sm"
                               )}
                             >
                               Sign out
@@ -614,7 +613,8 @@ const ProductsView = () => {
               return (
                 <div
                   className="relative transition-all duration-300 shadow-xl group h-max"
-                  onClick={() => navigate('/product')}
+                  onClick={() => navigate("/product")}
+                  key={index}
                 >
                   <div className="absolute right-0 z-10 space-y-4 transition-all duration-500 opacity-0 group-hover:opacity-70 group-hover:pr-4">
                     <div className="p-2 px-3 transition-all duration-300 bg-white cursor-pointer group-hover:opacity-100 group-hover:shadow-lg hover:bg-gray-950 hover:text-white">
@@ -672,7 +672,11 @@ const ProductsView = () => {
             <div className="absolute top-0 left-0 z-30 w-full h-full text-center bg-transparent py-14">
               <p className="mt-5 text-3xl font-bold font-header">Winter Sale</p>
               <span className="mt-5 text-4xl font-bold font-header">
-                Up to <span className='text-orange-500 font-styled animate-pulse'>40%</span> Off
+                Up to{" "}
+                <span className="text-orange-500 font-styled animate-pulse">
+                  40%
+                </span>{" "}
+                Off
               </span>
 
               <div className="grid grid-cols-4 gap-2 px-10 mt-5">
@@ -702,7 +706,11 @@ const ProductsView = () => {
                 </div>
               </div>
 
-              <div><button className='px-5 py-1 mt-5 transition-all duration-300 bg-orange-500 border border-orange-500 rounded-lg hover:bg-orange-400'>View all</button></div>
+              <div>
+                <button className="px-5 py-1 mt-5 transition-all duration-300 bg-orange-500 border border-orange-500 rounded-lg hover:bg-orange-400">
+                  View all
+                </button>
+              </div>
             </div>
           </div>
         </div>

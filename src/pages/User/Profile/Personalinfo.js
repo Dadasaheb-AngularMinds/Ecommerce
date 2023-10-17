@@ -5,6 +5,7 @@ import {
   toggleEditFlag,
   setobjToStore,
 } from "../../../redux/UserReducer/profileSLice";
+import TextField from "../../../components/form-controls/TextField";
 
 const PersonalInfo = () => {
   const editFlag = useSelector((state) => state?.profile?.editFlag);
@@ -230,7 +231,7 @@ const PersonalInfo = () => {
       ) : (
         <div className="space-y-4">
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-            <div>
+            {/* <div>
               <label htmlFor="name" className="block text-gray-600">
                 First Name
               </label>
@@ -243,7 +244,8 @@ const PersonalInfo = () => {
                 className="w-full py-2 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
                 required
               />
-            </div>
+            </div> */}
+            <TextField />
 
             <div>
               <label htmlFor="name" className="block text-gray-600">

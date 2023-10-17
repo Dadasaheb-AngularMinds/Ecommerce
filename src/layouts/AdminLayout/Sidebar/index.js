@@ -42,10 +42,11 @@ const Sidebar = () => {
         <ul role="list" className="flex flex-col flex-1 gap-y-7">
           <li>
             <ul role="list" className="-mx-2 space-y-1">
-              {navigation.map((item) => (
+              {navigation.map((item, index) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
+                    key={index}
                     className={classNames(
                       item.current
                         ? "bg-gray-50 text-indigo-600"

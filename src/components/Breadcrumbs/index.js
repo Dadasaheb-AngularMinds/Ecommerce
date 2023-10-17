@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Breadcrumb = (props) => {
   return (
@@ -33,8 +33,8 @@ const Breadcrumb = (props) => {
               <path
                 stroke="currentColor"
                 strokeLinecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLineJoin="round"
+                strokeWidth="2"
                 d="m1 9 4-4-4-4"
               />
             </svg>
@@ -58,8 +58,8 @@ const Breadcrumb = (props) => {
               <path
                 stroke="currentColor"
                 strokeLinecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLineJoin="round"
+                strokeWidth="2"
                 d="m1 9 4-4-4-4"
               />
             </svg>
