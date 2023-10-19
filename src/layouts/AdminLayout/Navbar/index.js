@@ -1,37 +1,33 @@
-import React from "react";
-import { Fragment, useState } from "react";
-import { Dialog, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon } from "@heroicons/react/24/outline";
+import React from 'react';
+import { Fragment, useState } from 'react';
+import { Dialog, Menu, Transition } from '@headlessui/react';
+import { Bars3Icon, BellIcon } from '@heroicons/react/24/outline';
 import {
   ChevronDownIcon,
   MagnifyingGlassIcon,
-} from "@heroicons/react/20/solid";
-import { useNavigate } from "react-router-dom";
+} from '@heroicons/react/20/solid';
+import { useNavigate } from 'react-router-dom';
 
 const userNavigation = [
-  { name: "Your profile", href: "/user-profile" },
-  { name: "Sign out", href: "/" },
+  { name: 'Your profile', href: '/user-profile' },
+  { name: 'Sign out', href: '/' },
 ];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(' ');
 }
 
 const Navbar = () => {
   const history = useNavigate();
   return (
-    <div className="flex self-stretch flex-1 gap-x-4 lg:gap-x-6">
-      <form className="relative flex flex-1" action="#" method="GET">
-        <label htmlFor="search-field" className="sr-only">
-          Search
-        </label>
-        <MagnifyingGlassIcon
-          className="absolute inset-y-0 left-0 w-5 h-full text-gray-400 pointer-events-none"
-          aria-hidden="true"
-        />
+    <div className="flex self-stretch flex-1 p-0 md:p-3 sm:p-4 gap-x-4 lg:gap-x-6 ">
+      <form className="flex flex-1 gap-x-4 " action="#" method="GET">
+        <span className="w-1/4 text-2xl font-semibold sm:w-auto font-poppins">
+          Seller Portal
+        </span>
         <input
           id="search-field"
-          className="block w-full h-full py-0 pl-8 pr-0 text-gray-900 border-0 outline-none placeholder:text-gray-400 focus:ring-0 sm:text-sm"
+          className="block w-1/3 h-full text-gray-900 rounded-md outline-none sm:w-auto border-slate-300 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
           placeholder="Search..."
           type="search"
           name="search"
@@ -42,7 +38,6 @@ const Navbar = () => {
           type="button"
           className="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500"
         >
-          <span className="sr-only">View notifications</span>
           <BellIcon className="w-6 h-6" aria-hidden="true" />
         </button>
 
@@ -92,8 +87,8 @@ const Navbar = () => {
                       onClick={() => history(item.href)}
                       key={index}
                       className={classNames(
-                        active ? "bg-gray-50" : "",
-                        "block px-3 py-1 text-sm leading-6 text-gray-900"
+                        active ? 'bg-gray-50' : '',
+                        'block px-3 py-1 text-sm leading-6 text-gray-900'
                       )}
                     >
                       {"item.name"}

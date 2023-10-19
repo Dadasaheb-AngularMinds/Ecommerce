@@ -6,7 +6,7 @@ import { Outlet, useScrollRestoration } from 'react-router-dom';
 import Header from './Header';
 import BottomBar from './Navbar/bottom';
 import { useEffect } from 'react';
-import FooterSection from '../../pages/User/Footer';
+import FooterSection from '../../pages/Customer/Footer';
 import Breadcrumb from '../../components/Breadcrumbs';
 import ScrollToTop from '../../components/scrollToTop';
 

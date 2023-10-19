@@ -1,23 +1,23 @@
-import React from "react";
-import { BrowserRouter, Route, Routes, Link, Navigate } from "react-router-dom";
-import { lazy } from "react";
-import Loadable from "./components/Loadable";
-import "react-toastify/dist/ReactToastify.css";
-import SessionTimeout from "./components/User/SessionTimeout.js";
-import AdminDashboard from "./pages/Admin/Dashboard";
-const AdminLayout = Loadable(lazy(() => import("./layouts/AdminLayout")));
-const Login = Loadable(lazy(() => import("./components/Auth/Login")));
-const AppLayout = Loadable(lazy(() => import("./layouts")));
-const Welcome = Loadable(lazy(() => import("./layouts/Welcome")));
-const RequireAuth = Loadable(lazy(() => import("./components/Auth")));
-const UserLayout = Loadable(lazy(() => import("./layouts/UserLayout")));
-const Register = Loadable(lazy(() => import("./components/Auth/Register")));
-const AddProduct = Loadable(lazy(() => import("./pages/Admin/AddProduct")));
-const UserDashboard = Loadable(lazy(() => import("./pages/User/Dashboard")));
-const ProductView = Loadable(lazy(() => import("./components/User/Product")));
-const Cart = Loadable(lazy(() => import("./pages/User/Cart")));
-const UserProfile = Loadable(lazy(() => import("./pages/User/Profile")));
-const UpdateRole = Loadable(lazy(() => import("./pages/User/UpdateRole")));
+import React from 'react';
+import { BrowserRouter, Route, Routes, Link, Navigate } from 'react-router-dom';
+import { lazy } from 'react';
+import Loadable from './components/Loadable';
+import 'react-toastify/dist/ReactToastify.css';
+import SessionTimeout from './components/User/SessionTimeout.js';
+import AdminDashboard from './pages/Seller/Dashboard';
+const AdminLayout = Loadable(lazy(() => import('./layouts/AdminLayout')));
+const Login = Loadable(lazy(() => import('./components/Auth/Login')));
+const AppLayout = Loadable(lazy(() => import('./layouts')));
+const Welcome = Loadable(lazy(() => import('./layouts/Welcome')));
+const RequireAuth = Loadable(lazy(() => import('./components/Auth')));
+const UserLayout = Loadable(lazy(() => import('./layouts/UserLayout')));
+const Register = Loadable(lazy(() => import('./components/Auth/Register')));
+const AddProduct = Loadable(lazy(() => import('./pages/Seller/AddProduct')));
+const UserDashboard = Loadable(lazy(() => import('./pages/Customer/Dashboard')));
+const ProductView = Loadable(lazy(() => import('./components/User/Product')));
+const Cart = Loadable(lazy(() => import('./pages/Customer/Cart')));
+const UserProfile = Loadable(lazy(() => import('./pages/Customer/Profile')));
+const UpdateRole = Loadable(lazy(() => import('./pages/Customer/UpdateRole')));
 
 function App() {
   return (
@@ -36,14 +36,17 @@ function App() {
             <Route path="profile/*" element={<UserProfile />} />
             {/* To do nested routing you have to add /* after parent endpoint  */}
           </Route>
+        </Route>
 
-          <Route path="/" element={<AdminLayout />}>
-            {/* <Route path="dashboard" element={<AdminDashboard />} /> */}
+        <Route path="/" element={<AdminLayout />}>
+          <Route path="seller-dashboard" element={<AdminDashboard />} />
+          <Route element={<RequireAuth />}>
             <Route path="add-product" element={<AddProduct />} />
           </Route>
+        </Route>
 
-          {/* Protected Routes */}
-          {/* <Route element={<PersistLogin />}>
+        {/* Protected Routes */}
+        {/* <Route element={<PersistLogin />}>
         <Route
           element={<RequireAuth allowedRoles={[...Object.values(ROLES)]} />}
         >
@@ -73,8 +76,7 @@ function App() {
           </Route>
         </Route>
       </Route> */}
-          {/* End Protected Routes */}
-        </Route>
+        {/* End Protected Routes */}
       </Route>
     </Routes>
   );
