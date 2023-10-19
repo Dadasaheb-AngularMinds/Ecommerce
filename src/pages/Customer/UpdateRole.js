@@ -1,5 +1,6 @@
 import React from "react";
 import img2 from "../../../src/assets/images/img2.jpg";
+import Input from "../../components/form-controls/Input";
 
 const UpdateRole = () => {
   return (
@@ -8,110 +9,70 @@ const UpdateRole = () => {
         <p className="text-2xl font-semibold font-header">Become a Seller</p>
       </div>
       <form className="space-y-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-4">
           <img src={img2} className="w-32 h-36" />
-          <button className="bg-gray-100">upload Profile</button>
         </div>
 
-        <div className="grid grid-cols-1 gap-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <label htmlFor="name" className="block text-gray-600">
+            <label
+              htmlFor="name"
+              className="block text-gray-600 text-sm text-sm"
+            >
               User Name
             </label>
-            <input
-              type="text"
-              id="first_name"
-              name="first_name"
-              // value={obj.first_name}
-              // onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
-              required
-            />
+
+            <Input placeholder="User Name" />
           </div>
 
           <div>
-            <label htmlFor="name" className="block text-gray-600">
+            <label htmlFor="name" className="block text-gray-600 text-sm">
               Organization
             </label>
-            <input
-              type="text"
-              id="last_name"
-              name="last_name"
-              // value={obj.last_name}
-              // onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
-              required
-            />
+
+            <Input />
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <label htmlFor="name" className="block text-gray-600">
+            <label htmlFor="name" className="block text-gray-600 text-sm">
               First Name
             </label>
-            <input
-              type="text"
-              id="first_name"
-              name="first_name"
-              // value={obj.first_name}
-              // onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
-              required
-            />
+
+            <Input />
           </div>
 
           <div>
-            <label htmlFor="name" className="block text-gray-600">
+            <label htmlFor="name" className="block text-gray-600 text-sm">
               Last Name
             </label>
-            <input
-              type="text"
-              id="last_name"
-              name="last_name"
-              // value={obj.last_name}
-              // onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
-              required
-            />
+
+            <Input />
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <label htmlFor="email" className="block text-gray-600">
+            <label htmlFor="email" className="block text-gray-600 text-sm">
               Email
             </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              // value={obj.email}
-              // onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
-              required
-            />
+
+            <Input />
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-gray-600">
+            <label htmlFor="password" className="block text-gray-600 text-sm">
               Password
             </label>
-            <input
-              type="text"
-              id="City"
-              name="City"
-              // value={obj.city}
-              // onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
-              required
-            />
+
+            <Input />
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <label htmlFor="name" className="block text-gray-600">
+            <label htmlFor="name" className="block text-gray-600 text-sm">
               Role
             </label>
             <select
@@ -120,7 +81,7 @@ const UpdateRole = () => {
               name="State"
               // value={obj.state}
               // onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
+              class="w-auto rounded-md border-0 py-1.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
               required
             >
               <option value="">Select Role</option>
@@ -129,24 +90,17 @@ const UpdateRole = () => {
             </select>
           </div>
           <div>
-            <label htmlFor="name" className="block text-gray-600">
+            <label htmlFor="name" className="block text-gray-600 text-sm">
               Phone
             </label>
-            <input
-              type="text"
-              id="Country"
-              name="Country"
-              // value={obj.country}
-              // onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
-              required
-            />
+
+            <Input />
           </div>
         </div>
 
         <button
           type="submit"
-          className="px-4 py-2 text-xl font-semibold text-white bg-orange-500 rounded-md smooth-shadow hover:bg-orange-600 focus:outline-none font-header"
+          className="px-4 py-1 text-xl font-semibold text-white bg-orange-500 rounded-md smooth-shadow hover:bg-orange-600 focus:outline-none font-header"
         >
           <span className="tracking-wider">Update</span>
         </button>

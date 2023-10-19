@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Wave from 'react-wavify';
-import { authenticationService } from '../../services/AuthServices';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import Loader from '../../components/Loader';
-import Cookie from 'js-cookie';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Wave from "react-wavify";
+import { authenticationService } from "../../services/AuthServices";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Loader from "../../components/Loader";
+import Cookie from "js-cookie";
 
 function Login() {
-  const [formData, setFormData] = useState({ username: '', password: '' });
+  const [formData, setFormData] = useState({ username: "", password: "" });
   const [checked, setChecked] = useState(false);
   const history = useNavigate();
   const [loading, setLoading] = useState(false);
@@ -17,8 +17,9 @@ function Login() {
     event.preventDefault();
     setLoading(true);
     const response = await authenticationService.login(formData);
+    localStorage.setItem("currentUser", JSON.stringify(response?.user));
     if (response?.token) {
-      Cookie.set('token', response.token);
+      Cookie.set("token", response.token);
     }
     const { error, token, message } = response;
     if (error) {
@@ -27,12 +28,12 @@ function Login() {
     }
 
     if (token) {
-      toast.success('Login Successful! Welcome back.', { autoClose: 3000 });
-      sessionStorage.setItem('Token', token);
+      toast.success("Login Successful! Welcome back.", { autoClose: 3000 });
+      sessionStorage.setItem("Token", token);
       document.cookie = token;
       setLoading(false);
       const debounceTimeout = setTimeout(() => {
-        history('/dashboard');
+        history("/dashboard");
       }, 1000);
       return () => {
         clearTimeout(debounceTimeout);
@@ -47,8 +48,7 @@ function Login() {
       [name]: value,
     }));
   };
-  
- 
+
   return (
     <>
       {loading ? <Loader /> : <></>}
@@ -59,17 +59,17 @@ function Login() {
               href="!#"
               className="bg-neutral-100 relative  group text-start mb-4 h-[50px] rounded-lg sm:w-[80%]  w-full flex items-center z-30 "
             >
-              <i className="flex items-center justify-center h-full  text-lg text-white rounded-l-lg rounded-r-sm w-[100px] fa fa-facebook-f"></i>{' '}
+              <i className="flex items-center justify-center h-full  text-lg text-white rounded-l-lg rounded-r-sm w-[100px] fa fa-facebook-f"></i>{" "}
               <span className="w-full text-gray-500 transition-all duration-500 group-hover:text-white">
-                Sign in with Facebook{' '}
+                Sign in with Facebook{" "}
               </span>
               <div className="absolute top-0 left-0 w-16 h-full transition-all duration-500 bg-[#3360bd] rounded-l-lg -z-20 group-hover:w-full group-hover:rounded-r-lg"></div>
             </button>
 
             <p className="text-sm text-zinc-500">
-              {' '}
+              {" "}
               <span>........</span> Or, <a href="sign-in.html">sign in</a> with
-              your email<span> ........</span>{' '}
+              your email<span> ........</span>{" "}
             </p>
           </div>
           <div className="mt-8">
@@ -108,7 +108,7 @@ function Login() {
                 <div className="flex">
                   <input
                     className={`mt-[2px] rounded-[4px] focus:outline-none ${
-                      checked && 'text-orange-400'
+                      checked && "text-orange-400"
                     } focus:ring-0 ring-white`}
                     type="checkbox"
                     name="remember_me"
@@ -127,7 +127,7 @@ function Login() {
 
               <div className="">
                 <button className="relative group w-full mb-5 text-base bg-orange-400 z-30 border-black p-3.5 rounded-lg font-medium hover:text-white">
-                  {' '}
+                  {" "}
                   Sign In
                   <div
                     className="absolute left-0 w-10 h-[35px] bg-orange-500 -z-10  bottom-0 rounded-bl-lg rounded-tr-[85%] group-hover:w-full 
@@ -138,9 +138,9 @@ function Login() {
 
               <div className="text-sm text-center text-zinc-500">
                 <p>
-                  New to Market?{' '}
+                  New to Market?{" "}
                   <span
-                    onClick={() => history('/register')}
+                    onClick={() => history("/register")}
                     className="text-orange-400 cursor-pointer"
                   >
                     Sign Up

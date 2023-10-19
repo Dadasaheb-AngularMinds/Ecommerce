@@ -5,7 +5,6 @@ import {
   toggleEditFlag,
   setobjToStore,
 } from "../../../redux/UserReducer/profileSLice";
-import TextField from "../../../components/form-controls/TextField";
 
 const PersonalInfo = () => {
   const editFlag = useSelector((state) => state?.profile?.editFlag);
@@ -68,7 +67,7 @@ const PersonalInfo = () => {
                 name="first_name"
                 value={obj.first_name}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-1 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
                 required
               />
             </div>
@@ -83,7 +82,7 @@ const PersonalInfo = () => {
                 name="last_name"
                 value={obj.last_name}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-1 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
                 required
               />
             </div>
@@ -100,7 +99,7 @@ const PersonalInfo = () => {
                 name="email"
                 value={obj.email}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-1 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
                 required
               />
             </div>
@@ -115,7 +114,7 @@ const PersonalInfo = () => {
                 name="City"
                 value={obj.city}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-1 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
                 required
               />
             </div>
@@ -132,7 +131,7 @@ const PersonalInfo = () => {
                 name="State"
                 value={obj.state}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-1 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
                 required
               />
             </div>
@@ -146,7 +145,7 @@ const PersonalInfo = () => {
                 name="Country"
                 value={obj.country}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-1 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
                 required
               />
             </div>
@@ -197,7 +196,7 @@ const PersonalInfo = () => {
                 name="address"
                 value={obj.address}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-1 border rounded-sm sm:w-full md:w-3/4 focus:outline-none focus:border-blue-500"
                 rows="2" // You can adjust the number of rows
               />
             </div>
@@ -205,7 +204,7 @@ const PersonalInfo = () => {
 
           <button
             type="submit"
-            className="w-1/3 px-4 py-2 text-xl font-semibold text-white bg-orange-500 rounded-md smooth-shadow hover:bg-orange-600 focus:outline-none font-header"
+            className="w-1/3 px-4 py-1 text-xl font-semibold text-white bg-orange-500 rounded-md smooth-shadow hover:bg-orange-600 focus:outline-none font-header"
           >
             <span className="tracking-wider">Update</span>
           </button>
@@ -231,7 +230,7 @@ const PersonalInfo = () => {
       ) : (
         <div className="space-y-4">
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-            {/* <div>
+            <div>
               <label htmlFor="name" className="block text-gray-600">
                 First Name
               </label>
@@ -241,11 +240,10 @@ const PersonalInfo = () => {
                 id="name"
                 name="name"
                 value={obj.first_name}
-                className="w-full py-2 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
+                className="w-full py-1 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
                 required
               />
-            </div> */}
-            <TextField />
+            </div>
 
             <div>
               <label htmlFor="name" className="block text-gray-600">
@@ -257,7 +255,7 @@ const PersonalInfo = () => {
                 id="last_name"
                 name="last_name"
                 value={obj.last_name}
-                className="w-full py-2 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
+                className="w-full py-1 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
                 required
               />
             </div>
@@ -274,7 +272,7 @@ const PersonalInfo = () => {
                 id="email"
                 name="email"
                 value={obj.email}
-                className="w-full py-2 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
+                className="w-full py-1 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
                 required
               />
             </div>
@@ -288,7 +286,7 @@ const PersonalInfo = () => {
                 type="text"
                 name="city"
                 value={obj.city}
-                className="w-full py-2 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
+                className="w-full py-1 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
                 required
               />
             </div>
@@ -304,7 +302,7 @@ const PersonalInfo = () => {
                 type="text"
                 name="State"
                 value={obj.state}
-                className="w-full py-2 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
+                className="w-full py-1 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
                 required
               />
             </div>
@@ -319,7 +317,7 @@ const PersonalInfo = () => {
                 name="Country"
                 value={obj.country}
                 onChange={handleChange}
-                className="w-full py-2 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
+                className="w-full py-1 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
                 required
               />
             </div>
@@ -380,7 +378,7 @@ const PersonalInfo = () => {
                 name="address"
                 value={obj.address}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
+                className="w-full px-4 py-1 bg-gray-200 border-none rounded-sm ring-0 focus:ring-0 sm:w-full md:w-3/4 focus:outline-none"
                 rows="2" // You can adjust the number of rows
               />
             </div>
